@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.front-image {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: url("/images/front.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  border-radius: 0;
+}
