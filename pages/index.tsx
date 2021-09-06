@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import FrontImageContainer from '../components/FrontImageContainer'
+import Head from "next/head"
+import FrontImage from "../components/FrontImage"
 
-export default function Home() {
+export default function Home(): React.ReactElement {
   return (
     <>
       <Head>
         <title>Joshua Cerdenia Music</title>
       </Head>
-      <FrontImageContainer />
+      <FrontImage />
     </>
   )
 }
