@@ -1,7 +1,9 @@
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import { Container } from "react-bootstrap"
 
-export default function FrontImageContainer(): React.ReactElement {
+export default function FrontImageContainer({ children }): React.ReactElement {
 	return (
-		<div className="front-image" />
+		<div className="front-image">
+			{children}
+		</div>
 	)
 }
