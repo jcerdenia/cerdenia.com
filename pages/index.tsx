@@ -14,11 +14,11 @@ export default function Home(): React.ReactElement {
       </Head>
       <FrontImage>
         <Container className="play-icon-container">
-				  <i 
+          <i 
             className="bi bi-play-circle play-icon" 
             onClick={() => setShowFeaturedMedia(true)}
           />
-			  </Container>
+        </Container>
       </FrontImage>
 
       <MediaModal
