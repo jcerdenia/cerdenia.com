@@ -3,8 +3,9 @@ import { useState } from "react"
 import { Container } from "react-bootstrap"
 import FrontImage from "../components/FrontImage"
 import MediaModal from "../components/MediaModal"
+import { parseContent } from "../lib/markdown"
 
-export default function Home(): React.ReactElement {
+export default function Home({ bio }): React.ReactElement {
   const [showFeaturedMedia, setShowFeaturedMedia] = useState(false);
 
   return (
@@ -20,6 +21,9 @@ export default function Home(): React.ReactElement {
           />
         </Container>
       </FrontImage>
+      <Container className="py-4">
+        <section dangerouslySetInnerHTML={{ __html: bio }} />
+      </Container>
       
       <MediaModal
         show={showFeaturedMedia} 
@@ -27,4 +31,12 @@ export default function Home(): React.ReactElement {
       />
     </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: { 
+      bio: parseContent("data/bio-short.md") 
+    }
+  }
 }

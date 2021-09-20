@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^12.2.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",

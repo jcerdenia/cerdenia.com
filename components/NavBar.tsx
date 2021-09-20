@@ -5,7 +5,7 @@ export default function NavBar(): React.ReactElement {
   const { route } = useRouter()
 
   return (
-    <Navbar variant="dark" expand="lg" fixed="top">
+    <Navbar className="navbar" variant="dark" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand className="brand" href="#home">Joshua Cerdenia Music</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
