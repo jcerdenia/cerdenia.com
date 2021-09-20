@@ -20,7 +20,7 @@ export default function Home(): React.ReactElement {
           />
         </Container>
       </FrontImage>
-
+      
       <MediaModal
         show={showFeaturedMedia} 
         onHide={() => setShowFeaturedMedia(false)}
