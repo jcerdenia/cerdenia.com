@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;0,1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Urbanist", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -19,10 +18,19 @@ a {
   box-sizing: border-box;
 }
 
+footer {
+  bottom: 0vh;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: gray;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
 .brand,
 .nav-item {
   font-size: 1.75rem;
-  font-weight: lighter;
+  font-weight: lighter !important;
 }
 
 .front-image {
@@ -47,10 +55,12 @@ a {
   color: darkgray;
   font-size: 4.5rem;
   cursor: pointer;
+  transition: 250ms;
 }
 
 .play-icon:hover {
-  color: lightgray;
+  color: white;
+  transition: 250ms;
 }
 
 .full-screen {

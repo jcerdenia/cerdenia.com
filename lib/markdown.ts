@@ -1,4 +1,4 @@
-export const parseContent = (filePath) => {
+export const markdownToHtml = (filePath: string): string => {
   const fs = require("fs")
   const matter = require("gray-matter")
   const md = require("markdown-it")()

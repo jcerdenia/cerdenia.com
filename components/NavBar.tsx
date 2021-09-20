@@ -12,8 +12,8 @@ export default function NavBar(): React.ReactElement {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" activeKey={route}>
             <Nav.Link className="nav-item" key="/" href="/">Home</Nav.Link>
-            <Nav.Link className="nav-item" key="/work" href="/work">Work</Nav.Link>
-            <Nav.Link className="nav-item" key="/about" href="/about">About</Nav.Link>
+            <Nav.Link disabled className="nav-item" key="/work" href="/work">Work</Nav.Link>
+            <Nav.Link disabled className="nav-item" key="/about" href="/about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

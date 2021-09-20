@@ -3,10 +3,17 @@ import { useState } from "react"
 import { Container } from "react-bootstrap"
 import FrontImage from "../components/FrontImage"
 import MediaModal from "../components/MediaModal"
-import { parseContent } from "../lib/markdown"
+import MediaGrid from "../components/MediaGrid"
+import { markdownToHtml } from "../lib/markdown"
 
-export default function Home({ bio }): React.ReactElement {
-  const [showFeaturedMedia, setShowFeaturedMedia] = useState(false);
+type HomePageProps = {
+  props: {
+    shortBio: string
+  }
+}
+
+const Home = ({ shortBio }: HomePageProps["props"]): React.ReactElement => {
+  const [showFeaturedMedia, setShowFeaturedMedia] = useState(false)
 
   return (
     <>
@@ -22,8 +29,9 @@ export default function Home({ bio }): React.ReactElement {
         </Container>
       </FrontImage>
       <Container className="py-4">
-        <section dangerouslySetInnerHTML={{ __html: bio }} />
+        <section dangerouslySetInnerHTML={{ __html: shortBio }} />
       </Container>
+      <MediaGrid />
       
       <MediaModal
         show={showFeaturedMedia} 
@@ -33,10 +41,12 @@ export default function Home({ bio }): React.ReactElement {
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps = async (): Promise<HomePageProps> => {
   return {
     props: { 
-      bio: parseContent("data/bio-short.md") 
+      shortBio: markdownToHtml("data/bio-short.md") 
     }
   }
 }
+
+export default Home
