@@ -7,12 +7,10 @@ import MediaGrid from "../components/MediaGrid"
 import { markdownToHtml } from "../lib/markdown"
 
 type HomePageProps = {
-  props: {
-    shortBio: string
-  }
+  shortBio: string
 }
 
-const Home = ({ shortBio }: HomePageProps["props"]): React.ReactElement => {
+const Home = ({ shortBio }: HomePageProps): React.ReactElement => {
   const [showFeaturedMedia, setShowFeaturedMedia] = useState(false)
 
   return (
@@ -41,7 +39,11 @@ const Home = ({ shortBio }: HomePageProps["props"]): React.ReactElement => {
   )
 }
 
-export const getStaticProps = async (): Promise<HomePageProps> => {
+type PropsContainer<PropsType> = {
+  props: PropsType
+}
+
+export const getStaticProps = async (): Promise<PropsContainer<HomePageProps>> => {
   return {
     props: { 
       shortBio: markdownToHtml("data/bio-short.md") 

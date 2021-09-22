@@ -1,13 +1,13 @@
 import { useRouter } from "next/router"
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
+import { Container, Navbar, Nav } from "react-bootstrap"
 
 export default function NavBar(): React.ReactElement {
   const { route } = useRouter()
 
   return (
-    <Navbar className="navbar" variant="dark" expand="lg" fixed="top">
+    <Navbar className="navbar" variant="dark" expand="md">
       <Container>
-        <Navbar.Brand className="brand" href="#home">Joshua Cerdenia Music</Navbar.Brand>
+        <Navbar.Brand className="brand" href="#home">Joshua Cerdenia</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" activeKey={route}>
