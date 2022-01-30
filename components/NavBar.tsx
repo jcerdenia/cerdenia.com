@@ -1,22 +1,35 @@
-import { useRouter } from "next/router"
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { useRouter } from "next/router";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 export default function NavBar(): React.ReactElement {
-  const { route } = useRouter()
+  const { asPath } = useRouter();
 
   return (
-    <Navbar className="navbar" variant="dark" expand="md">
+    <Navbar className="navbar" variant="light" expand="md">
       <Container>
-        <Navbar.Brand className="brand" href="#home">Joshua Cerdenia</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto" activeKey={route}>
-            <Nav.Link className="nav-item" key="/" href="/">Home</Nav.Link>
-            <Nav.Link disabled className="nav-item" key="/work" href="/work">Work</Nav.Link>
-            <Nav.Link disabled className="nav-item" key="/about" href="/about">About</Nav.Link>
+        <Navbar.Brand className="brand" href="/">
+          Joshua Cerdenia{" "}
+          <span className="mx-1 sub-brand text-muted">Composer</span>
+        </Navbar.Brand>
+
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav activeKey={asPath}>
+            <Nav.Link className="nav-item" key="/" href="/">
+              Home
+            </Nav.Link>
+            <Nav.Link className="nav-item" key="/about" href="/about">
+              About
+            </Nav.Link>
+            <Nav.Link className="nav-item" key="/work" href="/work" disabled>
+              Work
+            </Nav.Link>
+            <Nav.Link className="nav-item" key="/press" href="/press" disabled>
+              Press
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
+  );
 }
