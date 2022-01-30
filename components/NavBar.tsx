@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 export default function NavBar(): React.ReactElement {
-  const { route } = useRouter();
+  const { asPath } = useRouter();
 
   return (
     <Navbar className="navbar" variant="light" expand="md">
@@ -14,12 +14,15 @@ export default function NavBar(): React.ReactElement {
 
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
+          <Nav activeKey={asPath}>
             <Nav.Link className="nav-item" key="/" href="/">
               Home
             </Nav.Link>
             <Nav.Link className="nav-item" key="/work" href="/work" disabled>
               Work
+            </Nav.Link>
+            <Nav.Link className="nav-item" key="/press" href="/press" disabled>
+              Press
             </Nav.Link>
             <Nav.Link className="nav-item" key="/about" href="/about" disabled>
               About
