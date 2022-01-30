@@ -7,7 +7,7 @@ export default function NavBar(): React.ReactElement {
   return (
     <Navbar className="navbar" variant="light" expand="md">
       <Container>
-        <Navbar.Brand className="brand" href="#home">
+        <Navbar.Brand className="brand" href="/">
           Joshua Cerdenia{" "}
           <span className="mx-1 sub-brand text-muted">Composer</span>
         </Navbar.Brand>
