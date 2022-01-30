@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Container, Image } from "react-bootstrap";
+import { useRouter } from "next/router";
+import { Row, Col, Image } from "react-bootstrap";
 import { markdownToHtml } from "../lib/markdown";
 
 interface AboutPageProps {
@@ -7,25 +8,34 @@ interface AboutPageProps {
 }
 
 const About = ({ bio }: AboutPageProps): React.ReactElement => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
         <title>About: Joshua Cerdenia Music</title>
       </Head>
       <div className="about-container">
-        <Container className="headshot-container">
-          <Image
-            className="shadowed"
-            src="images/headshot.jpg"
-            alt="headshot"
-            rounded
-            fluid
-          />
-          <figcaption className="small text-muted">
-            Photo by Rashidah De Vore
-          </figcaption>
-        </Container>
-        <section className="mt-4" dangerouslySetInnerHTML={{ __html: bio }} />
+        <Row xs={1} xl={2}>
+          <Col xl={5}>
+            <div className="mb-4">
+              <Image
+                className="headshot shadowed"
+                src="images/headshot.jpg"
+                onClick={() => router.push("/images/headshot.jpg")}
+                alt="headshot"
+                rounded
+                fluid
+              />
+              <figcaption className="small text-muted">
+                Photo by Rashidah De Vore
+              </figcaption>
+            </div>
+          </Col>
+          <Col xl={7}>
+            <section dangerouslySetInnerHTML={{ __html: bio }} />
+          </Col>
+        </Row>
       </div>
     </>
   );

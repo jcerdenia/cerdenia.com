@@ -11,7 +11,6 @@ export default function NavBar(): React.ReactElement {
           Joshua Cerdenia{" "}
           <span className="mx-1 sub-brand text-muted">Composer</span>
         </Navbar.Brand>
-
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav activeKey={asPath}>
@@ -20,12 +19,6 @@ export default function NavBar(): React.ReactElement {
             </Nav.Link>
             <Nav.Link className="nav-item" key="/about" href="/about">
               About
-            </Nav.Link>
-            <Nav.Link className="nav-item" key="/work" href="/work" disabled>
-              Work
-            </Nav.Link>
-            <Nav.Link className="nav-item" key="/press" href="/press" disabled>
-              Press
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

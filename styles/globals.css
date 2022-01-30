@@ -123,6 +123,6 @@ footer {
   flex-direction: column;
 }
 
-.headshot-container {
-  max-width: 920px;
+.headshot {
+  cursor: pointer;
 }
