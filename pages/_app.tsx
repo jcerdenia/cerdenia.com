@@ -7,9 +7,11 @@ const MyApp = ({ Component, pageProps }): React.ReactElement => {
   return (
     <>
       <NavBar />
-      <Component {...pageProps} />
       <Container>
-        <footer>© 2011-22 Joshua Cerdenia.</footer>
+        <Component {...pageProps} />
+        <footer className="pt-4">
+          © 2011-22 Joshua Cerdenia. This site is under development.
+        </footer>
       </Container>
     </>
   );

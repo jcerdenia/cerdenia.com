@@ -18,14 +18,14 @@ export default function NavBar(): React.ReactElement {
             <Nav.Link className="nav-item" key="/" href="/">
               Home
             </Nav.Link>
+            <Nav.Link className="nav-item" key="/about" href="/about">
+              About
+            </Nav.Link>
             <Nav.Link className="nav-item" key="/work" href="/work" disabled>
               Work
             </Nav.Link>
             <Nav.Link className="nav-item" key="/press" href="/press" disabled>
               Press
-            </Nav.Link>
-            <Nav.Link className="nav-item" key="/about" href="/about" disabled>
-              About
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

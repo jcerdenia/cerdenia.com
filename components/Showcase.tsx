@@ -3,12 +3,12 @@ import media, { MediaDataItem } from "../data/media";
 
 const Showcase = (): React.ReactElement => {
   return (
-    <Container className="py-4">
+    <div>
       <Row xs={1} lg={2} xl={3} className="g-4">
         {media.map(({ widget, center, note }: MediaDataItem, idx: number) => (
           <Col key={idx}>
             <div
-              className="widget-container"
+              className="widget-container shadowed"
               style={{ alignItems: center ? "center" : null }}
             >
               <section
@@ -20,7 +20,7 @@ const Showcase = (): React.ReactElement => {
           </Col>
         ))}
       </Row>
-    </Container>
+    </div>
   );
 };
 
