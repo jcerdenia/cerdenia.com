@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }): React.ReactElement => {
       <Container>
         <Component {...pageProps} />
         <footer className="pt-4">
-          © 2011-22 Joshua Cerdenia. This site is under development.
+          © 2011-22 Joshua Cerdenia. This site is in development.
         </footer>
       </Container>
     </>
