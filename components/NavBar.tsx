@@ -14,7 +14,7 @@ export default function NavBar(): React.ReactElement {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav activeKey={asPath}>
-            <Nav.Link className="nav-item" key="/" href="/#">
+            <Nav.Link className="nav-item" key="/" href="/">
               Home
             </Nav.Link>
             <Nav.Link className="nav-item" key="/about" href="/#about">
