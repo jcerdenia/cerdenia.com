@@ -4,6 +4,8 @@ Joshua’s body of work reflects his wide-ranging cultural interests, traversing
 
 Joshua has been the recipient of numerous scholarships and grants to study with Christopher Rouse, Kevin Puts, and Ho Chee Kong at The Juilliard School, the Peabody Institute, and the Yong Siew Toh Conservatory of Music. At present, he is based out of Metro Manila.
 
+<hr />
+
 **For inquiries, commissions, and obtaining scores and parts, please email [joshua@cerdenia.com](mailto:joshua@cerdenia.com) directly.**
 
 **[Download photos and bios](https://www.dropbox.com/sh/08644da4vfuwkty/AACtBqeidImbmUyLN1ki06bAa?dl=0) of various lengths that can be used in programs and publications.**

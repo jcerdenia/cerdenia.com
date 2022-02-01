@@ -13,9 +13,7 @@ const MyApp = ({ Component, pageProps }): React.ReactElement => {
       <NavBar />
       <Container>
         <Component {...pageProps} />
-        <footer className="pt-4">
-          © 2011-22 Joshua Cerdenia. This site is in development.
-        </footer>
+        <footer className="pt-4">© 2011-22 Joshua Cerdenia</footer>
       </Container>
     </>
   );
