@@ -26,7 +26,7 @@ span {
 footer {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  color: gray;
+  color: rgb(100, 100, 100);
   font-weight: lighter;
   font-size: smaller;
 }
@@ -37,13 +37,14 @@ footer {
 }
 
 .brand {
+  color: #303030 !important;
   font-size: 2rem;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .sub-brand {
-  color: gray;
+  color: rgb(100, 100, 100);
   text-transform: none;
   font-size: 1rem;
 }
