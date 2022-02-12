@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 a {
-  color: darkblue;
+  color: rgb(37, 37, 145);
   text-decoration: none;
 }
 
@@ -19,9 +19,8 @@ a {
 
 p,
 div,
-span,
-a {
-  font-size: 18px;
+span {
+  color: #303030;
 }
 
 footer {
@@ -39,13 +38,14 @@ footer {
 
 .brand {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .sub-brand {
-  font-size: 1.25rem;
-  font-weight: lighter;
   color: gray;
+  text-transform: none;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,13 +55,7 @@ footer {
   }
 
   .brand {
-    font-weight: bold;
     font-size: 1.5rem;
-  }
-
-  .sub-brand {
-    font-size: 1rem;
-    font-weight: lighter;
   }
 }
 
