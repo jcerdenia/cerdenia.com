@@ -10,15 +10,20 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
         <title>About • Joshua Cerdenia Music</title>
       </Head>
       <Row xs={1} lg={2}>
-        <Col>
+        <Col md={12} lg={5}>
           <div className="mb-4">
-            <Image fluid src="/images/headshot.jpg" alt="headshot" />
+            <Image
+              fluid
+              className="headshot"
+              src="/images/headshot-2.jpeg"
+              alt="headshot"
+            />
             <figcaption className="small text-muted">
               Photo by Rashidah De Vore
             </figcaption>
           </div>
         </Col>
-        <Col>
+        <Col md={12} lg={7}>
           <HtmlSection html={bio} />
         </Col>
       </Row>
