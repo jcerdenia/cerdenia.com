@@ -1,14 +1,11 @@
-import Head from "next/head";
+import PageWrapper from "../components/PageWrapper";
 import Showcase from "../components/Showcase";
 
 const Home = (): React.ReactElement => {
   return (
-    <>
-      <Head>
-        <title>Joshua Cerdenia Music</title>
-      </Head>
+    <PageWrapper title="Joshua Cerdenia Music">
       <Showcase />
-    </>
+    </PageWrapper>
   );
 };
 

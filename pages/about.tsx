@@ -1,14 +1,15 @@
-import Head from "next/head";
 import { Row, Col, Image } from "react-bootstrap";
+import PageWrapper from "../components/PageWrapper";
 import HtmlSection from "../components/HtmlSection";
 import { markdownToHtml } from "../lib/markdown";
 
+interface AboutPageProps {
+  bio: string;
+}
+
 const About = ({ bio }: AboutPageProps): React.ReactElement => {
   return (
-    <>
-      <Head>
-        <title>About • Joshua Cerdenia Music</title>
-      </Head>
+    <PageWrapper title="About • Joshua Cerdenia Music">
       <Row xs={1} lg={2}>
         <Col md={12} lg={5}>
           <div className="mb-4">
@@ -28,7 +29,7 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
           <HtmlSection html={bio} />
         </Col>
       </Row>
-    </>
+    </PageWrapper>
   );
 };
 
@@ -39,9 +40,5 @@ export const getStaticProps = async (): Promise<{ props: AboutPageProps }> => {
     },
   };
 };
-
-interface AboutPageProps {
-  bio: string;
-}
 
 export default About;

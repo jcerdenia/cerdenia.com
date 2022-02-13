@@ -1,13 +1,10 @@
-import Head from "next/head";
 import { Row, Col } from "react-bootstrap";
+import PageWrapper from "../components/PageWrapper";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
 
 const News = (): React.ReactElement => {
   return (
-    <>
-      <Head>
-        <title>News • Joshua Cerdenia Music</title>
-      </Head>
+    <PageWrapper title="News • Joshua Cerdenia Music">
       {news.map((group: NewsItemGroup) => {
         return (
           <div key={group.title} className="mb-4">
@@ -29,7 +26,7 @@ const News = (): React.ReactElement => {
           </div>
         );
       })}
-    </>
+    </PageWrapper>
   );
 };
 
