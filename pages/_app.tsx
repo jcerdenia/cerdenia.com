@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const MyApp = ({ Component, pageProps }): React.ReactElement => {
   return (
@@ -13,7 +14,7 @@ const MyApp = ({ Component, pageProps }): React.ReactElement => {
       <NavBar />
       <Container>
         <Component {...pageProps} />
-        <footer className="pt-4">© 2011-22 Joshua Cerdenia</footer>
+        <Footer />
       </Container>
     </>
   );
