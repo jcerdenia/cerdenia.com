@@ -7,11 +7,15 @@ body {
   margin: 0;
   font-weight: 300;
   font-family: "Rubik", sans-serif;
+  background-color: #efefef;
 }
 
 a {
-  color: rgb(37, 37, 145);
-  text-decoration: none;
+  color: #2a6041;
+}
+
+a:hover {
+  color: #28965a;
 }
 
 * {
@@ -21,7 +25,7 @@ a {
 p,
 div,
 span {
-  color: #303030;
+  color: #070707;
 }
 
 footer {
@@ -38,7 +42,7 @@ footer {
 }
 
 .brand {
-  color: #303030 !important;
+  color: #070707 !important;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
