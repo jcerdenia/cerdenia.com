@@ -7,9 +7,11 @@ export default function NavBar(): React.ReactElement {
   return (
     <Navbar className="navbar" variant="light" expand="md">
       <Container>
-        <Navbar.Brand className="brand" href="/">
-          Joshua Cerdenia
-          <div className="sub-brand">Composer</div>
+        <Navbar.Brand className="d-flex align-items-center" href="/">
+          <span className="brand">Joshua Cerdenia</span>
+          <span>
+            <Navbar.Text className="sub-brand">Composer</Navbar.Text>
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
