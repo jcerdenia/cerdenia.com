@@ -13,7 +13,7 @@ const News = (): React.ReactElement => {
               <Row key={idx} className="my-3">
                 <Col xs={12} md={4}>
                   <span className="text-muted small">
-                    <strong>{item.source}</strong>: {item.date}
+                    <strong>{item.source}</strong> • {item.date}
                   </span>
                 </Col>
                 <Col xs={12} md={8}>
