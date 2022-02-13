@@ -1,10 +1,10 @@
-export type MediaDataItem = {
+export interface MediaDataItem {
   title: string;
   widget: string;
   note?: string;
   center?: boolean;
   hidden?: boolean;
-};
+}
 
 const media: MediaDataItem[] = [
   {

@@ -22,7 +22,7 @@ export default function NavBar(): React.ReactElement {
             <Nav.Link className="nav-item" href="/about">
               About
             </Nav.Link>
-            <Nav.Link disabled className="nav-item" href="/news">
+            <Nav.Link className="nav-item" href="/news">
               News
             </Nav.Link>
             <Nav.Link disabled className="nav-item" href="/work">
