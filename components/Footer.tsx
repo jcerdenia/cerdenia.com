@@ -5,13 +5,15 @@ const Footer = (): React.ReactElement => {
     <div className="pt-4">
       <p>
         <strong>
-          For inquiries, commissions, and obtaining scores and parts, please
+          For scores and parts, commissions, and all other inquiries, please
           email{" "}
           <Link href="mailto:joshua@cerdenia.com">joshua@cerdenia.com</Link>{" "}
           directly.
         </strong>
       </p>
-      <footer>© 2011-22 Joshua Cerdenia</footer>
+      <footer>
+        All content © 2011-22 Joshua Cerdenia unless otherwise stated.
+      </footer>
     </div>
   );
 };
