@@ -1,4 +1,7 @@
 import Head from "next/head";
+import { Container } from "react-bootstrap";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 interface PageWrapperProps {
   title: string;
@@ -21,7 +24,11 @@ const PageWrapper = ({ title, description, children }: PageWrapperProps) => {
         <link rel="icon" href="music-note.svg" />
         <title>{title}</title>
       </Head>
-      {children}
+      <NavBar />
+      <Container>
+        {children}
+        <Footer />
+      </Container>
     </>
   );
 };
