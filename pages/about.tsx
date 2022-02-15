@@ -9,7 +9,10 @@ interface AboutPageProps {
 
 const About = ({ bio }: AboutPageProps): React.ReactElement => {
   return (
-    <PageWrapper title="About • Joshua Cerdenia Music">
+    <PageWrapper
+      title="About - Joshua Cerdenia, Composer"
+      description={bio.slice(0, bio.indexOf(". ") + 1).replace(/<(.*?)>/g, "")}
+    >
       <Row xs={1} lg={2}>
         <Col md={12} lg={5}>
           <div className="mb-4">

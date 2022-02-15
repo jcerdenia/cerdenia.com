@@ -4,7 +4,10 @@ import news, { NewsItem, NewsItemGroup } from "../data/news";
 
 const News = (): React.ReactElement => {
   return (
-    <PageWrapper title="News • Joshua Cerdenia Music">
+    <PageWrapper
+      title="News - Joshua Cerdenia, Composer"
+      description="Recent & Upcoming Events / Press"
+    >
       {news.map((group: NewsItemGroup) => {
         return (
           <div key={group.title} className="mb-4">

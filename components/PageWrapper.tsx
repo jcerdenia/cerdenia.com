@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 interface PageWrapperProps {
   title: string;
-  description?: string;
+  description: string;
   children?: any;
 }
 
