@@ -19,7 +19,7 @@ const PageWrapper = ({ title, description, children }: PageWrapperProps) => {
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://music.cerdenia.com/images/headshot-2.jpeg"
+          content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
         <link rel="icon" href="music-note.svg" />
         <title>{title}</title>

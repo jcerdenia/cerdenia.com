@@ -19,7 +19,7 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
             <Image
               fluid
               className="headshot"
-              src="/images/headshot-2.jpeg"
+              src="/images/headshot-tall.jpeg"
               alt="headshot"
             />
             <figcaption className="small text-muted">
