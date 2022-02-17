@@ -15,27 +15,27 @@ const events: NewsItemGroup = {
   items: [
     {
       title: "Satélite 17. Entre cuerdas y palabras",
-      url: "http://ocne.mcu.es/programacion/satelite-17-entre-cuerdas-y-palabras",
-      source: "Orquesta Nacional de España",
       date: "3 May 2022",
+      source: "Orquesta Nacional de España",
+      url: "http://ocne.mcu.es/programacion/satelite-17-entre-cuerdas-y-palabras",
     },
     {
       title: "Vim: 10th Wave x Yuki Tokuda Dance Collaboration Concert",
-      url: "https://icareifyoulisten.tv/vim-10th-wave-x-yuki-tokuda-dance-collaboration-concert/",
-      source: "I Care If You Listen TV",
       date: "4 Jun 2021",
+      source: "I Care If You Listen TV",
+      url: "https://icareifyoulisten.tv/vim-10th-wave-x-yuki-tokuda-dance-collaboration-concert/",
     },
     {
       title: "A Closer Look at Swell",
-      url: "https://www.aaartsalliance.org/events/a-closer-look-at-swell-intimate-conversaations-with-asian-immigrants-and-children-of-asian-immigrants-who-turned-their-stories-into-song",
-      source: "Asian American Arts Alliance",
       date: "29 Jun 2021",
+      source: "Asian American Arts Alliance",
+      url: "https://www.aaartsalliance.org/events/a-closer-look-at-swell-intimate-conversaations-with-asian-immigrants-and-children-of-asian-immigrants-who-turned-their-stories-into-song",
     },
     {
       title: "Swell in Off-Broadway at HERE 2021",
-      url: "https://www.broadwayworld.com/off-broadway/regional/Swell-2806900",
-      source: "HERE",
       date: "17-21 Mar 2021",
+      source: "HERE",
+      url: "https://www.broadwayworld.com/off-broadway/regional/Swell-2806900",
     },
   ],
 };
@@ -45,21 +45,21 @@ const press: NewsItemGroup = {
   items: [
     {
       title: "Melisa Tien's SWELL to Premiere Online at HERE",
-      url: "https://www.broadwayworld.com/off-off-broadway/article/HERE-Presents-the-Premiere-of-Melisa-Tiens-SWELL-20210216",
-      source: "Broadway World",
       date: "Feb 2021",
+      source: "Broadway World",
+      url: "https://www.broadwayworld.com/off-off-broadway/article/HERE-Presents-the-Premiere-of-Melisa-Tiens-SWELL-20210216",
     },
     {
       title: "Carla Canales Navigates Cultural In-Betweens in “Duende”",
-      url: "https://icareifyoulisten.com/2020/11/carla-canales-navigates-cultural-in-betweens-in-duende/",
-      source: "I Care If You Listen",
       date: "Nov 2020",
+      source: "I Care If You Listen",
+      url: "https://icareifyoulisten.com/2020/11/carla-canales-navigates-cultural-in-betweens-in-duende/",
     },
     {
       title: "IndieWorks Announces BITE-SIZED BROADWAY- A Mini-Musical Podcast",
-      url: "https://www.broadwayworld.com/off-broadway/article/IndieWorks-Announces-BITE-SIZED-BROADWAY--A-Mini-Musical-Podcast-20200803",
-      source: "Broadway World",
       date: "Aug 2020",
+      source: "Broadway World",
+      url: "https://www.broadwayworld.com/off-broadway/article/IndieWorks-Announces-BITE-SIZED-BROADWAY--A-Mini-Musical-Podcast-20200803",
     },
     {
       title:

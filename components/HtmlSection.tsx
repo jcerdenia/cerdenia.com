@@ -1,3 +1,8 @@
+interface HtmlSectionProps {
+  className?: string;
+  html: string;
+}
+
 const HtmlSection = ({
   className,
   html,
@@ -6,10 +11,5 @@ const HtmlSection = ({
     <section className={className} dangerouslySetInnerHTML={{ __html: html }} />
   );
 };
-
-interface HtmlSectionProps {
-  className?: string;
-  html: string;
-}
 
 export default HtmlSection;
