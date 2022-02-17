@@ -16,6 +16,7 @@ a {
 
 a:hover {
   color: #28965a;
+  transition: 250ms;
 }
 
 * {
@@ -46,6 +47,11 @@ footer {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.brand:hover {
+  color: rgb(100, 100, 100) !important;
+  transition: 250ms;
 }
 
 .sub-brand {
