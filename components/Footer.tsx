@@ -5,8 +5,8 @@ const Footer = (): React.ReactElement => {
     <div className="pt-4">
       <p>
         <strong>
-          For scores and parts, commissions, and all other inquiries, please
-          email{" "}
+          For scores and parts, commissions, teaching, and all other inquiries,
+          please email{" "}
           <Link href="mailto:joshua@cerdenia.com">joshua@cerdenia.com</Link>{" "}
           directly.
         </strong>
