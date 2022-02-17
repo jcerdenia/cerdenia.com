@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Footer = (): React.ReactElement => {
   return (
     <div className="pt-4">
@@ -7,8 +5,7 @@ const Footer = (): React.ReactElement => {
         <strong>
           For scores and parts, commissions, teaching, and all other inquiries,
           please email{" "}
-          <Link href="mailto:joshua@cerdenia.com">joshua@cerdenia.com</Link>{" "}
-          directly.
+          <a href="mailto:joshua@cerdenia.com">joshua@cerdenia.com</a> directly.
         </strong>
       </p>
       <footer>
