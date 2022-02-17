@@ -40,8 +40,8 @@ const events: NewsItemGroup = {
   ],
 };
 
-const press: NewsItemGroup = {
-  title: "In the Press",
+const articles: NewsItemGroup = {
+  title: "Reviews & Articles",
   items: [
     {
       title: "Melisa Tien's SWELL to Premiere Online at HERE",
@@ -95,12 +95,6 @@ const press: NewsItemGroup = {
       url: "https://issuu.com/detroitsymphony/docs/perf1718_wrapb_2bb1_w/18",
     },
     {
-      title: "Maestro Filipino - Listen Again!",
-      date: "Nov 2017",
-      source: "98.7 DZFE The Master's Touch",
-      url: "http://dzfe.febc.ph/maestro-filipino-listen-again/",
-    },
-    {
       title: "Color and Contrasts from the New Juilliard Ensemble",
       date: "Apr 2016",
       source: "The New York Times",
@@ -151,6 +145,24 @@ const press: NewsItemGroup = {
   ],
 };
 
-const news: NewsItemGroup[] = [events, press];
+const broadcast: NewsItemGroup = {
+  title: "Broadcast",
+  items: [
+    {
+      title: "The Getaway",
+      date: "Oct 2020",
+      source: "Bite-Sized Broadway",
+      url: "https://www.indieworkstheatre.com/bsb-the-getaway",
+    },
+    {
+      title: "Maestro Filipino - Listen Again!",
+      date: "Nov 2017",
+      source: "98.7 DZFE The Master's Touch",
+      url: "http://dzfe.febc.ph/maestro-filipino-listen-again/",
+    },
+  ],
+};
+
+const news: NewsItemGroup[] = [events, articles, broadcast];
 
 export default news;
