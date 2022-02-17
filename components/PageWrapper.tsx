@@ -14,11 +14,18 @@ const PageWrapper = ({ title, description, children }: PageWrapperProps) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
+          content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
+        />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={title} />
+        <meta
+          property="twitter:image"
           content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
         <link rel="icon" href="music-note.svg" />
