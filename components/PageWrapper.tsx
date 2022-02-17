@@ -21,11 +21,11 @@ const PageWrapper = ({ title, description, children }: PageWrapperProps) => {
           property="og:image"
           content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={title} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={title} />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
         <link rel="icon" href="music-note.svg" />
