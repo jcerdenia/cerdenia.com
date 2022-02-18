@@ -10,13 +10,16 @@ const News = (): React.ReactElement => {
           <div key={group.title} className="mb-4">
             <h3>{group.title}</h3>
             {group.items.map((item: NewsItem, idx: number) => (
-              <Row key={idx} className="my-3">
-                <Col xs={12} md={4}>
-                  <span className="text-muted small">
-                    <strong>{item.source}</strong> • {item.date}
-                  </span>
+              <Row key={idx} className="news-item my-3">
+                <Col className="d-flex align-items-center" md={12} lg={4}>
+                  <div className="text-muted small news-item-meta">
+                    <span>
+                      <strong>{item.source}</strong>
+                    </span>
+                    <span>{item.date}</span>
+                  </div>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col className="d-flex align-items-center" md={12} lg={8}>
                   <a href={item.url} target="_blank" rel="noreferrer">
                     {item.title}
                   </a>

@@ -12,11 +12,11 @@ body {
 
 a {
   color: #2a6041;
+  transition: 250ms;
 }
 
 a:hover {
   color: #28965a;
-  transition: 250ms;
 }
 
 * {
@@ -63,6 +63,12 @@ footer {
   font-weight: 500;
 }
 
+.news-item-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .shadowed {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
@@ -92,6 +98,15 @@ footer {
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .news-item-meta {
+    justify-content: left;
+    width: auto;
+  }
+
+  .news-item-meta span {
+    margin-right: 8px;
   }
 
   .sub-brand {
