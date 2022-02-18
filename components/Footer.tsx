@@ -9,7 +9,16 @@ const Footer = (): React.ReactElement => {
         </strong>
       </p>
       <footer>
-        All content © 2011-22 Joshua Cerdenia unless otherwise stated.
+        All content © 2011-22 Joshua Cerdenia unless otherwise stated. This site
+        is{" "}
+        <a
+          href="https://github.com/joshuacerdenia/music.cerdenia.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-source
+        </a>
+        .
       </footer>
     </div>
   );
