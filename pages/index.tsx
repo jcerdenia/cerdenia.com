@@ -4,6 +4,7 @@ import Showcase from "../components/Showcase";
 const Home = (): React.ReactElement => {
   return (
     <PageWrapper
+      exact
       title="Joshua Cerdenia, Composer"
       description="The online home of the music of Joshua Cerdenia"
     >

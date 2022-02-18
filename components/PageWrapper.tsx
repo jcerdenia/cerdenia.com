@@ -5,11 +5,21 @@ import Footer from "./Footer";
 
 interface PageWrapperProps {
   title: string;
+  exact?: boolean;
   description: string;
-  children?: any;
+  children: any;
 }
 
-const PageWrapper = ({ title, description, children }: PageWrapperProps) => {
+const PageWrapper = ({
+  title,
+  exact,
+  description,
+  children,
+}: PageWrapperProps) => {
+  if (!exact) {
+    title += " - Joshua Cerdenia, Composer";
+  }
+
   return (
     <>
       <Head>
