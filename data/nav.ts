@@ -20,7 +20,6 @@ const navs: NavItem[] = [
   {
     title: "Work",
     url: "/work",
-    disabled: true,
   },
 ];
 
