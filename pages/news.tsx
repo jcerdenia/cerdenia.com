@@ -8,7 +8,7 @@ const News = (): React.ReactElement => {
       {news.map((group: NewsItemGroup) => {
         return (
           <div key={group.title} className="mb-4">
-            <h3>{group.title}</h3>
+            <h4>{group.title}</h4>
             {group.items.map((item: NewsItem, idx: number) => (
               <Row key={idx} className="news-item my-3">
                 <Col className="d-flex align-items-center" md={12} lg={4}>
