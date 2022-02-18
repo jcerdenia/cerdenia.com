@@ -52,6 +52,11 @@ footer {
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: 300ms;
+}
+
+.grayscale:hover {
+  opacity: 0.9;
 }
 
 .navbar {
