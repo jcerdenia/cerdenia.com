@@ -18,7 +18,7 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
           <div className="mb-4">
             <Image
               fluid
-              className="headshot"
+              className="grayscale"
               src="/images/headshot-tall.jpeg"
               alt="headshot"
             />
