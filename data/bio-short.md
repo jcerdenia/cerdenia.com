@@ -1,1 +1,0 @@
-**JOSHUA CERDENIA** is a Filipino composer whose diverse body of work spans orchestral, chamber, and vocal music, as well as musical theatre. His music has been commissioned and performed by world-renowned ensembles including the Detroit Symphony Orchestra, the Minnesota Orchestra, the Singapore Symphony Orchestra, and the Juilliard Orchestra.
