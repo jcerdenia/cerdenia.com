@@ -1,7 +1,7 @@
 import { Row, Col, Image } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 import HtmlSection from "../components/HtmlSection";
-import { markdownToHtml } from "../utils/markdown";
+import { parseMarkdown } from "../utils/markdown";
 
 interface AboutPageProps {
   bio: string;
@@ -39,7 +39,7 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
 export const getStaticProps = async (): Promise<{ props: AboutPageProps }> => {
   return {
     props: {
-      bio: markdownToHtml("data/bio-full.md"),
+      bio: parseMarkdown("data/bio-full.md", ["content"]).content,
     },
   };
 };
