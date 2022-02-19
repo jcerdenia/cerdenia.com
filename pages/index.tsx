@@ -1,9 +1,9 @@
 import { Row, Col } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
-import HtmlSection from "../components/HtmlSection";
-import media, { MediaDataItem } from "../data/media";
+import MediaWidget from "../components/MediaWidget";
+import media, { MediaDataItem } from "../data/showcase";
 
-const Home = (): React.ReactElement => {
+const HomePage = (): React.ReactElement => {
   return (
     <PageWrapper
       exact
@@ -11,9 +11,9 @@ const Home = (): React.ReactElement => {
       description="The online home of the music of Joshua Cerdenia"
     >
       <Row xs={1} lg={2} xl={3} className="g-1">
-        {media.map(({ widget }: MediaDataItem, idx: number) => (
-          <Col key={idx}>
-            <HtmlSection className="widget">{widget}</HtmlSection>
+        {media.map(({ url, type }: MediaDataItem, idx: number) => (
+          <Col key={idx} className="showcase">
+            <MediaWidget url={url} type={type} />
           </Col>
         ))}
       </Row>
@@ -21,4 +21,4 @@ const Home = (): React.ReactElement => {
   );
 };
 
-export default Home;
+export default HomePage;
