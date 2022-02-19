@@ -6,13 +6,6 @@ year: 2015
 mediaUrl: "https://soundcloud.com/joshuacerdenia/magayon"
 ---
 
-<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204090592&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="450" frameborder="no" scrolling="no"></iframe>
-
-### Magayon (2015)
-
-_Winner of the Juilliard Orchestra Composition Competition (2015)_  
-_Featured in the Minnesota Orchestra Composer Institute (2016)_
-
 _Magayon_ means “beautiful” in the Bicolano language of the Philippines, and it forms part of the name of Daragang Magayon—literally “beautiful maiden”—the central character in the origin myth of Mount Mayon, an active volcano that overlooks my place of birth, the Philippine province of Albay. According to the myth, Magayon, having previously rejected many powerful suitors from distant villages, was set to marry the chieftain Ulap. But as preparations began for a grand, feastly wedding, the jealous hunter Pagtuga intervened, holding Magayon’s father hostage and setting off a brief but deadly skirmish.
 
 When all of the main characters died—most tragically Magayon herself, who was hit by a stray arrow—the entire village went from celebratory anticipation of the wedding to mourning. The maiden was laid to rest on a grave next to her husband-to-be, which the villagers were alarmed to find rising higher and higher each day, accompanied by earthquakes and muffled rumblings of the earth. At last a crater formed, spewing hot ash and rocks.
@@ -23,6 +16,6 @@ My piece is concerned less with depicting the myth in its entirety and more with
 
 **Duration:** 13 minutes
 
-**Premiere:** April 28, 2015, Alice Tully Hall, Lincoln Center for the Performing Arts, New York, NY • Juilliard Orchestra; Jeffrey Milarsky, conductor
+**First performance:** 28 April 2015, Alice Tully Hall, Lincoln Center, New York, NY; Juilliard Orchestra conducted by Jeffrey Milarsky
 
-\[[View Perusal Score](https://issuu.com/joshuacerdenia/docs/magayon_-_full_score_in_c)\] • \[[Contact to perform](mailto:music@joshuacerdenia.com)\]
+<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204090592&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>

@@ -2,15 +2,10 @@
 title: "Spoliarium"
 for: "sinfonietta"
 category: "ORCHESTRA"
+description: "For the New Juilliard Ensemble"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/excerpt-spoliarium-for-chamber-orchestra-2016"
 ---
-
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267985720%3Fsecret_token%3Ds-hvvIG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-### Spoliarium (2016)
-
-_Composed for the New Juilliard Ensemble_
 
 According to some sources the _spoliarium_ in ancient Rome was a chamber attached to the Colosseum into which the bodies of fallen gladiators were sent to be stripped of their armor and dispatched. It is also the subject of the celebrated Filipino painter Juan Luna’s magnum opus, which won a gold medal in the Madrid Exposition of 1884 and now hangs in the main gallery of the National Museum of the Philippines. The giant canvas depicts at its center lifeless gladiators being dragged into the dark of the chamber. On one side a crowd of spectators riots; on the other, a woman weeps.
 
@@ -22,6 +17,6 @@ Also, there are a number of references, some subtle and some blatant, to other p
 
 **Duration:** 13 minutes
 
-**Premiere:** April 21, 2016, Alice Tully Hall, Lincoln Center for the Performing Arts, New York, NY • New Juilliard Ensemble; Joel Sachs, conductor
+**First performance:** April 21, 2016, Alice Tully Hall, Lincoln Center, New York, NY; New Juilliard Ensemble conducted by Joel Sachs
 
-\[[View Score Excerpt](http://joshuacerdenia.com/wp-content/uploads/2016/06/Cerdenia-Spoliarium-Excerpt.pdf)\] • \[[Contact to perform](mailto:music@joshuacerdenia.com)\]
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267985720%3Fsecret_token%3Ds-hvvIG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>

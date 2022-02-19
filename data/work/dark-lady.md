@@ -2,14 +2,11 @@
 title: "Dark Lady"
 subtitle: "Four Shakespeare Sonnets"
 for: "tenor, violin, and piano"
+description: "For Adam De Wilde"
 category: "VOCAL"
 year: 2014
 mediaUrl: "https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets"
 ---
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3qjplFP3kVU" frameborder="0" allowfullscreen></iframe>
-
-### Dark Lady: Four Shakespeare Sonnets (2014)
 
 _Dark Lady_ is a song cycle based on four sonnets from William Shakespeare's "Dark Lady" sequence: Nos. 130, 151, 141, and 127. In this sequence, the persona expresses a deep, sexual love for a dark-skinned whose features are not commonly regarded as beautiful; hence, the poems stand in contrast to Shakespeare's earlier, more well-known sonnets, which expresses a more youthful, spiritual love. While the sonnets in this cycle do not form together a cohesive textual narrative, I have arranged them to fit a musical narrative of my own making that progresses through various emotional states.
 
@@ -17,8 +14,10 @@ Although I have conceived the cycle as one long piece rather than four separate 
 
 The cycle, as a whole, also represents my first attempt at integrating elements of classical-tradition art song with popular and musical theater sensibilities. I have written the piece in commemoration of Shakespeare's 450th birth anniversary in the year 2014.
 
-**Instrumentation:** violin, male voice, piano
+**Instrumentation:** Tenor, violin, piano
 
 **Duration:** 16 minutes
 
-**Premiere:** May 2, 2014, Conservatory Concert Hall, Yong Siew Toh Conservatory of Music, Singapore • Adam de Wilde, tenor; Adam Wu, violin; Joshua Cerdenia, piano
+**First performance:** 2 May 2014, Conservatory Concert Hall, Singapore; Adam de Wilde, tenor; Adam Wu, violin; Joshua Cerdenia, piano
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148048374&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/joshuacerdenia" title="Joshua Cerdenia" target="_blank" style="color: #cccccc; text-decoration: none;">Joshua Cerdenia</a> · <a href="https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets" title="Dark Lady: Four Shakespeare Sonnets" target="_blank" style="color: #cccccc; text-decoration: none;">Dark Lady: Four Shakespeare Sonnets</a></div>

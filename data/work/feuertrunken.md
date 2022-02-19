@@ -3,6 +3,7 @@ title: "Feurtrunken"
 subtitle: "Fire-Drunk"
 for: "orchestra"
 category: "ORCHESTRA"
+description: "Commissioned by the Detroit Symphony Orchestra"
 year: 2017
 mediaUrl: "https://www.youtube.com/watch?v=xnmJFpS1x34"
 ---
@@ -13,16 +14,26 @@ During this time I also found myself absorbed in the _Divine Comedy_, especially
 
 The title, meaning “fire-drunk” or “drunk with fire,” is of course from Friedrich Schiller’s famous “Ode to Joy:” “We enter, drunk with fire, Heavenly One, your sanctuary.” I thought some reference to Beethoven was the obvious route; instead I chose Mahler, whose music I think conveys joy so adeptly. _Feuertrunken_ quotes the opening of Mahler's first Symphony before veering off into various, intertwined episodes of supplication, blasphemy, and finally, praise.
 
-**Instrumentation:** Piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets in B flat, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, percussion (3 players: almglocken, bass drum, 2 bongos, chimes, China cymbal, glockenspiel, snare drum, suspended cymbal, tam-tam, tambourine, wind chimes, xylophone), harp, strings
+_Feuertrunken_ was commissioned by the Detroit Symphony Orchestra for Leonard Slatkin and completed in New York City in 2017.
 
-_Feuertrunken_ was commissioned by the Detroit Symphony Orchestra and completed in New York City in 2017.
+**Instrumentation:** Piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets in B flat, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, percussion (3 players: almglocken, bass drum, 2 bongos, chimes, China cymbal, glockenspiel, snare drum, suspended cymbal, tam-tam, tambourine, wind chimes, xylophone), harp, strings
 
 **Duration:** 10 minutes
 
-**Premiere:** December 9, 10, 2017, Max M. Fisher Music Center, Detroit, MI • Detroit Symphony Orchestra; Leonard Slatkin, conductor
+**First performance:** 9 December 2017, Max M. Fisher Music Center, Detroit, MI; Detroit Symphony Orchestra conducted by Leonard Slatkin
 
-<iframe src="https://www.youtube.com/embed/xnmJFpS1x34" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/xnmJFpS1x34" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
->"Being drunk with fire sounds like a dangerous activity. However, the German title is from Schiller, a line from his Ode to Joy (“Wir betreten feuertrunken” – We enter, drunk with fire), and if that suggests Beethoven (his ‘Choral’ Symphony) it is to Mahler that Joshua Cerdenia leans, literally so in Feuertrunken, for its opening is from that composer’s First Symphony, for a couple of seconds, its dawn-like beginning becoming darker, questioning, then growing in intensity and energy, scored brilliantly for a large orchestra. Although there is something of a later breather there is no let-up in concentration, and then the wild ride continues (heralded to my ears by a conscious allusion to Beethoven 9, the stabs from contrabassoon and bass drum that cue the tenor’s solo), now even faster and with a sense of arrival and achievement. Terrific piece, and given a knockout second performance, the first was the night before. It’s no surprise to learn that Cerdenia is a pupil of Christopher Rouse (whose music I have long admired and been thrilled by), and while Cerdenia has an impressive style of his own, one can hear Rouse connections as well, which is all to the good." **—Colin Anderson, _Classical Source_**
+<span></span>
 
->"Joshua Cerdenia is a student of Christopher Rouse, and the latter’s influence is clear. The ten-minute work is very well crafted and brilliantly orchestrated. Its title is _Feuertrunken,_or “Drunk with Fire.” This word appears in the Schiller text for the “Ode to Joy,” but also makes a connection with Mahler’s world. Joshua is certainly a composer to watch over the next several years." **—Leonard Slatkin**
+>The work is filled with urgency, intensity, energy, excitement and a flurry of sounds both soft and otherwise, percussive and brass pronouncements, and endless rhythms. With a slight nod to Mahler’s First in the opening few notes, it’s a piece of enormous power that moves from one emotional platform to the next, interspersed with moments of tranquility before powering on. Waves of sound. It was stimulating and vibrant — a treat to hear.
+>
+>**—John Shulson, _Virginia Gazette_**
+
+>"Being drunk with fire sounds like a dangerous activity. However, the German title is from Schiller, a line from his Ode to Joy (“Wir betreten feuertrunken” – We enter, drunk with fire), and if that suggests Beethoven (his ‘Choral’ Symphony) it is to Mahler that Joshua Cerdenia leans, literally so in Feuertrunken, for its opening is from that composer’s First Symphony, for a couple of seconds, its dawn-like beginning becoming darker, questioning, then growing in intensity and energy, scored brilliantly for a large orchestra. Although there is something of a later breather there is no let-up in concentration, and then the wild ride continues (heralded to my ears by a conscious allusion to Beethoven 9, the stabs from contrabassoon and bass drum that cue the tenor’s solo), now even faster and with a sense of arrival and achievement. Terrific piece, and given a knockout second performance, the first was the night before. It’s no surprise to learn that Cerdenia is a pupil of Christopher Rouse (whose music I have long admired and been thrilled by), and while Cerdenia has an impressive style of his own, one can hear Rouse connections as well, which is all to the good." 
+>
+>**—Colin Anderson, _Classical Source_**
+
+>"Joshua Cerdenia is a student of Christopher Rouse, and the latter’s influence is clear. The ten-minute work is very well crafted and brilliantly orchestrated. Its title is _Feuertrunken,_or “Drunk with Fire.” This word appears in the Schiller text for the “Ode to Joy,” but also makes a connection with Mahler’s world. Joshua is certainly a composer to watch over the next several years." 
+>
+>**—Leonard Slatkin**
