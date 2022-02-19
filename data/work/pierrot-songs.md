@@ -1,7 +1,7 @@
 ---
 title: "Pierrot Songs"
 subtitle: "after Albert Giraud"
-for: "for soprano and Pierrot ensemble"
+for: "soprano and Pierrot ensemble"
 category: "VOCAL"
 year: 2012
 ---
