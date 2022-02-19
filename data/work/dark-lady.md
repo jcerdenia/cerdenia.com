@@ -4,6 +4,7 @@ subtitle: "Four Shakespeare Sonnets"
 for: "tenor, violin, and piano"
 category: "VOCAL"
 year: 2014
+mediaUrl: "https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3qjplFP3kVU" frameborder="0" allowfullscreen></iframe>

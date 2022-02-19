@@ -3,6 +3,7 @@ title: "Cariñosa"
 for: "violin, cello, and marimba"
 category: "CHAMBER"
 year: 2015
+mediaUrl: "https://www.youtube.com/watch?v=mbSxyysJgh8"
 ---
 
 <iframe src="https://www.youtube.com/embed/mbSxyysJgh8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

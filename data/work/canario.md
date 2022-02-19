@@ -3,6 +3,7 @@ title: "Canario"
 for: "violin with/without piano"
 category: "SOLO"
 year: 2016
+mediaUrl: "https://soundcloud.com/joshuacerdenia/canario-violin-and-piano-mockup"
 ---
 
 ![](images/Praetorius_345_460.jpg)
