@@ -7,12 +7,9 @@ interface AboutPageProps {
   bio: string;
 }
 
-const About = ({ bio }: AboutPageProps): React.ReactElement => {
+const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
   return (
-    <PageWrapper
-      title="About"
-      description={bio.slice(0, bio.indexOf(". ") + 1).replace(/<(.*?)>/g, "")}
-    >
+    <PageWrapper title="About">
       <Row xs={1} lg={2}>
         <Col md={12} lg={5}>
           <div className="mb-4">
@@ -44,4 +41,4 @@ export const getStaticProps = async (): Promise<{ props: AboutPageProps }> => {
   };
 };
 
-export default About;
+export default AboutPage;

@@ -2,9 +2,9 @@ import { Row, Col } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
 
-const News = (): React.ReactElement => {
+const NewsPage = (): React.ReactElement => {
   return (
-    <PageWrapper title="News" description="Recent & Upcoming Events / Press">
+    <PageWrapper title="News">
       {news.map((group: NewsItemGroup) => {
         return (
           <div key={group.title} className="mb-4">
@@ -33,4 +33,4 @@ const News = (): React.ReactElement => {
   );
 };
 
-export default News;
+export default NewsPage;
