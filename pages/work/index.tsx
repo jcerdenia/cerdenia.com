@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import { parseMarkdown } from "../../utils/markdown";
+import categories from "../../data/work-categories";
 
 interface Work {
   title: string;
@@ -16,30 +17,22 @@ interface WorkHomePageProps {
 }
 
 const WorkHomePage = ({ works }: WorkHomePageProps): React.ReactElement => {
-  const sections = {
-    ORCHESTRA: "Orchestra & Large Ensemble",
-    CHAMBER: "Chamber",
-    VOCAL: "Art Song, Vocal Chamber & Choral",
-    SOLO: "Solo Instrument with/without Piano",
-  };
-
   return (
-    <PageWrapper title="Work" description="List of compositions">
+    <PageWrapper title="Work">
+      <h4>Selected Work</h4>
       <Row xs={1} lg={2}>
-        {Object.entries(sections).map(([key, value]) => {
+        {Object.keys(categories).map((key: string) => {
           return (
             <Col key={key} className="my-2">
-              <h4>{value}</h4>
+              <h6 className="d-flex align-items-center">
+                {categories[key].display}
+              </h6>
               {works
                 .filter((work: Work) => work.category === key)
                 .map((work: Work) => {
                   return (
                     <div key={work.slug} className="my-3">
-                      <Link href={`/work/#under-construction`} passHref>
-                        <a>
-                          <strong>{work.title}</strong>
-                        </a>
-                      </Link>{" "}
+                      <Link href={`/work/${work.slug}`}>{work.title}</Link>{" "}
                       {work.subtitle && `(${work.subtitle})`}{" "}
                       <span className="small text-muted">for {work.for}</span>
                     </div>
