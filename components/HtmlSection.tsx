@@ -1,14 +1,17 @@
 interface HtmlSectionProps {
   className?: string;
-  html: string;
+  children: string;
 }
 
 const HtmlSection = ({
   className,
-  html,
+  children,
 }: HtmlSectionProps): React.ReactElement => {
   return (
-    <section className={className} dangerouslySetInnerHTML={{ __html: html }} />
+    <section
+      className={className}
+      dangerouslySetInnerHTML={{ __html: children }}
+    />
   );
 };
 

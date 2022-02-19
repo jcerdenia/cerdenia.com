@@ -29,7 +29,7 @@ const About = ({ bio }: AboutPageProps): React.ReactElement => {
         </Col>
         <Col md={12} lg={7}>
           <h4 className="mb-4">Biography</h4>
-          <HtmlSection html={bio} />
+          <HtmlSection>{bio}</HtmlSection>
         </Col>
       </Row>
     </PageWrapper>
