@@ -3,7 +3,6 @@ interface MediaWidgetProps {
   url: string;
   width?: number | string;
   height?: number | string;
-  type: "soundcloud" | "youtube";
 }
 
 const MediaWidget = ({
@@ -11,8 +10,22 @@ const MediaWidget = ({
   url,
   width = "100%",
   height = 300,
-  type,
 }: MediaWidgetProps): React.ReactElement => {
+  let type: "youtube" | "soundcloud" | null;
+
+  switch (true) {
+    case url.includes("youtube.com"): {
+      type = "youtube";
+      break;
+    }
+    case url.includes("soundcloud.com"): {
+      type = "soundcloud";
+      break;
+    }
+    default:
+      type = null;
+  }
+
   if (type === "soundcloud") {
     url = url.replace(/http(s?):\/\//i, "");
     return (

@@ -6,14 +6,14 @@ import Footer from "./Footer";
 interface PageWrapperProps {
   title: string;
   exact?: boolean;
-  description: string;
+  description?: string;
   children: any;
 }
 
 const PageWrapper = ({
   title,
   exact,
-  description,
+  description = "The online home of the music of Joshua Cerdenia",
   children,
 }: PageWrapperProps) => {
   if (!exact) {
