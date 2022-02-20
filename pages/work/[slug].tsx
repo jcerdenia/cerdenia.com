@@ -23,7 +23,11 @@ const WorkPage = ({
           <h6>{categories[metadata.category].display}</h6>
           {selections.map((work) => (
             <div key={work.slug} className="my-3">
-              <Link href={`/work/${work.slug}`}>{work.title}</Link>{" "}
+              {metadata.slug !== work.slug ? (
+                <Link href={`/work/${work.slug}`}>{work.title}</Link>
+              ) : (
+                <strong>{work.title}</strong>
+              )}{" "}
               {work.subtitle && `(${work.subtitle})`}{" "}
               <div className="small text-muted">for {work.for}</div>
             </div>
