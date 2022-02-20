@@ -25,6 +25,7 @@ a:hover {
 }
 
 blockquote {
+  color: rgb(100, 100, 100);
   padding-left: 1.5rem;
   border-left: solid;
 }
@@ -74,6 +75,15 @@ footer a:hover {
   opacity: 0.9;
 }
 
+.link-muted {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+
+.link-muted:hover {
+  color: #070707;
+}
+
 .media-link {
   font-size: 1.2rem;
   color: #070707;
@@ -98,6 +108,11 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.page-content-header,
+.work-sidebar h6 {
+  line-height: 1.5rem;
 }
 
 .shadowed {
@@ -152,6 +167,12 @@ footer a:hover {
   }
 
   .sub-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .work-sidebar {
     display: none;
   }
 }

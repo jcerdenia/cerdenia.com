@@ -7,19 +7,19 @@ interface CategoryMap {
 
 const categories: CategoryMap = {
   ORCHESTRA: {
-    display: "Orchestra & Large Ensemble",
+    display: "Orchestra & Sinfonietta",
     slug: "orchestra",
   },
   CHAMBER: {
-    display: "Chamber",
+    display: "Chamber Music",
     slug: "chamber",
   },
   VOCAL: {
-    display: "Art Song, Vocal Chamber & Choral",
+    display: "Vocal Music",
     slug: "vocal",
   },
   SOLO: {
-    display: "Solo Instrument with/without Piano",
+    display: "Solo and Duet Works",
     slug: "solo",
   },
 };

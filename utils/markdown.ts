@@ -7,7 +7,8 @@ type ParseOption = "metadata" | "content";
 
 export const parseMarkdown = (
   filePath: string,
-  options: ParseOption[] = ["metadata", "content"]
+  options: ParseOption[] = ["metadata", "content"],
+  callback: (content: string) => string = (content) => content
 ): ParsedMarkdown => {
   const fs = require("fs");
   const matter = require("gray-matter");
@@ -22,7 +23,7 @@ export const parseMarkdown = (
   }
 
   if (options.includes("content")) {
-    result.content = md.render(content);
+    result.content = md.render(callback(content));
   }
 
   return result;
