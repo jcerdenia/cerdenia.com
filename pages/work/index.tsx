@@ -3,7 +3,15 @@ import { Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import { parseMarkdown } from "../../utils/markdown";
 import categories from "../../data/work-categories";
-import { Work } from "./work";
+
+export interface Work {
+  title: string;
+  subtitle: string;
+  for: string;
+  description: string;
+  category: string;
+  slug: string;
+}
 
 interface WorkHomePageProps {
   works: Work[];

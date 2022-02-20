@@ -3,8 +3,8 @@ import { Button, Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import HtmlSection from "../../components/HtmlSection";
 import { parseMarkdown } from "../../utils/markdown";
-import { Work } from "./work";
 import categories from "../../data/work-categories";
+import { Work } from "./index";
 
 interface WorkSideBarProps {
   header: string;
