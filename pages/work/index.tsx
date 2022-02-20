@@ -6,9 +6,9 @@ import categories from "../../data/work-categories";
 
 export interface Work {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   for: string;
-  description: string;
+  description?: string;
   category: string;
   slug: string;
 }

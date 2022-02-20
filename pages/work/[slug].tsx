@@ -7,6 +7,7 @@ import categories from "../../data/work-categories";
 import { Work } from "./index";
 
 interface WorkSideBarProps {
+  activeKey: string;
   header: string;
   works: Work[];
 }
@@ -23,6 +24,7 @@ interface WorkPageProps {
 }
 
 const WorkSideBar = ({
+  activeKey,
   header,
   works,
 }: WorkSideBarProps): React.ReactElement => {
@@ -31,7 +33,7 @@ const WorkSideBar = ({
       <h6>{header}</h6>
       {works.map((work: Work) => (
         <div key={work.slug} className="my-3">
-          {work.slug !== work.slug ? (
+          {work.slug !== activeKey ? (
             <Link href={`/work/${work.slug}`}>{work.title}</Link>
           ) : (
             <strong>{work.title}</strong>
@@ -73,10 +75,11 @@ const WorkPage = ({
   relatedWorks,
 }: WorkPageProps): React.ReactElement => {
   return (
-    <PageWrapper title={work.title} description={work.title}>
+    <PageWrapper title={work.title}>
       <Row>
         <Col md={12} lg={3} className="work-sidebar-container">
           <WorkSideBar
+            activeKey={work.slug}
             header={categories[work.category].display}
             works={relatedWorks}
           />
