@@ -1,25 +1,25 @@
 export interface NavItem {
   title: string;
-  url: string;
+  path: string;
   disabled?: boolean;
 }
 
 const navs: NavItem[] = [
   {
     title: "Home",
-    url: "/",
+    path: "/",
   },
   {
     title: "About",
-    url: "/about",
+    path: "/about",
   },
   {
     title: "News",
-    url: "/news",
+    path: "/news",
   },
   {
     title: "Work",
-    url: "/work",
+    path: "/work",
   },
 ];
 

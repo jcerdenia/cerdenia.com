@@ -4,6 +4,7 @@ import navs, { NavItem } from "../data/nav";
 
 export default function NavBar(): React.ReactElement {
   const { asPath } = useRouter();
+  const basePath = "/" + asPath.split("/")[1];
 
   return (
     <Navbar className="navbar" variant="light" expand="md">
@@ -16,12 +17,12 @@ export default function NavBar(): React.ReactElement {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav activeKey={asPath}>
-            {navs.map(({ title, url, disabled }: NavItem) => (
+          <Nav activeKey={basePath}>
+            {navs.map(({ title, path, disabled }: NavItem) => (
               <Nav.Link
-                key={url}
+                key={path}
                 className="nav-item"
-                href={url}
+                href={path}
                 disabled={disabled}
               >
                 {title}
