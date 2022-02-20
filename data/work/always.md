@@ -16,6 +16,7 @@ With thanks to the Pablo Neruda Foundation.
 4 minutes
 
 ###### First Performance
+
 29 November 2012, Peabody Institute, Baltimore, MD\
 Seol Ah Yoo, soprano; Akkra Yeunyonghattaporn, piano
 

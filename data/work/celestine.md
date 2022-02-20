@@ -15,6 +15,7 @@ _Celestine_ was written for Celina Hawkins and completed in Boston in the fall o
 6 minutes
 
 ###### First Performance
+
 3 December 2016, Moores School of Music, Houston, TX\
 Celina Hawkins, oboe; Joshua Cerdenia, piano 
 

@@ -19,7 +19,8 @@ The cycle, as a whole, also represents my first attempt at integrating elements 
 16 minutes
 
 ###### First Performance
+
 2 May 2014, Conservatory Concert Hall, Singapore\
-Adam de Wilde, tenor; Adam Wu, violin; Joshua Cerdenia, piano
+Adam De Wilde, tenor; Adam Wu, violin; Joshua Cerdenia, piano
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148048374&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

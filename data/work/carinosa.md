@@ -12,9 +12,11 @@ The _cariñosa_ is a Philippine dance of Spanish origin; though I have borrowed 
 _Cariñosa_ was completed in New York City in the spring of 2015.
 
 ###### Duration 
+
 7 minutes
 
 ###### First Performance
+
 12 June 2015, Himawari-no Sato Concert Hall, Yokohama, Japan\
 Monique Lapins, violin; Dylan Lee, cello; Naoto Segawa, marimba
 

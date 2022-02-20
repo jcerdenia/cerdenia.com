@@ -9,12 +9,15 @@ mediaUrl: "https://soundcloud.com/joshuacerdenia/creed-singapore-symphony-orches
 Though I made several attempts at orchestral music when I was younger (only two of which I ever completed, and only one surviving into the present), _Credo_ is my first attempt after having undertaken some formal study of orchestration. It is a short slow movement with a narrative loosely modeled after the Nicene Creed. Despite the nature of the source material, there is no intent to express any specific religious meaning. The entire piece comprises a single large gesture: a gradual progression from an initial germ of an idea to a grand and resolute statement of profound belief, and, ultimately, prayerful contemplation.
 
 ###### Instrumentation
+
 2 flutes, 2 oboes, 2 clarinets in B flat, 2 bassoons, 4 horns, 2 trumpets in B flat, 3 trombones, tuba, timpani, strings
 
 ###### Duration
+
 6 minutes
 
 ###### First Performance
+
 13 February 2014, Conservatory Concert Hall, Singapore\
 Singapore Symphony Orchestra conducted by Jason Lai
 

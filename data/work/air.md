@@ -12,9 +12,11 @@ _Air_ is a generic term for a composition that has a lyrical or song-like qualit
 _Air_ was composed at the request of [Drew Alexander Forde](http://www.thatviolakid.com) and completed in New York City in September 2015.
 
 ###### Duration
+
 11 minutes
 
 ###### First Performance
+
 February 2016, Paul Recital Hall, The Juilliard School, New York, NY\
 Drew Alexander Forde, viola; Joshua Cerdenia, piano
 

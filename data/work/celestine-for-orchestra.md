@@ -12,12 +12,15 @@ The Latin root of the word _Celestine_ is _caelestis_, meaning celestial, refe
 _Celestine_ was commissioned by the Manila Symphony Orchestra and completed in New York City around Thanksgiving in 2017.
 
 ###### Instrumentation
+
 2 flutes (2nd doubling piccolo), 2 oboes, 2 clarinets in B flat, 2 bassoons, 2 horns, 2 trumpets in B flat, timpani, strings
 
 ###### Duration
+
 6 minutes
 
 ###### First Performance
+
 9 December 2017, Power Mac Center Spotlight, Makati, Philippines\
 Manila Symphony Orchestra conducted by Arturo Molina
 

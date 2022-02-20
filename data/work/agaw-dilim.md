@@ -14,6 +14,7 @@ Setting of a Tagalog poem by José Corazón de Jesus (Huseng Batute). _Agaw-Dili
 5 minutes
 
 ###### First Performance
+
 18 February 2018, Chicago, IL\
 Enrico Lagasca, bass-baritone; Victor Asuncion, piano
 

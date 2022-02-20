@@ -12,12 +12,15 @@ _Dumagat Fantasy_ grew out of my recollection of fieldwork in 2009 with a commun
 This piece was originally composed for Wong Kah Chun and the Asian Contemporary Ensemble as part of the National University of Singapore Arts Festival in March 2012. The premiere, which took place at the University Cultural Centre, incorporated visual images and narration by a storyteller. This revised version, completed in the same year, is a condensed and purely musical recounting of the Dumagat's stories.
 
 ###### Instrumentation
+
 Flute, clarinet, violin, cello, piano
 
 ###### Duration
+
 11 minutes
 
 ###### First Performance
+
 13 April 2012, Conservatory Orchestra Hall, Singapore (revised version)\
 Members of Ensemble TIMF: Joo Won Kim, flute; Yong Gen Lee, clarinet; Hojin Jeong, violin; Jooeun Oh, cello; Youngwoo Lee, piano
 

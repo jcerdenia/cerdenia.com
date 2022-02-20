@@ -13,9 +13,11 @@ A showpiece for violin inspired by a Renaissance dance, completed in New York Ci
 >— **Richard Hudson and Meredith Ellis Little, "Canary," _Grove Music Online_. _Oxford Music Online,_ Oxford University Press**
 
 ###### Duration
+
 5 minutes
 
 ###### First Performance
+
 3 April 2017, Morse Hall, The Juilliard School\
 Jocelyn Zhu, violin; Dror Baitel, piano
 
