@@ -20,6 +20,7 @@
 *.pem
 .vscode
 archive
+data/work/scripts
 
 # debug
 npm-debug.log*
