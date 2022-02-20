@@ -7,9 +7,9 @@ const HomePage = (): React.ReactElement => {
   return (
     <PageWrapper exact title="Joshua Cerdenia, Composer">
       <Row xs={1} lg={2} xl={3} className="g-1">
-        {media.map((url: string, idx: number) => (
+        {media.map((src: string, idx: number) => (
           <Col key={idx} className="showcase">
-            <MediaWidget url={url} />
+            <MediaWidget src={src} />
           </Col>
         ))}
       </Row>

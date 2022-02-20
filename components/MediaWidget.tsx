@@ -1,33 +1,34 @@
 interface MediaWidgetProps {
   className?: string;
-  url: string;
+  src: string;
   width?: number | string;
   height?: number | string;
 }
 
 const MediaWidget = ({
   className,
-  url,
+  src,
   width = "100%",
   height = 300,
 }: MediaWidgetProps): React.ReactElement => {
-  let type: "youtube" | "soundcloud" | null;
+  let type: "youtube" | "soundcloud" | undefined;
 
   switch (true) {
-    case url.includes("youtube.com"): {
+    case src.includes("youtube.com"): {
       type = "youtube";
       break;
     }
-    case url.includes("soundcloud.com"): {
+    case src.includes("soundcloud.com"): {
       type = "soundcloud";
       break;
     }
-    default:
-      type = null;
+    default: {
+      type = undefined;
+    }
   }
 
   if (type === "soundcloud") {
-    url = url.replace(/http(s?):\/\//i, "");
+    src = src.replace(/http(s?):\/\//i, "");
     return (
       <iframe
         className={className}
@@ -36,19 +37,19 @@ const MediaWidget = ({
         scrolling="no"
         frameBorder="no"
         allow="autoplay"
-        src={`https://w.soundcloud.com/player/?url=https%3A//${url}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`}
+        src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`}
       />
     );
   }
 
   if (type === "youtube") {
-    url = url.replace(/watch\?v=/i, "embed/");
+    src = src.replace(/watch\?v=/i, "embed/");
     return (
       <iframe
         className={className}
         width={width}
         height={height}
-        src={url}
+        src={src}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -57,7 +58,7 @@ const MediaWidget = ({
     );
   }
 
-  return <div className="text-danger">Cannot render {url}</div>;
+  return <div className="text-danger">Cannot render {src}</div>;
 };
 
 export default MediaWidget;
