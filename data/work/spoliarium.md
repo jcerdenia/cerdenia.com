@@ -11,12 +11,19 @@ According to some sources the _spoliarium_ in ancient Rome was a chamber attache
 
 Though I have taken Luna’s painting as my starting point, as I wrote the piece I sought a more personal meaning to the title. A large, quasi-symmetrical narrative arc provides structure to a number of musical episodes, some of which were inspired by José Rizal’s description of the painting—“the tumult of the throng, the cry of slaves, the metallic rattle of the armor on the corpses, the sobs of orphans, the hum of prayers”—and some that are entirely my own invention.
 
-Also, there are a number of references, some subtle and some blatant, to other pieces of music. Like Luna’s gladiators, I have dragged them into an imaginary chamber to strip them of whatever I might find useful to my own purposes.
+Also, there are a number of references, some subtle and some blatant, to other pieces of music. Like Luna’s gladiators, I have dragged them into an imaginary chamber to strip them of whatever I might find useful to my own purposes. _Spoliarium_ was written at the invitation of Joel Sachs for the New Juilliard Ensemble and completed in New York City in early 2016.
 
-**Instrumentation:** flute (doubling piccolo), oboe (doubling English horn), clarinet in B flat, bassoon, horn, trumpet in B flat, trombone, percussion (1 player: 4 tom-toms, kick drum, bass drum, crash cymbal, China cymbal, tam-tam, tambourine, crotales), harp, piano (doubling celesta and melodica), 2 violins, viola, cello, double bass
+###### Instrumentation
 
-**Duration:** 13 minutes
+Flute (doubling piccolo), oboe (doubling English horn), clarinet in B flat, bassoon, horn, trumpet in B flat, trombone, percussion (1 player: 4 tom-toms, kick drum, bass drum, crash cymbal, China cymbal, tam-tam, tambourine, crotales), harp, piano (doubling celesta and melodica), 2 violins, viola, cello, double bass
 
-**First performance:** April 21, 2016, Alice Tully Hall, Lincoln Center, New York, NY; New Juilliard Ensemble conducted by Joel Sachs
+###### Duration
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267985720%3Fsecret_token%3Ds-hvvIG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+13 minutes
+
+###### First Performance
+
+21 April 2016, Alice Tully Hall, Lincoln Center, New York, NY\
+New Juilliard Ensemble conducted by Joel Sachs
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267985720%3Fsecret_token%3Ds-hvvIG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>

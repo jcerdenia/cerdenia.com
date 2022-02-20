@@ -11,10 +11,14 @@ The Latin root of the word _Celestine_ is _caelestis_, meaning celestial, refe
 
 _Celestine_ was commissioned by the Manila Symphony Orchestra and completed in New York City around Thanksgiving in 2017.
 
-**Instrumentation:** 2 flutes (2nd doubling piccolo), 2 oboes, 2 clarinets in B flat, 2 bassoons, 2 horns, 2 trumpets in B flat, timpani, strings
+###### Instrumentation
+2 flutes (2nd doubling piccolo), 2 oboes, 2 clarinets in B flat, 2 bassoons, 2 horns, 2 trumpets in B flat, timpani, strings
 
-**Duration:** 6 minutes
+###### Duration
+6 minutes
 
-**First performance:** 9 December 2017, Power Mac Center Spotlight, Makati, Philippines; Manila Symphony Orchestra conducted by Arturo Molina
+###### First Performance
+9 December 2017, Power Mac Center Spotlight, Makati, Philippines\
+Manila Symphony Orchestra conducted by Arturo Molina
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1218093154&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/joshuacerdenia" title="Joshua Cerdenia" target="_blank" style="color: #cccccc; text-decoration: none;">Joshua Cerdenia</a> · <a href="https://soundcloud.com/joshuacerdenia/celestine-prelude-for-orchestramock-up" title="Celestine - Prelude for Orchestra (mock-up)" target="_blank" style="color: #cccccc; text-decoration: none;">Celestine - Prelude for Orchestra (mock-up)</a></div>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1218093154&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

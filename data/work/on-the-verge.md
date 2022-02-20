@@ -12,10 +12,14 @@ The titles of the six movements of _On the Verge_ are phrases from English trans
 
 I made an active effort not to make the piece about death as an immediate, special event. There is no reference to it anywhere in the piece, except in the sixth movement. With that exception, each of the movements is very brief, perhaps feeling as if it is on the verge of blossoming into something bigger, but instead fades away.
 
-**Instrumentation:** 2 violins, viola, cello
+###### Instrumentation
+2 violins, viola, cello
 
-**Duration:** 19 minutes
+###### Duration
+19 minutes
 
-**First performance:** 30 April 2013, Peabody Institute, Baltimore, MD; Kubrick Quartet: Orin Laursen and Alan Choo, violins; Dian Zhang, viola; Javier Iglesias, cello
+###### First Performance
+30 April 2013, Peabody Institute, Baltimore, MD\
+Kubrick Quartet: Orin Laursen and Alan Choo, violins; Dian Zhang, viola; Javier Iglesias, cello
 
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/5352140&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>

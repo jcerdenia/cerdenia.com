@@ -11,10 +11,14 @@ mediaUrl: "https://www.youtube.com/watch?v=YhaNa_622Wc"
 
 _Heavenward_ was composed for Ensemble Gô and completed in Singapore in early 2014.
 
-**Instrumentation:** 2 violins, viola, cello, marimba
+###### Instrumentation
+2 violins, viola, cello, marimba
 
-**Duration:** 10 minutes
+###### Duration
+10 minutes
 
-**First performance:** 2 May 2014, Conservatory Concert Hall, Singapore; Ensemble Gô: Monique Lapins and San Win Htike, violins; Victor Williams, viola; Dylan Lee, cello; Naoto Segawa, marimba
+###### First Performance
+2 May 2014, Conservatory Concert Hall, Singapore\
+Monique Lapins and San Win Htike, violins; Victor Williams, viola; Dylan Lee, cello; Naoto Segawa, marimba
 
 <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148051885&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>

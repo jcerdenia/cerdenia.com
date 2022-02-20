@@ -11,8 +11,12 @@ My first art song, _Always_ is a setting in English of Pablo Neruda's "Siempre" 
 
 With thanks to the Pablo Neruda Foundation.  
 
-**Duration:** 4 minutes
+###### Duration
 
-**First performance:** November 29, 2012, Peabody Institute, Baltimore, MD • Seol Ah Yoo, soprano; Akkra Yeunyonghattaporn, piano
+4 minutes
+
+###### First Performance
+29 November 2012, Peabody Institute, Baltimore, MD\
+Seol Ah Yoo, soprano; Akkra Yeunyonghattaporn, piano
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90536194&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
