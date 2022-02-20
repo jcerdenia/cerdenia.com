@@ -111,7 +111,7 @@ footer a:hover {
 }
 
 .page-content-header,
-.work-sidebar h6 {
+.work-sidebar-container h6 {
   line-height: 1.5rem;
 }
 
@@ -136,8 +136,9 @@ footer a:hover {
   text-transform: none;
 }
 
-.work-container {
-  max-width: 960px;
+.work-content-container .btn {
+  width: 100%;
+  display: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -172,7 +173,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .work-sidebar {
+  .work-content-container .btn {
+    display: block;
+  }
+
+  .work-sidebar-container {
     display: none;
   }
 }

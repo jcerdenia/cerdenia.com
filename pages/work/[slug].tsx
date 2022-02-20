@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Row, Col } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import HtmlSection from "../../components/HtmlSection";
 import { parseMarkdown } from "../../utils/markdown";
@@ -19,7 +19,7 @@ const WorkPage = ({
   return (
     <PageWrapper title={metadata.title} description={metadata.title}>
       <Row>
-        <Col md={12} lg={3} className="work-sidebar">
+        <Col md={12} lg={3} className="work-sidebar-container">
           <h6>{categories[metadata.category].display}</h6>
           {selections.map((work) => (
             <div key={work.slug} className="my-3">
@@ -38,12 +38,15 @@ const WorkPage = ({
             </a>
           </Link>
         </Col>
-        <Col md={12} lg={9}>
+        <Col md={12} lg={9} className="work-content-container">
           <h4 className="page-content-header">
             {metadata.title} {metadata.subtitle && `(${metadata.subtitle})`}
           </h4>
           <p className="small text-muted">{metadata.description}</p>
-          <HtmlSection className="content">{content}</HtmlSection>
+          <HtmlSection className="my-2">{content}</HtmlSection>
+          <Button href="/work" variant="outline-secondary">
+            <i className="bi bi-arrow-return-left" /> More Work
+          </Button>
         </Col>
       </Row>
     </PageWrapper>
