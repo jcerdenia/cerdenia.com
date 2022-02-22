@@ -14,7 +14,7 @@ const HomePage = (): React.ReactElement => {
       widgetEl.style.transition = "300ms";
 
       if (hoveredWidgetId && widgetId !== hoveredWidgetId) {
-        widgetEl.style.filter = "brightness(60%)";
+        widgetEl.style.filter = "brightness(50%)";
       } else {
         widgetEl.style.filter = "brightness(100%)";
       }
@@ -23,9 +23,9 @@ const HomePage = (): React.ReactElement => {
 
   return (
     <PageWrapper exact title="Joshua Cerdenia, Composer">
-      <Row xs={1} lg={2} xl={3} className="g-2">
+      <Row xs={1} lg={2} xl={3} className="g-1">
         {media.map((src: string, idx: number) => (
-          <Col style={{ margin: 0 }} key={idx}>
+          <Col className="showcase-container" key={idx}>
             <MediaWidget
               className="showcase"
               id={`widget-${idx}`}
