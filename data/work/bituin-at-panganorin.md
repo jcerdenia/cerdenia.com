@@ -6,7 +6,7 @@ category: "VOCAL"
 year: 2016
 ---
 
-Setting of a Tagalog poem by José Corazón de Jesus (Huseng Batute). _Bituin at Panganorin_ was composed for Enrico Lagasca and first completed in New York City in October 2016. I later completed a revised version in the spring of 2019.
+Setting of a Tagalog poem by José Corazón de Jesús (Huseng Batute). _Bituin at Panganorin_ was composed for Enrico Lagasca and first completed in New York City in October 2016. I later completed a revised version in the spring of 2019.
 
 ###### Duration
 

@@ -7,7 +7,7 @@ year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/agaw-dilim"
 ---
 
-Setting of a Tagalog poem by José Corazón de Jesus (Huseng Batute). _Agaw-Dilim_ was composed for Enrico Lagasca and completed in New York City in March 2017.
+Setting of a Tagalog poem by José Corazón de Jesús (Huseng Batute). _Agaw-Dilim_ was composed for Enrico Lagasca and completed in New York City in March 2017.
 
 ###### Duration
 

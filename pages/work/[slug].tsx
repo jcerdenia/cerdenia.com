@@ -51,10 +51,7 @@ const WorkSideBar = ({
   );
 };
 
-const WorkContentProps = ({
-  work,
-  note,
-}: WorkContentProps): React.ReactElement => {
+const WorkContent = ({ work, note }: WorkContentProps): React.ReactElement => {
   return (
     <>
       <h4 className="page-content-header">
@@ -85,7 +82,7 @@ const WorkPage = ({
           />
         </Col>
         <Col md={12} lg={9} className="work-content-container">
-          <WorkContentProps work={work} note={note} />
+          <WorkContent work={work} note={note} />
         </Col>
       </Row>
     </PageWrapper>
