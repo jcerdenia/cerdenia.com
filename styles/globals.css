@@ -30,6 +30,10 @@ blockquote {
   border-left: solid;
 }
 
+blockquote p {
+  color: rgb(100, 100, 100);
+}
+
 p,
 div,
 span {
@@ -73,6 +77,11 @@ footer a:hover {
 
 .grayscale:hover {
   opacity: 0.9;
+}
+
+.half-opaque {
+  transition: 300ms;
+  opacity: 0.5;
 }
 
 .link-muted {
@@ -120,7 +129,6 @@ footer a:hover {
 }
 
 .showcase {
-  height: 300px;
   transition: 300ms;
 }
 
@@ -142,7 +150,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 576px) {
-  .widget:hover {
+  .showcase {
+    filter: brightness(100%) !important;
+  }
+
+  .showcase:hover {
     transform: none;
     box-shadow: none;
   }
