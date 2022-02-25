@@ -43,7 +43,7 @@ const WorkSideBar = ({
         </div>
       ))}
       <Link href="/work" passHref>
-        <a className="link-muted">
+        <a className="link-muted link-more-work">
           <i className="bi bi-arrow-return-left" /> More Work
         </a>
       </Link>
@@ -59,9 +59,11 @@ const WorkContent = ({ work, note }: WorkContentProps): React.ReactElement => {
       </h4>
       <p className="small text-muted">{work.description}</p>
       <HtmlSection className="my-2">{note}</HtmlSection>
-      <Button href="/work" variant="outline-secondary">
-        <i className="bi bi-arrow-return-left" /> More Work
-      </Button>
+      <Link href="/work" passHref>
+        <a className="link-muted link-more-work">
+          <i className="bi bi-arrow-return-left" /> More Work
+        </a>
+      </Link>
     </>
   );
 };
