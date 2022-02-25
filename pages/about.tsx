@@ -27,16 +27,18 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
         <Col md={12} lg={7}>
           <h4 className="mb-4">Biography</h4>
           <HtmlSection>{bio}</HtmlSection>
-          <Button
-            id="button-press-pack"
-            className="my-1"
-            variant="outline-secondary"
-            href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="bi bi-cloud-arrow-down"></i> Press Pack
-          </Button>
+          <div className="d-flex justify-content-center">
+            <Button
+              id="button-press-pack"
+              className="px-5 py-2"
+              variant="outline-secondary"
+              href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bi bi-cloud-download" /> Press Pack
+            </Button>
+          </div>
         </Col>
       </Row>
     </PageWrapper>
