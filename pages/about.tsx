@@ -1,4 +1,4 @@
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import PageWrapper from "../components/PageWrapper";
 import HtmlSection from "../components/HtmlSection";
 import { parseMarkdown } from "../utils/markdown";
@@ -27,6 +27,16 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
         <Col md={12} lg={7}>
           <h4 className="mb-4">Biography</h4>
           <HtmlSection>{bio}</HtmlSection>
+          <Button
+            id="button-press-pack"
+            className="my-1"
+            variant="outline-secondary"
+            href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bi bi-cloud-arrow-down"></i> Press Pack
+          </Button>
         </Col>
       </Row>
     </PageWrapper>
