@@ -149,8 +149,11 @@ footer a:hover {
   text-transform: none;
 }
 
-.work-content-container .btn {
+.wide {
   width: 100%;
+}
+
+.work-content-container .link-more-work {
   display: none;
 }
 
@@ -190,11 +193,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .work-content-container .btn {
+  .work-content-container .link-more-work {
     display: block;
   }
 
   .work-sidebar-container {
     display: none;
+  }
+
+  #button-press-pack {
+    width: 100%;
   }
 }
