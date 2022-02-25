@@ -8,12 +8,14 @@ interface PageWrapperProps {
   exact?: boolean;
   description?: string;
   children: any;
+  wide?: boolean;
 }
 
 const PageWrapper = ({
   title,
   exact,
   description = "The online home of the music of Joshua Cerdenia",
+  wide = false,
   children,
 }: PageWrapperProps) => {
   if (!exact) {
@@ -42,8 +44,8 @@ const PageWrapper = ({
         <title>{title}</title>
       </Head>
       <NavBar />
+      <Container fluid={wide}>{children}</Container>
       <Container>
-        {children}
         <Footer />
       </Container>
     </>
