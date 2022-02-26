@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Button, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import PageWrapper from "../../components/PageWrapper";
 import HtmlSection from "../../components/HtmlSection";
 import { parseMarkdown } from "../../utils/markdown";
+import { excerpt } from "../../utils/excerpt";
 import categories from "../../data/work-categories";
 import { Work } from "./index";
 
@@ -74,7 +75,7 @@ const WorkPage = ({
   relatedWorks,
 }: WorkPageProps): React.ReactElement => {
   return (
-    <PageWrapper title={work.title}>
+    <PageWrapper title={work.title} description={excerpt(note)}>
       <Row>
         <Col md={12} lg={3} className="work-sidebar-container">
           <WorkSideBar
