@@ -4,8 +4,7 @@ const Footer = (): React.ReactElement => {
       <p>
         <strong>
           For scores and parts, commissions, teaching, and all other inquiries,
-          please email{" "}
-          <a href="mailto:joshua@cerdenia.com">joshua@cerdenia.com</a> directly.
+          please <a href="mailto:joshua@cerdenia.com">email me</a> directly.
         </strong>
       </p>
       <footer>
