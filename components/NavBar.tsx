@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import navs, { NavItem } from "../data/nav";
 
-export default function NavBar(): React.ReactElement {
+const NavBar = (): React.ReactElement => {
   const { asPath } = useRouter();
   const basePath = "/" + asPath.split("/")[1];
 
@@ -33,4 +33,6 @@ export default function NavBar(): React.ReactElement {
       </Container>
     </Navbar>
   );
-}
+};
+
+export default NavBar;
