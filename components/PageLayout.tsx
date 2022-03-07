@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
-interface PageWrapperProps {
+interface PageLayoutProps {
   title: string;
   exact?: boolean;
   description?: string;
@@ -11,13 +11,13 @@ interface PageWrapperProps {
   wide?: boolean;
 }
 
-const PageWrapper = ({
+const PageLayout = ({
   title,
   exact,
   description = "The online home of the music of Joshua Cerdenia",
   wide = false,
   children,
-}: PageWrapperProps) => {
+}: PageLayoutProps) => {
   if (!exact) {
     title += " - Joshua Cerdenia, Composer";
   }
@@ -52,4 +52,4 @@ const PageWrapper = ({
   );
 };
 
-export default PageWrapper;
+export default PageLayout;

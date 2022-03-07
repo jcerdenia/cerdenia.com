@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import PageWrapper from "../components/PageWrapper";
+import PageLayout from "../components/PageLayout";
 import MediaWidget from "../components/MediaWidget";
 import media from "../data/showcase";
 
@@ -22,7 +22,7 @@ const HomePage = (): React.ReactElement => {
   }, [hoveredWidgetId]);
 
   return (
-    <PageWrapper exact title="Joshua Cerdenia, Composer">
+    <PageLayout exact title="Joshua Cerdenia, Composer">
       <Row xs={1} lg={2} xl={3} className="g-1">
         {media.map((src: string, idx: number) => (
           <Col className="showcase-container" key={idx}>
@@ -36,7 +36,7 @@ const HomePage = (): React.ReactElement => {
           </Col>
         ))}
       </Row>
-    </PageWrapper>
+    </PageLayout>
   );
 };
 

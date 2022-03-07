@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
-import PageWrapper from "../../components/PageWrapper";
+import PageLayout from "../../components/PageLayout";
 import { parseMarkdown } from "../../utils/markdown";
 import categories from "../../data/work-categories";
 
@@ -19,7 +19,7 @@ interface WorkHomePageProps {
 
 const WorkHomePage = ({ works }: WorkHomePageProps): React.ReactElement => {
   return (
-    <PageWrapper title="Work">
+    <PageLayout title="Work">
       <h4>Selected Work</h4>
       <Row xs={1} lg={2}>
         {Object.keys(categories).map((key: string) => {
@@ -43,7 +43,7 @@ const WorkHomePage = ({ works }: WorkHomePageProps): React.ReactElement => {
           );
         })}
       </Row>
-    </PageWrapper>
+    </PageLayout>
   );
 };
 

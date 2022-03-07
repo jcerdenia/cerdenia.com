@@ -1,5 +1,5 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
-import PageWrapper from "../components/PageWrapper";
+import PageLayout from "../components/PageLayout";
 import HtmlSection from "../components/HtmlSection";
 import { parseMarkdown } from "../utils/markdown";
 
@@ -9,7 +9,7 @@ interface AboutPageProps {
 
 const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
   return (
-    <PageWrapper title="About">
+    <PageLayout title="About">
       <Row xs={1} lg={2}>
         <Col md={12} lg={5}>
           <div className="mb-4">
@@ -41,7 +41,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
           </div>
         </Col>
       </Row>
-    </PageWrapper>
+    </PageLayout>
   );
 };
 

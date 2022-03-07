@@ -1,10 +1,10 @@
 import { Row, Col } from "react-bootstrap";
-import PageWrapper from "../components/PageWrapper";
+import PageLayout from "../components/PageLayout";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
 
 const NewsPage = (): React.ReactElement => {
   return (
-    <PageWrapper title="News">
+    <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {
         return (
           <div key={group.title} className="mb-4">
@@ -29,7 +29,7 @@ const NewsPage = (): React.ReactElement => {
           </div>
         );
       })}
-    </PageWrapper>
+    </PageLayout>
   );
 };
 
