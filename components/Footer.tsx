@@ -1,23 +1,40 @@
+import { Row, Col } from "react-bootstrap";
+import socials, { Social } from "../data/socials";
+
 const Footer = (): JSX.Element => {
   return (
     <div className="pt-4">
-      <p>
-        <strong>
-          For scores and parts, commissions, teaching, and all other inquiries,
-          please <a href="mailto:joshua@cerdenia.com">email me</a> directly.
-        </strong>
-      </p>
-      <footer>
-        © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}
-        <a
-          href="https://github.com/joshuacerdenia/music.cerdenia.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-source
-        </a>
-        .
-      </footer>
+      <Row>
+        <Col className="d-flex align-items-center mb-3">
+          <span className="text-medium-bold">
+            For scores and parts, commissions, teaching, and all other
+            inquiries, please <a href="mailto:joshua@cerdenia.com">email</a>{" "}
+            directly.
+          </span>
+        </Col>
+        <Col xl="auto" className="d-flex align-items-center mb-3">
+          <div className="socials">
+            {socials.map((social: Social) => {
+              return (
+                <a key={social.name} href={social.url}>
+                  <i className={social.iconClassName} />
+                </a>
+              );
+            })}
+          </div>
+        </Col>
+        <footer>
+          © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}
+          <a
+            href="https://github.com/joshuacerdenia/music.cerdenia.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-source
+          </a>
+          .
+        </footer>
+      </Row>
     </div>
   );
 };

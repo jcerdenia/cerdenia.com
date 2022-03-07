@@ -142,11 +142,32 @@ footer a:hover {
   margin-bottom: -1px;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.25rem;
+  letter-spacing: 16px;
+}
+
+.socials i {
+  color: rgb(100, 100, 100);
+  transition: 200ms;
+}
+
+.socials i:hover {
+  color: #2a6041;
+}
+
 .sub-brand {
   font-weight: 300;
   margin-left: 12px;
   color: rgb(100, 100, 100);
   text-transform: none;
+}
+
+.text-medium-bold {
+  font-weight: 400;
 }
 
 .wide {
