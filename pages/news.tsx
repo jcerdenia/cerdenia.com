@@ -20,9 +20,7 @@ const NewsPage = (): JSX.Element => {
                   </div>
                 </Col>
                 <Col className="d-flex align-items-center" md={12} lg={8}>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    {item.title}
-                  </a>
+                  <a href={item.url}>{item.title}</a>
                 </Col>
               </Row>
             ))}

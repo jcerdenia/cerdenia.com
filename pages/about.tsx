@@ -33,8 +33,6 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
               className="px-5 py-2"
               variant="outline-secondary"
               href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
             >
               <i className="bi bi-cloud-download" /> Press Pack
             </Button>

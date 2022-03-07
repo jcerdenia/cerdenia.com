@@ -25,11 +25,7 @@ const Footer = (): JSX.Element => {
         </Col>
         <footer>
           © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}
-          <a
-            href="https://github.com/joshuacerdenia/music.cerdenia.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/joshuacerdenia/music.cerdenia.com">
             open-source
           </a>
           .

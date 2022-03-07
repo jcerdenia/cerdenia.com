@@ -23,9 +23,7 @@ export const parseMarkdown = (
   }
 
   if (options.includes("content")) {
-    result.content = md
-      .render(onBeforeRender(content))
-      .replace(/<a /g, '<a target="_blank" rel="noreferrer" ');
+    result.content = md.render(onBeforeRender(content));
   }
 
   return result;
