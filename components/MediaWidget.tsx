@@ -1,19 +1,19 @@
 interface MediaWidgetProps {
-  id?: string;
   className?: string;
   src: string;
   width?: number | string;
   height?: number | string;
+  style?: {};
   onMouseEnter?: VoidFunction;
   onMouseLeave?: VoidFunction;
 }
 
 const MediaWidget = ({
-  id,
   className,
   src,
   width = "100%",
   height = 300,
+  style,
   onMouseEnter,
   onMouseLeave,
 }: MediaWidgetProps): React.ReactElement => {
@@ -37,14 +37,14 @@ const MediaWidget = ({
     src = src.replace(/http(s?):\/\//i, "");
     return (
       <iframe
-        id={id}
         className={className}
         width={width}
         height={height}
+        style={style}
+        src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`}
         scrolling="no"
         frameBorder="no"
         allow="autoplay"
-        src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       />
@@ -55,10 +55,10 @@ const MediaWidget = ({
     src = src.replace(/watch\?v=/i, "embed/");
     return (
       <iframe
-        id={id}
         className={className}
         width={width}
         height={height}
+        style={style}
         src={src}
         title="YouTube video player"
         frameBorder="0"

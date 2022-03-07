@@ -1,25 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import PageLayout from "../components/PageLayout";
 import MediaWidget from "../components/MediaWidget";
 import media from "../data/showcase";
 
 const HomePage = (): React.ReactElement => {
-  const [hoveredWidgetId, setHoveredWidgetId] = useState(null);
+  const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
-  useEffect(() => {
-    for (let i = 0; i < media.length; i++) {
-      const widgetId = `widget-${i}`;
-      const widgetEl = document.getElementById(widgetId);
-      widgetEl.style.transition = "300ms";
-
-      if (hoveredWidgetId && widgetId !== hoveredWidgetId) {
-        widgetEl.style.filter = "brightness(50%)";
-      } else {
-        widgetEl.style.filter = "brightness(100%)";
-      }
-    }
-  }, [hoveredWidgetId]);
+  const decideWidgetStyle = (widgetId: number): {} => ({
+    filter:
+      !hoveredWidgetId || hoveredWidgetId === widgetId
+        ? "brightness(100%)"
+        : "brightness(50%)",
+  });
 
   return (
     <PageLayout exact title="Joshua Cerdenia, Composer">
@@ -28,10 +21,10 @@ const HomePage = (): React.ReactElement => {
           <Col className="showcase-container" key={idx}>
             <MediaWidget
               className="showcase"
-              id={`widget-${idx}`}
               src={src}
-              onMouseEnter={() => setHoveredWidgetId(`widget-${idx}`)}
+              onMouseEnter={() => setHoveredWidgetId(idx)}
               onMouseLeave={() => setHoveredWidgetId(null)}
+              style={decideWidgetStyle(idx)}
             />
           </Col>
         ))}
