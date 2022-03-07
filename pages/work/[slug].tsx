@@ -33,15 +33,15 @@ const WorkSideBar = ({
     <>
       <h6>{header}</h6>
       {works.map((work: Work) => (
-        <div key={work.slug} className="my-3">
+        <nav key={work.slug} className="my-3">
           {work.slug !== activeKey ? (
             <Link href={`/work/${work.slug}`}>{work.title}</Link>
           ) : (
             <strong>{work.title}</strong>
           )}{" "}
           {work.subtitle && `(${work.subtitle})`}{" "}
-          <div className="small text-muted">for {work.for}</div>
-        </div>
+          <aside className="small text-muted">for {work.for}</aside>
+        </nav>
       ))}
       <Link href="/work" passHref>
         <a className="link-muted link-more-work">
@@ -58,7 +58,7 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
       <h4 className="page-content-header">
         {work.title} {work.subtitle && `(${work.subtitle})`}
       </h4>
-      <p className="small text-muted">{work.description}</p>
+      <aside className="small text-muted mb-3">{work.description}</aside>
       <HtmlSection className="my-2">{note}</HtmlSection>
       <Link href="/work" passHref>
         <a className="link-muted link-more-work">

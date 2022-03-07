@@ -6,14 +6,14 @@ const Footer = (): JSX.Element => {
     <div className="pt-4">
       <Row>
         <Col className="d-flex align-items-center mb-3">
-          <span className="text-medium-bold">
+          <strong>
             For scores and parts, commissions, teaching, and all other
             inquiries, please <a href="mailto:joshua@cerdenia.com">email</a>{" "}
             directly.
-          </span>
+          </strong>
         </Col>
         <Col xl="auto" className="d-flex align-items-center mb-3">
-          <div className="socials">
+          <span className="socials">
             {socials.map((social: Social) => {
               return (
                 <a key={social.name} href={social.url}>
@@ -21,7 +21,7 @@ const Footer = (): JSX.Element => {
                 </a>
               );
             })}
-          </div>
+          </span>
         </Col>
         <footer>
           © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}

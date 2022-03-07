@@ -70,7 +70,7 @@ const MediaWidget = ({
     );
   }
 
-  return <div className="text-danger">Cannot render {src}</div>;
+  return <text className="text-danger">Cannot render {src}</text>;
 };
 
 export default MediaWidget;

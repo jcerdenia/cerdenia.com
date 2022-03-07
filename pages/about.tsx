@@ -11,23 +11,21 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
   return (
     <PageLayout title="About">
       <Row xs={1} lg={2}>
-        <Col md={12} lg={5}>
-          <div className="mb-4">
-            <Image
-              fluid
-              className="grayscale"
-              src="/images/headshot-tall.jpeg"
-              alt="headshot"
-            />
-            <figcaption className="small text-muted">
-              Photo by Rashidah De Vore
-            </figcaption>
-          </div>
+        <Col md={12} lg={5} className="mb-4">
+          <Image
+            fluid
+            className="grayscale"
+            src="/images/headshot-tall.jpeg"
+            alt="headshot"
+          />
+          <figcaption className="small text-muted">
+            Photo by Rashidah De Vore
+          </figcaption>
         </Col>
         <Col md={12} lg={7}>
           <h4 className="mb-4">Biography</h4>
           <HtmlSection>{bio}</HtmlSection>
-          <div className="d-flex justify-content-center">
+          <span className="d-flex justify-content-center">
             <Button
               id="button-press-pack"
               className="px-5 py-2"
@@ -36,7 +34,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
             >
               <i className="bi bi-cloud-download" /> Press Pack
             </Button>
-          </div>
+          </span>
         </Col>
       </Row>
     </PageLayout>

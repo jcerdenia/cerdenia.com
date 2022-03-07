@@ -10,10 +10,10 @@ const NavBar = (): JSX.Element => {
     <Navbar className="navbar" variant="light" expand="md">
       <Container>
         <Navbar.Brand className="d-flex align-items-center" href="/">
-          <span className="brand">Joshua Cerdenia</span>
-          <span>
+          <header className="brand">Joshua Cerdenia</header>
+          <aside>
             <Navbar.Text className="sub-brand">Composer</Navbar.Text>
-          </span>
+          </aside>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
