@@ -17,7 +17,7 @@ interface WorkHomePageProps {
   works: Work[];
 }
 
-const WorkHomePage = ({ works }: WorkHomePageProps): React.ReactElement => {
+const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
   return (
     <PageLayout title="Work">
       <h4>Selected Work</h4>
@@ -55,7 +55,7 @@ export const getStaticProps = async (): Promise<{
     .readdirSync(`${process.cwd()}/data/work`)
     .filter((fileName: string): boolean => fileName.endsWith(".md"))
     .map(
-      (fileName: string): {} =>
+      (fileName: string): {} | null =>
         parseMarkdown(`data/work/${fileName}`, ["metadata"]).metadata
     );
 

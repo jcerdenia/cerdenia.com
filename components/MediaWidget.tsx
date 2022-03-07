@@ -16,7 +16,7 @@ const MediaWidget = ({
   style,
   onMouseEnter,
   onMouseLeave,
-}: MediaWidgetProps): React.ReactElement => {
+}: MediaWidgetProps): JSX.Element => {
   let type: "youtube" | "soundcloud" | undefined;
 
   switch (true) {

@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import PageLayout from "../components/PageLayout";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
 
-const NewsPage = (): React.ReactElement => {
+const NewsPage = (): JSX.Element => {
   return (
     <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {

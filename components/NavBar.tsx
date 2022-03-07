@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import navs, { NavItem } from "../data/nav";
 
-const NavBar = (): React.ReactElement => {
+const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
   const basePath = "/" + asPath.split("/")[1];
 

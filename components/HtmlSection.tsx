@@ -6,7 +6,7 @@ interface HtmlSectionProps {
 const HtmlSection = ({
   className,
   children,
-}: HtmlSectionProps): React.ReactElement => {
+}: HtmlSectionProps): JSX.Element => {
   return (
     <section
       className={className}

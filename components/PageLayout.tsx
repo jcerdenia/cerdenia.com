@@ -17,7 +17,7 @@ const PageLayout = ({
   description = "The online home of the music of Joshua Cerdenia",
   wide = false,
   children,
-}: PageLayoutProps) => {
+}: PageLayoutProps): JSX.Element => {
   if (!exact) {
     title += " - Joshua Cerdenia, Composer";
   }

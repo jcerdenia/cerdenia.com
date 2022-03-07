@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
-const MyApp = ({ Component, pageProps }): React.ReactElement => {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return <Component {...pageProps} />;
 };
 

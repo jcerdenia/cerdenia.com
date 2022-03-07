@@ -8,7 +8,7 @@ type ParseOption = "metadata" | "content";
 export const parseMarkdown = (
   filePath: string,
   options: ParseOption[] = ["metadata", "content"],
-  callback: (content: string) => string = (content) => content
+  onBeforeRender: (content: string) => string = (content) => content
 ): ParsedMarkdown => {
   const fs = require("fs");
   const matter = require("gray-matter");
@@ -24,7 +24,7 @@ export const parseMarkdown = (
 
   if (options.includes("content")) {
     result.content = md
-      .render(callback(content))
+      .render(onBeforeRender(content))
       .replace(/<a /g, '<a target="_blank" rel="noreferrer" ');
   }
 

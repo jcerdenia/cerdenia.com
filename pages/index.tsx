@@ -4,7 +4,7 @@ import PageLayout from "../components/PageLayout";
 import MediaWidget from "../components/MediaWidget";
 import media from "../data/showcase";
 
-const HomePage = (): React.ReactElement => {
+const HomePage = (): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
   const decideWidgetStyle = (widgetId: number): {} => ({

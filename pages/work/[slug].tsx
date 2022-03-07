@@ -28,7 +28,7 @@ const WorkSideBar = ({
   activeKey,
   header,
   works,
-}: WorkSideBarProps): React.ReactElement => {
+}: WorkSideBarProps): JSX.Element => {
   return (
     <>
       <h6>{header}</h6>
@@ -52,7 +52,7 @@ const WorkSideBar = ({
   );
 };
 
-const WorkContent = ({ work, note }: WorkContentProps): React.ReactElement => {
+const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
   return (
     <>
       <h4 className="page-content-header">
@@ -69,11 +69,7 @@ const WorkContent = ({ work, note }: WorkContentProps): React.ReactElement => {
   );
 };
 
-const WorkPage = ({
-  work,
-  note,
-  relatedWorks,
-}: WorkPageProps): React.ReactElement => {
+const WorkPage = ({ work, note, relatedWorks }: WorkPageProps): JSX.Element => {
   return (
     <PageLayout title={work.title} description={excerpt(note)}>
       <Row>
