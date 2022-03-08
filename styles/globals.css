@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 * {
   box-sizing: border-box;
@@ -142,20 +141,21 @@ footer a:hover {
   margin-bottom: -1px;
 }
 
-.socials {
+.socials-row {
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 1.25rem;
-  letter-spacing: 16px;
 }
 
-.socials i {
+.socials-row .icon {
   color: rgb(100, 100, 100);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   transition: 200ms;
 }
 
-.socials i:hover {
+.socials-row .icon:hover {
   color: #2a6041;
 }
 

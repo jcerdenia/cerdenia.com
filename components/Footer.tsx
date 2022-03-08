@@ -1,4 +1,5 @@
 import { Row, Col } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 import socials, { Social } from "../data/socials";
 
 const Footer = (): JSX.Element => {
@@ -13,11 +14,11 @@ const Footer = (): JSX.Element => {
           </strong>
         </Col>
         <Col xl="auto" className="d-flex align-items-center mb-3">
-          <span className="socials">
+          <span className="socials-row">
             {socials.map((social: Social) => {
               return (
                 <a key={social.name} href={social.url}>
-                  <i className={social.iconClassName} />
+                  <Icon className="icon" icon={social.iconId} />
                 </a>
               );
             })}

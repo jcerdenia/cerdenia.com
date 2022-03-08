@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 import PageLayout from "../../components/PageLayout";
 import HtmlSection from "../../components/HtmlSection";
 import { parseMarkdown } from "../../utils/markdown";
@@ -45,7 +46,7 @@ const WorkSideBar = ({
       ))}
       <Link href="/work" passHref>
         <a className="link-muted link-more-work">
-          <i className="bi bi-arrow-return-left" /> More Work
+          <Icon icon="bi:arrow-return-left" /> More Work
         </a>
       </Link>
     </>
@@ -62,7 +63,7 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
       <HtmlSection className="my-2">{note}</HtmlSection>
       <Link href="/work" passHref>
         <a className="link-muted link-more-work">
-          <i className="bi bi-arrow-return-left" /> More Work
+          <Icon icon="bi:arrow-return-left" /> More Work
         </a>
       </Link>
     </>
