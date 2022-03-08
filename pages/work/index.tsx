@@ -35,7 +35,7 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
                     <div key={work.slug} className="my-3">
                       <Link href={`/work/${work.slug}`}>{work.title}</Link>{" "}
                       {work.subtitle && `(${work.subtitle})`}{" "}
-                      <aside className="small text-muted">for {work.for}</aside>
+                      <span className="small text-muted">for {work.for}</span>
                     </div>
                   );
                 })}
