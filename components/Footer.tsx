@@ -21,6 +21,7 @@ const Footer = (): JSX.Element => {
                   key={social.name}
                   iconId={social.iconId}
                   iconClassName="icon"
+                  iconStyle={social.iconStyle}
                   href={social.url}
                 />
               );

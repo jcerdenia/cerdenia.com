@@ -2,6 +2,7 @@ export interface Social {
   name: string;
   url: string;
   iconId: string;
+  iconStyle?: any;
 }
 
 const socials: Social[] = [
