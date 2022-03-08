@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import { Icon } from "@iconify/react";
+import LinkedIcon from "./LinkedIcon";
 import socials, { Social } from "../data/socials";
 
 const Footer = (): JSX.Element => {
@@ -17,9 +17,12 @@ const Footer = (): JSX.Element => {
           <span className="socials-row">
             {socials.map((social: Social) => {
               return (
-                <a key={social.name} href={social.url}>
-                  <Icon className="icon" icon={social.iconId} />
-                </a>
+                <LinkedIcon
+                  key={social.name}
+                  iconId={social.iconId}
+                  iconClassName="icon"
+                  href={social.url}
+                />
               );
             })}
           </span>

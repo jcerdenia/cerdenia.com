@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
-import { Icon } from "@iconify/react";
 import PageLayout from "../../components/PageLayout";
 import HtmlSection from "../../components/HtmlSection";
+import LinkedIcon from "../../components/LinkedIcon";
 import { parseMarkdown } from "../../utils/markdown";
 import { excerpt } from "../../utils/excerpt";
 import categories from "../../data/work-categories";
@@ -45,9 +45,12 @@ const WorkSideBar = ({
         </nav>
       ))}
       <Link href="/work" passHref>
-        <a className="link-muted link-more-work">
-          <Icon icon="bi:arrow-return-left" /> More Work
-        </a>
+        <LinkedIcon
+          className="link-muted link-more-work"
+          iconId="bi:arrow-return-left"
+        >
+          More Work
+        </LinkedIcon>
       </Link>
     </>
   );
@@ -62,9 +65,12 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
       <aside className="small text-muted mb-3">{work.description}</aside>
       <HtmlSection className="my-2">{note}</HtmlSection>
       <Link href="/work" passHref>
-        <a className="link-muted link-more-work">
-          <Icon icon="bi:arrow-return-left" /> More Work
-        </a>
+        <LinkedIcon
+          className="link-muted link-more-work"
+          iconId="bi:arrow-return-left"
+        >
+          More Work
+        </LinkedIcon>
       </Link>
     </>
   );
