@@ -14,10 +14,22 @@ const events: NewsItemGroup = {
   title: "Recent & Upcoming Events",
   items: [
     {
+      title: "Carmina Burana",
+      date: "27-28 Jan 2023",
+      source: "Utah Symphony Orchestra",
+      url: "https://utahsymphony.org/event/id/28236/",
+    },
+    {
       title: "Satélite 17. Entre cuerdas y palabras",
       date: "3 May 2022",
-      source: "Orquesta Nacional de España",
+      source: "Orquesta y Coro Nacionales de España",
       url: "http://ocne.mcu.es/programacion/satelite-17-entre-cuerdas-y-palabras",
+    },
+    {
+      title: "Entre cuerdas y palabras",
+      date: "29 Apr 2022",
+      source: "Cultura Pozuelo",
+      url: "https://cultura.pozuelodealarcon.org/agenda/entre-cuerdas-y-palabras",
     },
     {
       title: "Vim: 10th Wave x Yuki Tokuda Dance Collaboration Concert",
@@ -40,9 +52,16 @@ const events: NewsItemGroup = {
   ],
 };
 
-const articles: NewsItemGroup = {
-  title: "Reviews & Articles",
+const announcements: NewsItemGroup = {
+  title: "Announcements",
   items: [
+    {
+      title:
+        "Utah Symphony's 2022-23 Season Culminates Thierry Fischer's Tenure as Music Director",
+      date: "Mar 2022",
+      source: "Broadway World",
+      url: "https://www.broadwayworld.com/salt-lake-city/article/Utah-Symphonys-2022-23-Season-Culminates-Thierry-Fischers-Tenure-as-Music-Director-20220325",
+    },
     {
       title: "Melisa Tien's SWELL to Premiere Online at HERE",
       date: "Feb 2021",
@@ -50,16 +69,22 @@ const articles: NewsItemGroup = {
       url: "https://www.broadwayworld.com/off-off-broadway/article/HERE-Presents-the-Premiere-of-Melisa-Tiens-SWELL-20210216",
     },
     {
-      title: "Carla Canales Navigates Cultural In-Betweens in “Duende”",
-      date: "Nov 2020",
-      source: "I Care If You Listen",
-      url: "https://icareifyoulisten.com/2020/11/carla-canales-navigates-cultural-in-betweens-in-duende/",
-    },
-    {
       title: "IndieWorks Announces BITE-SIZED BROADWAY- A Mini-Musical Podcast",
       date: "Aug 2020",
       source: "Broadway World",
       url: "https://www.broadwayworld.com/off-broadway/article/IndieWorks-Announces-BITE-SIZED-BROADWAY--A-Mini-Musical-Podcast-20200803",
+    },
+  ],
+};
+
+const articles: NewsItemGroup = {
+  title: "Reviews & Articles",
+  items: [
+    {
+      title: "Carla Canales Navigates Cultural In-Betweens in “Duende”",
+      date: "Nov 2020",
+      source: "I Care If You Listen",
+      url: "https://icareifyoulisten.com/2020/11/carla-canales-navigates-cultural-in-betweens-in-duende/",
     },
     {
       title:
@@ -163,6 +188,6 @@ const broadcast: NewsItemGroup = {
   ],
 };
 
-const news: NewsItemGroup[] = [events, articles, broadcast];
+const news: NewsItemGroup[] = [events, announcements, articles, broadcast];
 
 export default news;
