@@ -9,7 +9,7 @@ const HomePage = (): JSX.Element => {
 
   const decideWidgetStyle = (widgetId: number): {} => ({
     filter:
-      !hoveredWidgetId || hoveredWidgetId === widgetId
+      hoveredWidgetId === null || hoveredWidgetId === widgetId
         ? "brightness(100%)"
         : "brightness(50%)",
   });
