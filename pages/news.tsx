@@ -7,20 +7,22 @@ const NewsPage = (): JSX.Element => {
     <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {
         return (
-          <main key={group.title} className="mb-4">
+          <main key={group.title} className="mb-5">
             <h4>{group.title}</h4>
             {group.items.map((item: NewsItem, idx: number) => (
               <Row key={idx} className="news-item my-3">
-                <Col className="d-flex align-items-center" md={12} lg={4}>
-                  <div className="small news-item-meta">
+                <Col className="d-flex" lg={12} xl={4}>
+                  <div className="small news-item-line news-item-meta">
                     <span>
                       <strong>{item.source}</strong>
                     </span>
                     <span className="text-muted">{item.date}</span>
                   </div>
                 </Col>
-                <Col className="d-flex align-items-center" md={12} lg={8}>
-                  <a href={item.url}>{item.title}</a>
+                <Col lg={12} xl={8}>
+                  <a className="news-item-line" href={item.url}>
+                    {item.title}
+                  </a>
                 </Col>
               </Row>
             ))}

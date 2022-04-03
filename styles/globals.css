@@ -112,6 +112,10 @@ footer a:hover {
   font-weight: 500;
 }
 
+.news-item-line {
+  line-height: 1.5rem;
+}
+
 .news-item-meta {
   display: flex;
   justify-content: space-between;
