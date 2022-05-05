@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
-import HtmlSection from "../../components/HtmlSection";
+import HtmlWrapper from "../../components/HtmlWrapper";
 import LinkedIcon from "../../components/LinkedIcon";
 import { parseMarkdown } from "../../utils/markdown";
 import { excerpt } from "../../utils/excerpt";
@@ -63,7 +63,7 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
         {work.title} {work.subtitle && `(${work.subtitle})`}
       </h4>
       <aside className="small text-muted mb-3">{work.description}</aside>
-      <HtmlSection className="my-2">{note}</HtmlSection>
+      <HtmlWrapper className="my-2">{note}</HtmlWrapper>
       <Link href="/work" passHref>
         <LinkedIcon
           className="link-muted link-more-work"

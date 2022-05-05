@@ -1,7 +1,7 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import PageLayout from "../components/PageLayout";
-import HtmlSection from "../components/HtmlSection";
+import HtmlWrapper from "../components/HtmlWrapper";
 import { parseMarkdown } from "../utils/markdown";
 
 interface AboutPageProps {
@@ -25,7 +25,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
         </Col>
         <Col md={12} lg={7}>
           <h4 className="mb-4">Biography</h4>
-          <HtmlSection>{bio}</HtmlSection>
+          <HtmlWrapper>{bio}</HtmlWrapper>
           <span className="d-flex justify-content-center">
             <Button
               id="button-press-pack"

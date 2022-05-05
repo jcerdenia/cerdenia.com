@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import HtmlSection from "../components/HtmlSection";
+import HtmlWrapper from "../components/HtmlWrapper";
 import PageLayout from "../components/PageLayout";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
 import { parseMarkdownInline } from "../utils/markdown";
@@ -30,9 +30,9 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                     {item.title}
                   </a>
                   {item.blurb && (
-                    <HtmlSection className="small" wrapper="aside">
+                    <HtmlWrapper className="small" parent="aside">
                       {item.blurb}
-                    </HtmlSection>
+                    </HtmlWrapper>
                   )}
                 </Col>
               </Row>
