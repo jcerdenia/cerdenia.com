@@ -8,6 +8,7 @@ export interface Work {
   title: string;
   subtitle?: string;
   for: string;
+  year: number;
   description?: string;
   category: string;
   slug: string;
@@ -35,7 +36,9 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
                     <div key={work.slug} className="my-3">
                       <Link href={`/work/${work.slug}`}>{work.title}</Link>{" "}
                       {work.subtitle && `(${work.subtitle})`}{" "}
-                      <span className="small text-muted">for {work.for}</span>
+                      <span className="small text-muted">
+                        for {work.for} ({work.year})
+                      </span>
                     </div>
                   );
                 })}
