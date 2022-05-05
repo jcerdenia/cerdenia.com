@@ -56,6 +56,18 @@ const announcements: NewsItemGroup = {
   title: "Announcements",
   items: [
     {
+      title: "The Florida Orchestra announces its 2022-23 concert season",
+      date: "May 2022",
+      source: "St. Pete Catalyst",
+      url: "https://stpetecatalyst.com/the-florida-orchestra-announces-its-2022-23-concert-season/",
+    },
+    {
+      title: "Mario Carro estrena «Dance me» en Auditorio Nacional",
+      date: "Apr 2022",
+      source: "Asociación Madrileña de Compositores",
+      url: "https://amcc.es/mario-carro-estrena-dance-me-en-auditorio-nacional/",
+    },
+    {
       title:
         "Utah Symphony's 2022-23 Season Culminates Thierry Fischer's Tenure as Music Director",
       date: "Mar 2022",
