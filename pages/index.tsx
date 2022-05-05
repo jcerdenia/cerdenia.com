@@ -33,7 +33,8 @@ const HomePage = (): JSX.Element => {
             <p className="small">
               <a className={decideShowcaseLinkClass(idx)} href={item.path}>
                 {item.title}
-              </a>
+              </a>{" "}
+              {item.artist && `(${item.artist})`}
             </p>
           </Col>
         ))}
