@@ -3,6 +3,7 @@ export interface NewsItem {
   url: string;
   source: string;
   date: string;
+  blurb?: string;
 }
 
 export interface NewsItemGroup {
@@ -18,36 +19,45 @@ const events: NewsItemGroup = {
       date: "27-28 Jan 2023",
       source: "Utah Symphony Orchestra",
       url: "https://utahsymphony.org/event/id/28236/",
+      blurb:
+        "Performance of _Feuertrunken (Fire-Drunk)_ conducted by Fawzi Haimor",
     },
     {
       title: "Satélite 17. Entre cuerdas y palabras",
       date: "3 May 2022",
       source: "Orquesta y Coro Nacionales de España",
       url: "http://ocne.mcu.es/programacion/satelite-17-entre-cuerdas-y-palabras",
+      blurb: "Performance of _Heavenward_ for marimba and string quartet",
     },
     {
       title: "Entre cuerdas y palabras",
       date: "29 Apr 2022",
       source: "Cultura Pozuelo",
       url: "https://cultura.pozuelodealarcon.org/agenda/entre-cuerdas-y-palabras",
+      blurb: "Performance of _Heavenward_ for marimba and string quartet",
     },
     {
       title: "Vim: 10th Wave x Yuki Tokuda Dance Collaboration Concert",
       date: "4 Jun 2021",
       source: "I Care If You Listen TV",
       url: "https://icareifyoulisten.tv/vim-10th-wave-x-yuki-tokuda-dance-collaboration-concert/",
+      blurb:
+        "Performance of _Heavenward_ for marimba and string quartet with choreography by Yuki Tokuda",
     },
     {
       title: "A Closer Look at Swell",
       date: "29 Jun 2021",
       source: "Asian American Arts Alliance",
       url: "https://www.aaartsalliance.org/events/a-closer-look-at-swell-intimate-conversaations-with-asian-immigrants-and-children-of-asian-immigrants-who-turned-their-stories-into-song",
+      blurb:
+        "Conversation with Melisa Tien, Tian Hui Ng, and composers of _Swell_",
     },
     {
       title: "Swell in Off-Broadway at HERE 2021",
       date: "17-21 Mar 2021",
       source: "HERE",
       url: "https://www.broadwayworld.com/off-broadway/regional/Swell-2806900",
+      blurb: "Premiere of _Exile/Home_ for baritone and piano trio",
     },
   ],
 };

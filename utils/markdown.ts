@@ -28,3 +28,8 @@ export const parseMarkdown = (
 
   return result;
 };
+
+export const parseMarkdownInline = (markdown: string): string => {
+  const md = require("markdown-it")();
+  return md.renderInline(markdown);
+};

@@ -1,8 +1,14 @@
 import { Row, Col } from "react-bootstrap";
+import HtmlSection from "../components/HtmlSection";
 import PageLayout from "../components/PageLayout";
 import news, { NewsItem, NewsItemGroup } from "../data/news";
+import { parseMarkdownInline } from "../utils/markdown";
 
-const NewsPage = (): JSX.Element => {
+interface NewsPageProps {
+  news: NewsItemGroup[];
+}
+
+const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
   return (
     <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {
@@ -23,6 +29,11 @@ const NewsPage = (): JSX.Element => {
                   <a className="news-item-line" href={item.url}>
                     {item.title}
                   </a>
+                  {item.blurb && (
+                    <HtmlSection className="small" wrapper="aside">
+                      {item.blurb}
+                    </HtmlSection>
+                  )}
                 </Col>
               </Row>
             ))}
@@ -31,6 +42,20 @@ const NewsPage = (): JSX.Element => {
       })}
     </PageLayout>
   );
+};
+
+export const getStaticProps = async (): Promise<{ props: NewsPageProps }> => {
+  news.forEach((group: NewsItemGroup) => {
+    group.items.forEach((item: NewsItem) => {
+      if (item.blurb) {
+        item.blurb = parseMarkdownInline(item.blurb);
+      }
+    });
+  });
+
+  return {
+    props: { news },
+  };
 };
 
 export default NewsPage;
