@@ -96,6 +96,19 @@ const announcements: NewsItemGroup = {
       source: "Broadway World",
       url: "https://www.broadwayworld.com/off-broadway/article/IndieWorks-Announces-BITE-SIZED-BROADWAY--A-Mini-Musical-Podcast-20200803",
     },
+    {
+      title:
+        "Melisa Tien's SWELL to Explore The Personal Immigration Stories Of 10 Composers",
+      date: "Jun 2019",
+      source: "Broadway World",
+      url: "https://www.broadwayworld.com/off-off-broadway/article/Melisa-Tiens-SWELL-to-Explore-The-Personal-Immigration-Stories-Of-10-Composers-20190613",
+    },
+    {
+      title: "Virginia Symphony Orchestra Announces 2019-2020 Classics Season",
+      date: "Jan 2019",
+      source: "Virginia Symphony Orchestra",
+      url: "https://virginiasymphony.org/1-25-19-virginia-symphony-orchestra-announces-2019-2020-classics-season-hosted-by-governor-ralph-s-northam-and-first-lady-pamela-northam/",
+    },
   ],
 };
 
