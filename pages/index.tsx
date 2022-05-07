@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LinkedIcon from "../components/LinkedIcon";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
@@ -16,13 +15,13 @@ const HomePage = (): JSX.Element => {
             .map((item: NewsItem, idx: number) => {
               return (
                 <li key={idx}>
-                  <a href={item.url}>{item.title}</a>{" "}
+                  <a href={item.url}>{item.title}</a>
                 </li>
               );
             })}
         </ul>
         <LinkedIcon
-          className="link-muted link-more-work"
+          className="link-muted"
           iconId="bi:arrow-return-right"
           href="/news"
         >
