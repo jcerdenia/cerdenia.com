@@ -37,7 +37,8 @@ const media: MediaItem[] = [
     src: "https://soundcloud.com/joshuacerdenia/creed-singapore-symphony-orchestra",
   },
   {
-    title: "Dark Lady (Four Shakespeare Sonnets)",
+    title: "Dark Lady",
+    artist: "Adam De Wilde",
     path: "/work/dark-lady",
     src: "https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets",
   },
