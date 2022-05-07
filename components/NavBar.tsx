@@ -7,7 +7,7 @@ const NavBar = (): JSX.Element => {
   const basePath = "/" + asPath.split("/")[1];
 
   return (
-    <Navbar className="navbar" variant="light" expand="md">
+    <Navbar className="navbar" variant="light" expand="lg">
       <Container>
         <Navbar.Brand className="d-flex align-items-center" href="/">
           <header className="brand">Joshua Cerdenia</header>
