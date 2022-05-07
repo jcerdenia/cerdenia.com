@@ -115,6 +115,11 @@ footer a:hover {
   width: 100%;
 }
 
+.news-item-date {
+  min-width: fit-content;
+  padding-left: 2px;
+}
+
 .page-content-header,
 .work-sidebar-container h6 {
   line-height: 1.5rem;

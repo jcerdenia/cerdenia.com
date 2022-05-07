@@ -1,7 +1,12 @@
 import LinkedIcon from "../components/LinkedIcon";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
-import { announcements, NewsItem } from "../data/news";
+import announcements from "../data/news/announcements.json";
+
+interface NewsItem {
+  title: string;
+  url: string;
+}
 
 const HomePage = (): JSX.Element => {
   return (
@@ -10,8 +15,9 @@ const HomePage = (): JSX.Element => {
       <section className="my-3">
         <h4>Latest News</h4>
         <ul>
-          {announcements.items
-            .slice(0, 3)
+          {announcements
+            .slice(announcements.length - 3, announcements.length)
+            .reverse()
             .map((item: NewsItem, idx: number) => {
               return (
                 <li className="my-1" key={idx}>
