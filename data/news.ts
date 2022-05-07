@@ -79,10 +79,10 @@ export const announcements: NewsItemGroup = {
     },
     {
       title:
-        "Utah Symphony's 2022-23 Season Culminates Thierry Fischer's Tenure as Music Director",
+        "Utah Symphony Celebrates Extraordinary Tenure of Music Director Thierry Fischer in Monumental 2022-23 Season",
       date: "Mar 2022",
-      source: "Broadway World",
-      url: "https://www.broadwayworld.com/salt-lake-city/article/Utah-Symphonys-2022-23-Season-Culminates-Thierry-Fischers-Tenure-as-Music-Director-20220325",
+      source: "Utah Symphony Orchestra",
+      url: "https://usuo.org/news/press-releases/utah-symphony-celebrates-extraordinary-tenure-of-music-director-thierry-fischer-in-monumental-2022-23-season/",
     },
     {
       title: "Melisa Tien's SWELL to Premiere Online at HERE",
