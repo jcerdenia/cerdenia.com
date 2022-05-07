@@ -44,14 +44,13 @@ const WorkSideBar = ({
           <aside className="small text-muted">for {work.for}</aside>
         </nav>
       ))}
-      <Link href="/work" passHref>
-        <LinkedIcon
-          className="link-muted link-more-work"
-          iconId="bi:arrow-return-left"
-        >
-          More Work
-        </LinkedIcon>
-      </Link>
+      <LinkedIcon
+        className="link-muted link-more-work"
+        iconId="bi:arrow-return-left"
+        href="/work"
+      >
+        More Work
+      </LinkedIcon>
     </>
   );
 };
@@ -64,14 +63,13 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
       </h4>
       <aside className="small text-muted mb-3">{work.description}</aside>
       <HtmlWrapper className="my-2">{note}</HtmlWrapper>
-      <Link href="/work" passHref>
-        <LinkedIcon
-          className="link-muted link-more-work"
-          iconId="bi:arrow-return-left"
-        >
-          More Work
-        </LinkedIcon>
-      </Link>
+      <LinkedIcon
+        className="link-muted link-more-work"
+        iconId="bi:arrow-return-left"
+        href="/work"
+      >
+        More Work
+      </LinkedIcon>
     </>
   );
 };

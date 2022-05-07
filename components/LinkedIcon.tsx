@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 interface LinkedIconProps {
@@ -5,7 +6,7 @@ interface LinkedIconProps {
   className?: string;
   iconClassName?: string;
   iconStyle?: any;
-  href?: string;
+  href: string;
   children?: string;
 }
 
@@ -17,12 +18,27 @@ const LinkedIcon = ({
   href,
   children,
 }: LinkedIconProps): JSX.Element => {
-  return (
-    <a className={className} href={href}>
-      <Icon icon={iconId} className={iconClassName} style={iconStyle} />{" "}
-      {children}
-    </a>
-  );
+  const iconProps = {
+    icon: iconId,
+    className: iconClassName,
+    style: iconStyle,
+  };
+
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} passHref>
+        <a className={className}>
+          <Icon {...iconProps} /> {children}
+        </a>
+      </Link>
+    );
+  } else {
+    return (
+      <a className={className} href={href}>
+        <Icon {...iconProps} /> {children}
+      </a>
+    );
+  }
 };
 
 export default LinkedIcon;

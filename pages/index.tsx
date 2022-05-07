@@ -21,14 +21,13 @@ const HomePage = (): JSX.Element => {
               );
             })}
         </ul>
-        <Link href="/news" passHref>
-          <LinkedIcon
-            className="link-muted link-more-work"
-            iconId="bi:arrow-return-right"
-          >
-            More News & Events
-          </LinkedIcon>
-        </Link>
+        <LinkedIcon
+          className="link-muted link-more-work"
+          iconId="bi:arrow-return-right"
+          href="/news"
+        >
+          More News & Events
+        </LinkedIcon>
       </section>
     </PageLayout>
   );
