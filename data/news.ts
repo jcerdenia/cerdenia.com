@@ -23,6 +23,14 @@ const events: NewsItemGroup = {
         "Performance of _Feuertrunken (Fire-Drunk)_ conducted by Fawzi Haimor",
     },
     {
+      title: "Marsalis Tuba Concerto with The Florida Orchestra",
+      date: "6-8 Jan 2023",
+      source: "The Florida Orchestra",
+      url: "https://www.lastrowmusic.com/event/marsalis-tuba-concerto-with-the-florida-orchestra/",
+      blurb:
+        "Performance of _Feuertrunken (Fire-Drunk)_ conducted by Fawzi Haimor",
+    },
+    {
       title: "Satélite 17. Entre cuerdas y palabras",
       date: "3 May 2022",
       source: "Orquesta y Coro Nacionales de España",

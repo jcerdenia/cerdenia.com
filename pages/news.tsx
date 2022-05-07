@@ -22,7 +22,7 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                     <span>
                       <strong>{item.source}</strong>
                     </span>
-                    <span className="text-muted">{item.date}</span>
+                    <span className="text-muted text-right">{item.date}</span>
                   </div>
                 </Col>
                 <Col lg={12} xl={8}>
@@ -30,7 +30,10 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                     {item.title}
                   </a>
                   {item.blurb && (
-                    <HtmlWrapper className="small" parent="aside">
+                    <HtmlWrapper
+                      className="small news-item-line"
+                      parent="aside"
+                    >
                       {item.blurb}
                     </HtmlWrapper>
                   )}
