@@ -20,8 +20,8 @@ interface WorkHomePageProps {
 
 const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
   return (
-    <PageLayout title="Work">
-      <h4>Selected Work</h4>
+    <PageLayout title="Works">
+      <h4>Selected Works</h4>
       <Row xs={1} lg={2}>
         {Object.keys(categories).map((key: string) => {
           return (
@@ -34,7 +34,7 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
                 .map((work: Work) => {
                   return (
                     <div key={work.slug} className="my-3">
-                      <Link href={`/work/${work.slug}`}>{work.title}</Link>{" "}
+                      <Link href={`/works/${work.slug}`}>{work.title}</Link>{" "}
                       {work.subtitle && `(${work.subtitle})`}{" "}
                       <span className="small text-muted">
                         for {work.for} ({work.year})
@@ -55,11 +55,11 @@ export const getStaticProps = async (): Promise<{
 }> => {
   const fs = require("fs");
   const works: Work[] = fs
-    .readdirSync(`${process.cwd()}/data/work`)
+    .readdirSync(`${process.cwd()}/data/works`)
     .filter((fileName: string): boolean => fileName.endsWith(".md"))
     .map(
       (fileName: string): {} | null =>
-        parseMarkdown(`data/work/${fileName}`, ["metadata"]).metadata
+        parseMarkdown(`data/works/${fileName}`, ["metadata"]).metadata
     );
 
   return {

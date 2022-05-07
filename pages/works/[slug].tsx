@@ -36,7 +36,7 @@ const WorkSideBar = ({
       {works.map((work: Work) => (
         <nav key={work.slug} className="my-3">
           {work.slug !== activeKey ? (
-            <Link href={`/work/${work.slug}`}>{work.title}</Link>
+            <Link href={`/works/${work.slug}`}>{work.title}</Link>
           ) : (
             <strong>{work.title}</strong>
           )}{" "}
@@ -47,9 +47,9 @@ const WorkSideBar = ({
       <LinkedIcon
         className="link-muted link-more-work"
         iconId="bi:arrow-return-left"
-        href="/work"
+        href="/works"
       >
-        More Work
+        More Works
       </LinkedIcon>
     </>
   );
@@ -66,9 +66,9 @@ const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
       <LinkedIcon
         className="link-muted link-more-work"
         iconId="bi:arrow-return-left"
-        href="/work"
+        href="/works"
       >
-        More Work
+        More Works
       </LinkedIcon>
     </>
   );
@@ -96,7 +96,7 @@ const WorkPage = ({ work, note, relatedWorks }: WorkPageProps): JSX.Element => {
 export const getStaticPaths = async () => {
   const fs = require("fs");
   const slugs: string[] = fs
-    .readdirSync(`${process.cwd()}/data/work`)
+    .readdirSync(`${process.cwd()}/data/works`)
     .filter((fileName: string): boolean => fileName.endsWith(".md"))
     .map((fileName: string): string => fileName.replace(".md", ""));
 
@@ -113,7 +113,7 @@ export const getStaticProps = async (
 ): Promise<{ props: WorkPageProps }> => {
   const slug = context.params.slug;
   const { metadata: work, content: note }: any = parseMarkdown(
-    `/data/work/${slug}.md`,
+    `/data/works/${slug}.md`,
     ["metadata", "content"],
     (content) => {
       return content
@@ -125,10 +125,10 @@ export const getStaticProps = async (
 
   const fs = require("fs");
   const relatedWorks: Work[] = fs
-    .readdirSync(`${process.cwd()}/data/work`)
+    .readdirSync(`${process.cwd()}/data/works`)
     .filter((fileName: string) => fileName.endsWith(".md"))
     .map((fileName: string) => {
-      return parseMarkdown(`data/work/${fileName}`, ["metadata"]).metadata;
+      return parseMarkdown(`data/works/${fileName}`, ["metadata"]).metadata;
     })
     .filter(({ category }: Work) => category === work.category);
 

@@ -10,8 +10,8 @@ const navs: NavItem[] = [
     path: "/",
   },
   {
-    title: "Work",
-    path: "/work",
+    title: "Works",
+    path: "/works",
   },
   {
     title: "News & Events",
