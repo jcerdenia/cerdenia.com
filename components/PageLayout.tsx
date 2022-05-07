@@ -45,9 +45,7 @@ const PageLayout = ({
       </Head>
       <NavBar />
       <Container fluid={wide}>{children}</Container>
-      <Container>
-        <Footer />
-      </Container>
+      <Footer />
     </>
   );
 };

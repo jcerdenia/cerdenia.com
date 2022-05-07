@@ -78,14 +78,14 @@ const WorkPage = ({ work, note, relatedWorks }: WorkPageProps): JSX.Element => {
   return (
     <PageLayout title={work.title} description={excerpt(note)}>
       <Row>
-        <Col md={12} lg={3} className="work-sidebar-container">
+        <Col md={12} lg={3} className="mb-4 work-sidebar-container">
           <WorkSideBar
             activeKey={work.slug}
             header={categories[work.category].display}
             works={relatedWorks}
           />
         </Col>
-        <Col md={12} lg={9} className="work-content-container">
+        <Col md={12} lg={9} className="mb-4 work-content-container">
           <WorkContent work={work} note={note} />
         </Col>
       </Row>

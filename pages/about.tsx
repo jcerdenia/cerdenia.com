@@ -23,7 +23,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
             Photo by Rashidah De Vore
           </figcaption>
         </Col>
-        <Col md={12} lg={7}>
+        <Col md={12} lg={7} className="mb-4">
           <h4 className="mb-4">Biography</h4>
           <HtmlWrapper>{bio}</HtmlWrapper>
           <span className="d-flex justify-content-center">
@@ -33,7 +33,8 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
               variant="outline-secondary"
               href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
             >
-              <Icon icon="bi:cloud-download" className="me-1" /> Press Pack
+              <Icon icon="bi:cloud-download" className="me-1" /> Download Photos
+              & Bios
             </Button>
           </span>
         </Col>

@@ -68,6 +68,10 @@ footer a:hover {
   transition: 250ms;
 }
 
+.footer-container {
+  background-color: inherit;
+}
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
