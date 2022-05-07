@@ -62,7 +62,7 @@ const events: NewsItemGroup = {
   ],
 };
 
-const announcements: NewsItemGroup = {
+export const announcements: NewsItemGroup = {
   title: "Announcements",
   items: [
     {
