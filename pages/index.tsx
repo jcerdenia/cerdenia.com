@@ -13,14 +13,14 @@ const HomePage = (): JSX.Element => {
     <PageLayout exact title="Joshua Cerdenia, Composer">
       <Showcase />
       <section className="my-3">
-        <h4>Latest News</h4>
+        <h5>Latest News</h5>
         <ul>
           {announcements
             .slice(announcements.length - 3, announcements.length)
             .reverse()
             .map((item: NewsItem, idx: number) => {
               return (
-                <li className="my-1" key={idx}>
+                <li className="my-2" key={idx}>
                   <a href={item.url}>{item.title}</a>
                 </li>
               );

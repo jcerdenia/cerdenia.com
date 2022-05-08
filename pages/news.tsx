@@ -5,23 +5,10 @@ import { parseMarkdownInline } from "../utils/markdown";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
+import { NewsItem, NewsItemGroup } from "../data/interfaces";
 
 interface NewsPageProps {
   news: NewsItemGroup[];
-}
-
-interface NewsItem {
-  title: string;
-  url: string;
-  source: string;
-  date: string;
-  location?: string;
-  blurb?: string;
-}
-
-interface NewsItemGroup {
-  title: string;
-  items: NewsItem[];
 }
 
 const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
@@ -29,11 +16,11 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
     <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {
         return (
-          <main key={group.title} className="mb-5">
-            <h4>{group.title}</h4>
+          <section key={group.title} className="mb-4">
+            <h5>{group.title}</h5>
             {group.items.map((item: NewsItem, idx: number) => (
               <Row key={idx} className="news-item my-3">
-                <Col className="d-flex" lg={12} xl={3}>
+                <Col className="d-flex" lg={12} xl={4}>
                   <div className="small news-item-line news-item-meta">
                     <span>
                       <strong>{item.source}</strong>
@@ -43,7 +30,7 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                     </span>
                   </div>
                 </Col>
-                <Col lg={12} xl={9}>
+                <Col lg={12} xl={8}>
                   <a className="news-item-line" href={item.url}>
                     {item.title}
                   </a>
@@ -61,7 +48,7 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                 </Col>
               </Row>
             ))}
-          </main>
+          </section>
         );
       })}
     </PageLayout>

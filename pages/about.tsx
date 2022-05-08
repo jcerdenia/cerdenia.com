@@ -23,8 +23,8 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
             Photo by Rashidah De Vore
           </figcaption>
         </Col>
-        <Col md={12} lg={7} className="mb-4">
-          <h4 className="mb-4">Biography</h4>
+        <Col md={12} lg={7}>
+          <h5 className="mb-4">Biography</h5>
           <HtmlWrapper>{bio}</HtmlWrapper>
           <span className="d-flex justify-content-center">
             <Button
