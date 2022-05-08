@@ -69,7 +69,7 @@ footer a:hover {
 }
 
 .footer-container {
-  background-color: inherit;
+  background-color: white;
 }
 
 .grayscale {
@@ -120,8 +120,7 @@ footer a:hover {
   padding-left: 2px;
 }
 
-.page-content-header,
-.work-sidebar-container h6 {
+.page-content-header {
   line-height: 1.5rem;
 }
 

@@ -1,92 +1,26 @@
-import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
-import HtmlWrapper from "../../components/HtmlWrapper";
-import LinkedIcon from "../../components/LinkedIcon";
+import WorksList from "../../components/WorksList";
+import WorkDetail from "../../components/WorkDetail";
 import { parseMarkdown } from "../../utils/markdown";
 import { excerpt } from "../../utils/excerpt";
-import categories from "../../data/work-categories";
-import { Work } from "./index";
-
-interface WorkSideBarProps {
-  activeKey: string;
-  header: string;
-  works: Work[];
-}
-
-interface WorkContentProps {
-  work: Work;
-  note: string;
-}
+import { Work } from "../../data/interfaces";
 
 interface WorkPageProps {
+  works: Work[];
   work: Work;
   note: string;
-  relatedWorks: Work[];
 }
 
-const WorkSideBar = ({
-  activeKey,
-  header,
-  works,
-}: WorkSideBarProps): JSX.Element => {
-  return (
-    <>
-      <h6>{header}</h6>
-      {works.map((work: Work) => (
-        <nav key={work.slug} className="my-3">
-          {work.slug !== activeKey ? (
-            <Link href={`/works/${work.slug}`}>{work.title}</Link>
-          ) : (
-            <strong>{work.title}</strong>
-          )}{" "}
-          {work.subtitle && `(${work.subtitle})`}{" "}
-          <aside className="small text-muted">for {work.for}</aside>
-        </nav>
-      ))}
-      <LinkedIcon
-        className="link-muted link-more-work"
-        iconId="bi:arrow-return-left"
-        href="/works"
-      >
-        More Works
-      </LinkedIcon>
-    </>
-  );
-};
-
-const WorkContent = ({ work, note }: WorkContentProps): JSX.Element => {
-  return (
-    <>
-      <h4 className="page-content-header">
-        {work.title} {work.subtitle && `(${work.subtitle})`}
-      </h4>
-      <aside className="small text-muted mb-3">{work.description}</aside>
-      <HtmlWrapper className="my-2">{note}</HtmlWrapper>
-      <LinkedIcon
-        className="link-muted link-more-work"
-        iconId="bi:arrow-return-left"
-        href="/works"
-      >
-        More Works
-      </LinkedIcon>
-    </>
-  );
-};
-
-const WorkPage = ({ work, note, relatedWorks }: WorkPageProps): JSX.Element => {
+const WorkPage = ({ works, work, note }: WorkPageProps): JSX.Element => {
   return (
     <PageLayout title={work.title} description={excerpt(note)}>
       <Row>
-        <Col md={12} lg={3} className="mb-4 work-sidebar-container">
-          <WorkSideBar
-            activeKey={work.slug}
-            header={categories[work.category].display}
-            works={relatedWorks}
-          />
+        <Col md={12} lg={4} className="mb-4 work-sidebar-container">
+          <WorksList works={works} activeKey={work.slug} />
         </Col>
-        <Col md={12} lg={9} className="mb-4 work-content-container">
-          <WorkContent work={work} note={note} />
+        <Col md={12} lg={8} className="mb-4 work-content-container">
+          <WorkDetail work={work} note={note} />
         </Col>
       </Row>
     </PageLayout>
@@ -95,6 +29,7 @@ const WorkPage = ({ work, note, relatedWorks }: WorkPageProps): JSX.Element => {
 
 export const getStaticPaths = async () => {
   const fs = require("fs");
+
   const slugs: string[] = fs
     .readdirSync(`${process.cwd()}/data/works`)
     .filter((fileName: string): boolean => fileName.endsWith(".md"))
@@ -111,7 +46,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (
   context: any
 ): Promise<{ props: WorkPageProps }> => {
+  const fs = require("fs");
   const slug = context.params.slug;
+
   const { metadata: work, content: note }: any = parseMarkdown(
     `/data/works/${slug}.md`,
     ["metadata", "content"],
@@ -123,17 +60,15 @@ export const getStaticProps = async (
     }
   );
 
-  const fs = require("fs");
-  const relatedWorks: Work[] = fs
+  const works: Work[] = fs
     .readdirSync(`${process.cwd()}/data/works`)
     .filter((fileName: string) => fileName.endsWith(".md"))
     .map((fileName: string) => {
       return parseMarkdown(`data/works/${fileName}`, ["metadata"]).metadata;
-    })
-    .filter(({ category }: Work) => category === work.category);
+    });
 
   return {
-    props: { work, note, relatedWorks },
+    props: { works, work, note },
   };
 };
 

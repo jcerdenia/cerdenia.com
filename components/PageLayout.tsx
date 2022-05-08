@@ -11,10 +11,15 @@ interface PageLayoutProps {
   wide?: boolean;
 }
 
+const defaultDescription =
+  "The online home of the music of Joshua Cerdenia. " +
+  "List of works with audio samples and program notes, " +
+  "biography and photographs, news and upcomoning events.";
+
 const PageLayout = ({
   title,
   exact,
-  description = "The online home of the music of Joshua Cerdenia",
+  description = defaultDescription,
   wide = false,
   children,
 }: PageLayoutProps): JSX.Element => {
@@ -44,7 +49,9 @@ const PageLayout = ({
         <title>{title}</title>
       </Head>
       <NavBar />
-      <Container fluid={wide}>{children}</Container>
+      <Container className="pb-4" fluid={wide}>
+        {children}
+      </Container>
       <Footer />
     </>
   );
