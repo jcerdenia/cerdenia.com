@@ -1,6 +1,5 @@
 ---
 title: "Always"
-subtitle: "from The Captain's Verses"
 for: "soprano and piano"
 category: "VOCAL"
 year: 2012

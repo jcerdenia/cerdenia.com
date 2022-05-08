@@ -3,7 +3,7 @@ title: "Agaw-Dilim"
 for: "bass-baritone and piano"
 description: "For Enrico Lagasca"
 category: "VOCAL"
-year: 2016
+year: 2017
 mediaUrl: "https://soundcloud.com/joshuacerdenia/agaw-dilim"
 ---
 

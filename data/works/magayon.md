@@ -1,6 +1,7 @@
 ---
 title: "Magayon"
 for: "orchestra"
+description: "For the Juilliard Orchestra"
 category: "ORCHESTRA"
 year: 2015
 mediaUrl: "https://soundcloud.com/joshuacerdenia/magayon"
@@ -11,6 +12,8 @@ _Magayon_ means “beautiful” in the Bicolano language of the Philippines, and
 When all of the main characters died—most tragically Magayon herself, who was hit by a stray arrow—the entire village went from celebratory anticipation of the wedding to mourning. The maiden was laid to rest on a grave next to her husband-to-be, which the villagers were alarmed to find rising higher and higher each day, accompanied by earthquakes and muffled rumblings of the earth. At last a crater formed, spewing hot ash and rocks.
 
 My piece is concerned less with depicting the myth in its entirety and more with the emotional journey that the story evokes. I kept in mind Mount Mayon’s near-perfect cone in shaping the piece: its three sections (fast–slow–fast) are of roughly equal length and form an almost symmetrical arc, flowing seamlessly from one to the next. I also place less emphasis on the tragedy of the myth, and more on my own sense of wonder toward the mythology of my home country; hence, the piece, though brutal at times, ultimately comes to a triumphant close.
+
+_Magayon_ was completed in New York City in 2015 and was selected as a winner of the Juilliard Orchestra's composition competition in the same year.
 
 ###### Instrumentation
  3 flutes (3rd doubling piccolo), 2 oboes, English horn, 2 clarinets in B flat, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, percussion (3 players: bass drum, tam-tam, 2 suspended cymbals, China cymbal, chimes, glockenspiel, 3 triangles), strings
