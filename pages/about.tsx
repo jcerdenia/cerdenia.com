@@ -22,11 +22,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
           <figcaption className="small text-muted">
             Photo by Rashidah De Vore
           </figcaption>
-        </Col>
-        <Col md={12} lg={7}>
-          <h5 className="mb-4">Biography</h5>
-          <HtmlWrapper>{bio}</HtmlWrapper>
-          <span className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center mt-3">
             <Button
               id="button-press-pack"
               className="px-5 py-2"
@@ -36,7 +32,11 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
               <Icon icon="bi:cloud-download" className="me-1" /> Download Photos
               & Bios
             </Button>
-          </span>
+          </div>
+        </Col>
+        <Col md={12} lg={7}>
+          <h5 className="mb-4">Biography</h5>
+          <HtmlWrapper>{bio}</HtmlWrapper>
         </Col>
       </Row>
     </PageLayout>
