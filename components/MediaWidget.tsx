@@ -4,6 +4,7 @@ interface MediaWidgetProps {
   width?: number | string;
   height?: number | string;
   style?: {};
+  visual?: boolean;
   onMouseEnter?: VoidFunction;
   onMouseLeave?: VoidFunction;
 }
@@ -14,6 +15,7 @@ const MediaWidget = ({
   width = "100%",
   height = 300,
   style,
+  visual = true,
   onMouseEnter,
   onMouseLeave,
 }: MediaWidgetProps): JSX.Element => {
@@ -47,7 +49,7 @@ const MediaWidget = ({
           width={width}
           height={height}
           style={style}
-          src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`}
+          src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=${visual}`}
           scrolling="no"
           frameBorder="no"
           allow="autoplay"
