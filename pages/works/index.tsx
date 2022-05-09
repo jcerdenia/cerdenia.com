@@ -3,16 +3,7 @@ import PageLayout from "../../components/PageLayout";
 import MediaWidget from "../../components/MediaWidget";
 import WorksList from "../../components/WorksList";
 import { parseMarkdown } from "../../utils/markdown";
-
-export interface Work {
-  title: string;
-  subtitle?: string;
-  for: string;
-  year: number;
-  description?: string;
-  category: string;
-  slug: string;
-}
+import { Work } from "../../data/interfaces";
 
 interface WorkHomePageProps {
   works: Work[];

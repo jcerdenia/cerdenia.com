@@ -2,10 +2,10 @@ import { Row, Col } from "react-bootstrap";
 import HtmlWrapper from "../components/HtmlWrapper";
 import PageLayout from "../components/PageLayout";
 import { parseMarkdownInline } from "../utils/markdown";
+import { NewsItem, NewsItemGroup } from "../data/interfaces";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
-import { NewsItem, NewsItemGroup } from "../data/interfaces";
 
 interface NewsPageProps {
   news: NewsItemGroup[];

@@ -17,7 +17,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       <aside className="small text-muted mb-3">({work.year})</aside>
       <HtmlWrapper className="my-2">{note}</HtmlWrapper>
       <LinkedIcon
-        className="link-muted link-more-work"
+        className="mt-3 link-muted link-more-work"
         iconId="bi:arrow-return-left"
         href="/works"
       >
