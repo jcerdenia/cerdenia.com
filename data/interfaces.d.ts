@@ -15,7 +15,7 @@ export interface NewsItemGroup {
 export interface Work {
   title: string;
   subtitle?: string;
-  for: string;
+  instrumentation: string;
   year: number;
   description?: string;
   category: string;

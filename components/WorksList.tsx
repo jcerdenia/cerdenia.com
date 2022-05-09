@@ -1,4 +1,4 @@
-import Link from "next/link";
+import WorkListItem from "./WorkListItem";
 import categories from "../data/work-categories";
 import { Work } from "../data/interfaces";
 
@@ -21,17 +21,11 @@ const WorksList = ({ works, activeKey }: WorksListProps): JSX.Element => {
               .filter((work: Work) => work.category === key)
               .map((work: Work) => {
                 return (
-                  <nav key={work.slug} className="my-3">
-                    {work.slug !== activeKey ? (
-                      <Link href={`/works/${work.slug}`}>{work.title}</Link>
-                    ) : (
-                      <strong>{work.title}</strong>
-                    )}{" "}
-                    {work.subtitle && `(${work.subtitle})`}{" "}
-                    <span className="small text-muted">
-                      {work.for ? `for ${work.for}` : work.description}
-                    </span>
-                  </nav>
+                  <WorkListItem
+                    key={work.slug}
+                    active={work.slug === activeKey}
+                    work={work}
+                  />
                 );
               })}
           </section>
