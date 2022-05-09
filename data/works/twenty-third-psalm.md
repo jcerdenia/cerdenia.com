@@ -3,6 +3,7 @@ title: "Twenty-Third Psalm"
 instrumentation: "chorus"
 category: "VOCAL"
 year: 2016
+scoreUrl: "https://drive.google.com/file/d/1-SpwLHfePb3FmWKwHbS3bWB5qpURdt8F/view?usp=sharing"
 ---
 
 There is a rich tradition of choral singing in my native Philippines, which is probably what intimidated me out of writing choral music for so long, until my friend Enrico Lagasca, an alumnus of the highly awarded "[Madz](http://www.philippinemadrigalsingers.com/)," approached me with the opportunity to write my first piece for chorus. The only stipulation was that it had to use a sacred text.

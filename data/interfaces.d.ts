@@ -20,4 +20,5 @@ export interface Work {
   description?: string;
   category: string;
   slug: string;
+  scoreUrl?: string;
 }

@@ -3,6 +3,7 @@ title: "Turbulence"
 instrumentation: "solo piano"
 category: "SOLO"
 year: 2011
+scoreUrl: "https://drive.google.com/file/d/1A5AUf04O_Jlc7jXH8oOkLaU_ZzWGaaDb/view?usp=sharing"
 ---
 
 A single movement roughly in sonata-allegro form, written in Singapore in early 2011.

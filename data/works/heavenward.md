@@ -5,6 +5,7 @@ category: "CHAMBER"
 description: "For Naoto Segawa and Ensemble Gô"
 year: 2014
 mediaUrl: "https://www.youtube.com/watch?v=YhaNa_622Wc"
+scoreUrl: "https://drive.google.com/file/d/1mQ_DXxwGEBg02PY5l_fHAOR2oKCCQRQs/view?usp=sharing"
 ---
 
 **Heavenward,** my third in a cycle of independent pieces inspired by Japanese death poems (along with _On the Verge_ and _When You Contemplate the Waters_), was directly inspired by a haiku of Dohaku (died in 1675): Cargoless, / bound heavenward, / Ship of the moon (English translation from _Japanese Death Poems,_ ed. Yoel Hoffman, 1986). Unlike the previous two pieces in my “Death Haiku” cycle, I did not derive a musical narrative nor musical elements from Dohaku’s poem; neither did I wish to express the tragedy of the poet’s impending death, nor to comment on the gravity of death in general. Instead, I aimed to express a more personal reaction to the words. The piece depicts a gradual emotional ascent, beginning on a slow and dignified note and interspersed with brief moments of fleeting activity, harmonic instability and incremental tempo changes; eventually, it ends in a far different place. All the while, a three-note motive dominates the piece, appearing relatively unchanged throughout the piece.

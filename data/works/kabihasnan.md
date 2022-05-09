@@ -4,6 +4,7 @@ instrumentation: "flute, cello, percussion, and piano"
 category: "CHAMBER"
 year: 2013
 mediaUrl: "https://soundcloud.com/joshuacerdenia/kabihasnan"
+scoreUrl: "https://drive.google.com/file/d/1o5TVly2_Yza8p3PXTMG7IaMXRJICnAvv/view?usp=sharing"
 ---
 
 _Kabihasnan_ is loosely based on musical gestures and scale materials found in Philippine kulintang music. The piece attempts to reverse the standard roles of the instruments involved: piano and percussion emphasize melody through gong and chime-like sounds, while the flute and cello provide harmonic and timbral support. "Kabihasnan" means civilization in the Tagalog language.

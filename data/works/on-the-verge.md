@@ -6,11 +6,14 @@ description: "For the Kubrick Quartet"
 category: "CHAMBER"
 year: 2013
 mediaUrl: "api.soundcloud.com/playlists/5352140"
+scoreUrl: "https://drive.google.com/file/d/1VsoiWoHXxdkFaTWmdpMaFWyWBnj6a45p/view?usp=sharing"
 ---
 
 The titles of the six movements of _On the Verge_ are phrases from English translations of death haiku that I picked out from Yoel Hoffman's 1986 anthology, _Japanese Death Poems: Written by Zen Monks and Haiku Poets on the Verge of Death._ I was inspired by the elegance of the words and the brevity and succinctness of the haiku form, and equally, by the air that pervades the poems of quiet acceptance of death as a natural inevitability.
 
 I made an active effort not to make the piece about death as an immediate, special event. There is no reference to it anywhere in the piece, except in the sixth movement. With that exception, each of the movements is very brief, perhaps feeling as if it is on the verge of blossoming into something bigger, but instead fades away.
+
+_On the Verge_ was composed for the Kubrick Quartet as part of a project between the chamber music and composition departments of the Peabody Institute in Baltimore, MD. It was completed in early 2013.
 
 ###### Instrumentation
 2 violins, viola, cello

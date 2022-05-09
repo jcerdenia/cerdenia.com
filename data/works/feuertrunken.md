@@ -6,6 +6,7 @@ category: "ORCHESTRA"
 description: "Commissioned by the Detroit Symphony Orchestra"
 year: 2017
 mediaUrl: "https://www.youtube.com/watch?v=xnmJFpS1x34"
+scoreUrl: "https://drive.google.com/file/d/1J7_u9aMLvhS1YolKCcFRrIpk3qV-lhoZ/view?usp=sharing"
 ---
 
 _**Feuertrunken**_ is a loud meditation (if one can meditate loudly) on joy. In the months that I spent composing the piece, between March–June 2017, I found little cause for celebration in the many goings-on both locally and abroad; perhaps this was the reason I thought the subject of joy had so much urgency.

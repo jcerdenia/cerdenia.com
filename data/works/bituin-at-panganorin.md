@@ -4,6 +4,7 @@ instrumentation: "bass-baritone and piano"
 description: "For Enrico Lagasca"
 category: "VOCAL"
 year: 2016
+scoreUrl: "https://drive.google.com/file/d/1b15QFU8iEuFBRBNfXSz06-7ORHEz-Oty/view?usp=sharing"
 ---
 
 Setting of a Tagalog poem by José Corazón de Jesús (Huseng Batute). _Bituin at Panganorin_ was composed for Enrico Lagasca and first completed in New York City in October 2016. I later completed a revised version in the spring of 2019.

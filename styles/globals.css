@@ -222,15 +222,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .media-button {
+    width: 100%;
+  }
+
   .work-content-container .link-more-work {
     display: block;
   }
 
   .work-sidebar-container {
     display: none;
-  }
-
-  #button-press-pack {
-    width: 100%;
   }
 }

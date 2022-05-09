@@ -5,6 +5,7 @@ description: "Commissioned by Ensemble Gô"
 category: "CHAMBER"
 year: 2015
 mediaUrl: "https://www.youtube.com/watch?v=mbSxyysJgh8"
+scoreUrl: "https://drive.google.com/file/d/1MYwrjgJ4hpSI2WtKG4JdGpvdtsLXcKNZ/view?usp=sharing"
 ---
 
 The _cariñosa_ is a Philippine dance of Spanish origin; though I have borrowed the name, my piece bears little resemblance to it, except for its harmonic basis and two occasions in which the traditional _cariñosa_ tune is quoted. The music that surrounds these two quotations is inspired by various elements of indigenous Philippine music, though some of them may not be Filipino at all, if not entirely imagined.

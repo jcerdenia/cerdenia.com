@@ -4,6 +4,7 @@ instrumentation: "soprano and piano"
 category: "VOCAL"
 year: 2012
 mediaUrl: "https://soundcloud.com/joshuacerdenia/always-after-pablo-neruda-2012"
+scoreUrl: "https://drive.google.com/file/d/1T0qQpor6knlhKhtrbZ_WhYpa31_ss7z6/view?usp=sharing"
 ---
 
 My first art song, _Always_ is a setting in English of Pablo Neruda's "Siempre" from _Los Versos del Capitan._ Translation by Brian Cole.

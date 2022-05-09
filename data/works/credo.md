@@ -5,6 +5,7 @@ description: "For the Yong Siew Toh Conservatory Orchestra"
 category: "ORCHESTRA"
 year: 2013
 mediaUrl: "https://soundcloud.com/joshuacerdenia/creed-singapore-symphony-orchestra"
+scoreUrl: "https://drive.google.com/file/d/1EoypwaD_67TiT_lhIyMC54og2Dj11h2a/view?usp=sharing"
 ---
 
 Though I made several attempts at orchestral music when I was younger (only two of which I ever completed, and only one surviving into the present), _Credo_ is my first attempt after having undertaken some formal study of orchestration. It is a short slow movement with a narrative loosely modeled after the Nicene Creed. Despite the nature of the source material, there is no intent to express any specific religious meaning. The entire piece comprises a single large gesture: a gradual progression from an initial germ of an idea to a grand and resolute statement of profound belief, and, ultimately, prayerful contemplation.

@@ -5,6 +5,7 @@ description: "For Drew Alexander Forde"
 category: "SOLO"
 year: 2015
 mediaUrl: "api.soundcloud.com/tracks/267880661"
+scoreUrl: "https://drive.google.com/file/d/1NO7QLZzD6zW1tphhnBDFX9v16VPq-IaO/view?usp=sharing"
 ---
 
 _Air_ is a generic term for a composition that has a lyrical or song-like quality. I have long been fond of the contemporary Airs of Aaron Jay Kernis (for violin) and of Kevin Puts (one each for flute, clarinet, cello, and violin). They are reserved and unassuming pieces, simple in their language but deep in their expressive capacity. My own Air keeps in mind the instrument's unique musical qualities, including the darkness of its tone color and the relative slowness with which the instrument speaks. My aim is not a strong statement but simply to revel quietly in a musical world to which I'm strongly drawn.

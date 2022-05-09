@@ -5,6 +5,7 @@ description: "For Jocelyn Zhu"
 category: "SOLO"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/canario-violin-and-piano-mockup"
+scoreUrl: "https://drive.google.com/file/d/1llHNT8GvRfUZMwRy3XoLgPMr1Zzf2kfN/view?usp=sharing"
 ---
 
 A showpiece for violin with or without piano inspired by a Renaissance dance, completed in New York City in the summer of 2016.

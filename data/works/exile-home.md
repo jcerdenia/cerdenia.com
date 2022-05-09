@@ -4,6 +4,7 @@ instrumentation: "baritone, violin, cello, and piano"
 description: "Comissioned by Melisa Tien for SWELL"
 category: "VOCAL"
 year: 2021
+scoreUrl: "https://drive.google.com/file/d/1YwAfFy7fHOE4BbRnICDi7k1okDtUFyUj/view?usp=sharing"
 ---
 
 After a bit of time in the US, I’ve returned to my home country of the Philippines. I’d emigrated from here in hopes of furthering my career, wound up in New York City, then returned when the pandemic hit. A big part of me remains in New York, and I’m constantly wondering what might bring me back.

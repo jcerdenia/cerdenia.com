@@ -5,6 +5,7 @@ category: "SOLO"
 description: "For Celina Hawkins"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/joshua-cerdenia-celina-hawkins-celestine-for-oboe-and-piano"
+scoreUrl: "https://drive.google.com/file/d/1SI9vVmmCmoJEhPO5COUS-dpE8O8lk_RQ/view?usp=sharing"
 
 ---
 

@@ -6,6 +6,7 @@ description: "For Adam De Wilde"
 category: "VOCAL"
 year: 2014
 mediaUrl: "https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets"
+scoreUrl: "https://drive.google.com/file/d/15dtmO4pwDwydTHLmBk7ZY138GPShje5A/view?usp=sharing"
 ---
 
 _Dark Lady_ is a song cycle based on four sonnets from William Shakespeare's "Dark Lady" sequence: Nos. 130, 151, 141, and 127. In this sequence, the persona expresses a deep, sexual love for a dark-skinned whose features are not commonly regarded as beautiful; hence, the poems stand in contrast to Shakespeare's earlier, more well-known sonnets, which expresses a more youthful, spiritual love. While the sonnets in this cycle do not form together a cohesive textual narrative, I have arranged them to fit a musical narrative of my own making that progresses through various emotional states.
