@@ -1,6 +1,6 @@
 ---
 title: "Turbulence"
-for: "solo piano"
+instrumentation: "solo piano"
 category: "SOLO"
 year: 2011
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Twenty-Third Psalm"
-for: "chorus"
+instrumentation: "chorus"
 category: "VOCAL"
 year: 2016
 ---

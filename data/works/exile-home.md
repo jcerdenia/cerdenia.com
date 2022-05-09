@@ -1,6 +1,6 @@
 ---
 title: "Exile/Home"
-for: "baritone, violin, cello, and piano"
+instrumentation: "baritone, violin, cello, and piano"
 description: "Comissioned by Melisa Tien for SWELL"
 category: "VOCAL"
 year: 2021

@@ -1,6 +1,6 @@
 ---
 title: "Celestine"
-for: "small orchestra"
+instrumentation: "small orchestra"
 category: "ORCHESTRA"
 description: "Commissioned by the Manila Symphony Orchestra"
 year: 2017

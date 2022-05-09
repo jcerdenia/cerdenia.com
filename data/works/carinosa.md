@@ -1,6 +1,6 @@
 ---
 title: "Cariñosa"
-for: "violin, cello, and marimba"
+instrumentation: "violin, cello, and marimba"
 description: "Commissioned by Ensemble Gô"
 category: "CHAMBER"
 year: 2015

@@ -1,6 +1,6 @@
 ---
 title: "Heavenward"
-for: "marimba and string quartet"
+instrumentation: "marimba and string quartet"
 category: "CHAMBER"
 description: "For Naoto Segawa and Ensemble Gô"
 year: 2014

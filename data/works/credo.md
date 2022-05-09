@@ -1,6 +1,6 @@
 ---
 title: "Credo"
-for: "orchestra"
+instrumentation: "orchestra"
 description: "For the Yong Siew Toh Conservatory Orchestra"
 category: "ORCHESTRA"
 year: 2013

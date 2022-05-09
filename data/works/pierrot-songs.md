@@ -1,6 +1,6 @@
 ---
 title: "Pierrot Songs"
-for: "soprano and Pierrot ensemble"
+instrumentation: "soprano and Pierrot ensemble"
 description: "For Gemma New and the Lunar Ensemble"
 category: "VOCAL"
 year: 2012

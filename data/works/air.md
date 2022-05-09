@@ -1,6 +1,6 @@
 ---
 title: "Air"
-for: "viola and piano"
+instrumentation: "viola and piano"
 description: "For Drew Alexander Forde"
 category: "SOLO"
 year: 2015

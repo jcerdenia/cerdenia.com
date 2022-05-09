@@ -1,6 +1,6 @@
 ---
 title: "Celestine"
-for: "oboe and piano"
+instrumentation: "oboe and piano"
 category: "SOLO"
 description: "For Celina Hawkins"
 year: 2016

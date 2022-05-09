@@ -1,6 +1,6 @@
 ---
 title: "Canario"
-for: "violin with/without piano"
+instrumentation: "violin with/without piano"
 description: "For Jocelyn Zhu"
 category: "SOLO"
 year: 2016

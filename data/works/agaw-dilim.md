@@ -1,6 +1,6 @@
 ---
 title: "Agaw-Dilim"
-for: "bass-baritone and piano"
+instrumentation: "bass-baritone and piano"
 description: "For Enrico Lagasca"
 category: "VOCAL"
 year: 2017

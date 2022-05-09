@@ -1,6 +1,6 @@
 ---
 title: "Spoliarium"
-for: "sinfonietta"
+instrumentation: "sinfonietta"
 category: "ORCHESTRA"
 description: "For the New Juilliard Ensemble"
 year: 2016

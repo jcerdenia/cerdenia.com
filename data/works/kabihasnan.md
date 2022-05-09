@@ -1,6 +1,6 @@
 ---
 title: "Kabihasnan"
-for: "flute, cello, percussion, and piano"
+instrumentation: "flute, cello, percussion, and piano"
 category: "CHAMBER"
 year: 2013
 mediaUrl: "https://soundcloud.com/joshuacerdenia/kabihasnan"

@@ -1,6 +1,6 @@
 ---
 title: "Magayon"
-for: "orchestra"
+instrumentation: "orchestra"
 description: "For the Juilliard Orchestra"
 category: "ORCHESTRA"
 year: 2015

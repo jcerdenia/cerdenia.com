@@ -1,6 +1,6 @@
 ---
 title: "Always"
-for: "soprano and piano"
+instrumentation: "soprano and piano"
 category: "VOCAL"
 year: 2012
 mediaUrl: "https://soundcloud.com/joshuacerdenia/always-after-pablo-neruda-2012"

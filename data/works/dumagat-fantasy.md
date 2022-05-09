@@ -1,6 +1,6 @@
 ---
 title: "Dumagat Fantasy"
-for: "Pierrot ensemble"
+instrumentation: "Pierrot ensemble"
 category: "CHAMBER"
 description: "Commissioned by the Asian Contemporary Ensemble"
 year: 2012

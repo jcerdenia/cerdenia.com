@@ -1,7 +1,7 @@
 ---
 title: "Dark Lady"
 subtitle: "Four Shakespeare Sonnets"
-for: "tenor, violin, and piano"
+instrumentation: "tenor, violin, and piano"
 description: "For Adam De Wilde"
 category: "VOCAL"
 year: 2014
