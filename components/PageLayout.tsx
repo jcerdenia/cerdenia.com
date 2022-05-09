@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import meta from "../data/meta";
 
 interface PageLayoutProps {
   title: string;
@@ -11,20 +12,15 @@ interface PageLayoutProps {
   wide?: boolean;
 }
 
-const defaultDescription =
-  "The online home of the music of Joshua Cerdenia. " +
-  "List of works with audio samples and program notes, " +
-  "biography and photographs, news and upcomoning events.";
-
 const PageLayout = ({
   title,
   exact,
-  description = defaultDescription,
+  description = meta.description,
   wide = false,
   children,
 }: PageLayoutProps): JSX.Element => {
   if (!exact) {
-    title += " - Joshua Cerdenia, Composer";
+    title += ` - ${meta.title}`;
   }
 
   return (
