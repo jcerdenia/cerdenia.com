@@ -32,5 +32,5 @@ Members of Ensemble TIMF: Joo Won Kim, flute; Yong Gen Lee, clarinet; Hojin Jeon
 <span></span>
 
 >The best piece, for my money, was ... [Joshua Cerdenia's] _Dumagat Fantasy_
-tasy inspired by the tribespeople of his native Philippines. A beautifully crafted and wholly coherent piece of writing which showed a keen understanding ofinstrumental colour, it deserves many more performances.\
+inspired by the tribespeople of his native Philippines. A beautifully crafted and wholly coherent piece of writing which showed a keen understanding of instrumental colour, it deserves many more performances.\
 **—Marc Rochester, _The Straits Times_**
