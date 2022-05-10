@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Container, Navbar, Nav, Offcanvas, Button } from "react-bootstrap";
-import navs, { NavItem } from "../data/nav";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { Icon } from "@iconify/react";
+import navs, { NavItem } from "../data/nav";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
