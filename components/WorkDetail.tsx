@@ -21,11 +21,12 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       <Button
         className="media-button px-5 py-2 m-1"
         variant="outline-secondary"
-        href={work.scoreUrl}
         disabled={!work.scoreUrl}
+        href={work.scoreUrl}
+        target="_blank"
       >
         <Icon icon="bi:file-pdf" className="me-1" /> Perusal Score
-        {!work.scoreUrl ? " Unavailable" : null}
+        {!work.scoreUrl ? " Unavailable" : null}{" "}
       </Button>
       <LinkedIcon
         className="mt-3 link-muted link-more-work"
