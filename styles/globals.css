@@ -63,6 +63,14 @@ footer a:hover {
   color: #070707 !important;
 }
 
+.brand-sub {
+  font-weight: 300;
+  margin-left: 1rem;
+  color: rgb(100, 100, 100);
+  text-transform: none;
+  vertical-align: text-top;
+}
+
 .brand:hover {
   color: rgb(100, 100, 100) !important;
   transition: 250ms;
@@ -103,6 +111,8 @@ footer a:hover {
 
 .nav-item {
   font-weight: 500;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .news-item-line {
@@ -167,13 +177,6 @@ footer a:hover {
   color: #2a6041;
 }
 
-.sub-brand {
-  font-weight: 300;
-  margin-left: 12px;
-  color: rgb(100, 100, 100);
-  text-transform: none;
-}
-
 .text-right {
   text-align: right;
 }
@@ -199,12 +202,14 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   .brand {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0px;
   }
 
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .news-item-meta {
@@ -216,14 +221,20 @@ footer a:hover {
     margin-right: 8px;
   }
 
-  .sub-brand {
-    display: none;
+  .brand-sub {
+    font-size: 1rem;
+    margin-left: 0.5rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .media-button {
     width: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .work-content-container .link-more-work {

@@ -1,7 +1,6 @@
 export interface NavItem {
   title: string;
   path: string;
-  disabled?: boolean;
 }
 
 const navs: NavItem[] = [
