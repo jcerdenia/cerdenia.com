@@ -28,3 +28,9 @@ Flute, clarinet, violin, cello, piano
 Members of Ensemble TIMF: Joo Won Kim, flute; Yong Gen Lee, clarinet; Hojin Jeong, violin; Jooeun Oh, cello; Youngwoo Lee, piano
 
 <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/43315110&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>
+
+<span></span>
+
+>The best piece, for my money, was ... [Joshua Cerdenia's] _Dumagat Fantasy_
+tasy inspired by the tribespeople of his native Philippines. A beautifully crafted and wholly coherent piece of writing which showed a keen understanding ofinstrumental colour, it deserves many more performances.\
+**—Marc Rochester, _The Straits Times_**

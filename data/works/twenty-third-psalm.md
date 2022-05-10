@@ -12,7 +12,8 @@ Although—or perhaps because—I have had a complicated relationship with relig
 
 _Twenty-Third-Psalm_ was completed in New York City in the summer of 2016.
 
-**Chorus:** SATB (div.) a cappella
+###### Chorus
+SATB (div.) a cappella
 
 ###### Duration
  6 minutes
