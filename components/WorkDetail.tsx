@@ -21,9 +21,9 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       <Button
         className="media-button px-5 py-2 m-1"
         variant="outline-secondary"
-        disabled={!work.scoreUrl}
         href={work.scoreUrl}
-        target="_blank"
+        target={work.scoreUrl && "_blank"}
+        disabled={!work.scoreUrl}
       >
         <Icon icon="bi:file-pdf" className="me-1" /> Perusal Score
         {!work.scoreUrl ? " Unavailable" : null}{" "}
