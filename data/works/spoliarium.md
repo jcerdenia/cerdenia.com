@@ -1,10 +1,11 @@
 ---
 title: "Spoliarium"
-instrumentation: "sinfonietta"
+instrumentation: "chamber orchestra"
 category: "ORCHESTRA"
 description: "For the New Juilliard Ensemble"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/excerpt-spoliarium-for-chamber-orchestra-2016"
+scoreUrl: "https://drive.google.com/file/d/10HCW9mIPihZ4O77xY8XSEFfen7QDad9C/view?usp=sharing"
 ---
 
 According to some sources the _spoliarium_ in ancient Rome was a chamber attached to the Colosseum into which the bodies of fallen gladiators were sent to be stripped of their armor and dispatched. It is also the subject of the celebrated Filipino painter Juan Luna’s magnum opus, which won a gold medal in the Madrid Exposition of 1884 and now hangs in the main gallery of the National Museum of the Philippines. The giant canvas depicts at its center lifeless gladiators being dragged into the dark of the chamber. On one side a crowd of spectators riots; on the other, a woman weeps.

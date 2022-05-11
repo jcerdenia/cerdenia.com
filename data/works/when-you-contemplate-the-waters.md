@@ -1,6 +1,6 @@
 ---
 title: "When You Contemplate the Waters"
-instrumentation: "sinfonietta"
+instrumentation: "chamber orchestra"
 category: "ORCHESTRA"
 description: "For the Yong Siew Toh Conservatory New Music Ensemble"
 year: 2013
