@@ -18,8 +18,7 @@ const WorkListItem = ({ work, active }: WorkListItemProps): JSX.Element => {
       <span className="small text-muted">
         {work.instrumentation
           ? `for ${work.instrumentation}`
-          : work.description}{" "}
-        ({work.year})
+          : work.description}
       </span>
     </nav>
   );
