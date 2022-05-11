@@ -14,13 +14,13 @@ const categories: CategoryMap = {
     display: "Chamber (3 or more players without voice)",
     slug: "chamber",
   },
-  VOCAL: {
-    display: "Vocal & Vocal Chamber",
-    slug: "vocal",
-  },
   SOLO: {
     display: "Solo & Duet",
     slug: "solo",
+  },
+  VOCAL: {
+    display: "Vocal & Vocal Chamber",
+    slug: "vocal",
   },
   OTHER: {
     display: "Other",
