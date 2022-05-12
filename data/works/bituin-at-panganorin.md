@@ -8,6 +8,8 @@ year: 2016
 scoreUrl: "https://drive.google.com/file/d/1b15QFU8iEuFBRBNfXSz06-7ORHEz-Oty/view?usp=sharing"
 ---
 
+###### Composer's Note
+
 _Bituin at Panganorin_ is a setting of a Tagalog poem by José Corazón de Jesús (1894–1932), also known as Huseng Batute. It was composed for Enrico Lagasca and first completed in New York City in October 2016. I later completed a revised version in the spring of 2019.
 
 ###### Text
