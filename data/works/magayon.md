@@ -10,6 +10,9 @@ scoreUrl: "https://drive.google.com/file/d/1nZNmvb9zOxwfabJeXud7ieyRxSkikxOF/vie
 
 <iframe class="mb-3" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204090592&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>
 
+>This orchestral piece is youthful, energetic, colorful, and intensely passionate.  The piece relentlessly drives forward, dancing with pulsing energy and tutti forces – like a volcanic eruption, colorful and forceful. When it turns reflective, it becomes lovely and atmospheric.\
+**–Mark Greenfest, _SoundWordSight_**
+
 ###### Composer's Note
 
 _Magayon_ means “beautiful” in the Bicolano language of the Philippines, and it forms part of the name of Daragang Magayon—literally “beautiful maiden”—the central character in the origin myth of Mount Mayon, an active volcano that overlooks my place of birth, the Philippine province of Albay. According to the myth, Magayon, having previously rejected many powerful suitors from distant villages, was set to marry the chieftain Ulap. But as preparations began for a grand, feastly wedding, the jealous hunter Pagtuga intervened, holding Magayon’s father hostage and setting off a brief but deadly skirmish.

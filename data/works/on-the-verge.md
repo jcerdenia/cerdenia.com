@@ -17,7 +17,7 @@ The titles of the six movements of _On the Verge_ are phrases from English trans
 
 I made an active effort not to make the piece about death as an immediate, special event. There is no reference to it anywhere in the piece, except in the sixth movement. With that exception, each of the movements is very brief, perhaps feeling as if it is on the verge of blossoming into something bigger, but instead fades away.
 
-_On the Verge_ was composed for the Kubrick Quartet as part of a project between the chamber music and composition departments of the Peabody Institute in Baltimore, MD. It was completed in early 2013.
+_On the Verge_ was composed for the Kubrick Quartet as part of a project between the chamber music and composition departments of the Peabody Institute in Baltimore, Maryland. It was completed in early 2013.
 
 ###### Instrumentation
 2 violins, viola, cello
