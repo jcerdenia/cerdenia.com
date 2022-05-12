@@ -10,7 +10,7 @@ scoreUrl: "https://drive.google.com/file/d/1A5AUf04O_Jlc7jXH8oOkLaU_ZzWGaaDb/vie
 
 ###### Composer's Note
 
-_Turbulence_ is a single movement roughly in sonata-allegro form, written in Singapore in early 2011.
+A single movement roughly in sonata-allegro form, written in Singapore in early 2011.
 
 ###### Duration
 4 minutes
