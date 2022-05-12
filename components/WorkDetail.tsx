@@ -15,8 +15,10 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       <h5 className="page-content-header">
         {work.title} {work.subtitle && `(${work.subtitle})`}
       </h5>
-      <aside className="small text-muted">{work.description}</aside>
-      <aside className="small text-muted mb-3">({work.year})</aside>
+      <aside className="small text-muted mb-1">
+        {work.instrumentation && `For ${work.instrumentation}`} ({work.year})
+      </aside>
+      <aside className="small text-muted mb-3">{work.description}</aside>
       <HtmlWrapper className="my-2">{note}</HtmlWrapper>
       <Button
         className="media-button px-5 py-2 m-1"

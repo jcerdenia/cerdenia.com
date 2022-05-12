@@ -8,18 +8,19 @@ interface WorkListItemProps {
 
 const WorkListItem = ({ work, active }: WorkListItemProps): JSX.Element => {
   return (
-    <nav className="my-3">
+    <nav className="my-2">
       {active ? (
         <strong>{work.title}</strong>
       ) : (
         <Link href={`/works/${work.slug}`}>{work.title}</Link>
       )}{" "}
       {work.subtitle && `(${work.subtitle})`}{" "}
-      <span className="small text-muted">
+      <aside className="small text-muted">
         {work.instrumentation
           ? `for ${work.instrumentation}`
-          : work.description}
-      </span>
+          : work.description}{" "}
+        ({work.year})
+      </aside>
     </nav>
   );
 };
