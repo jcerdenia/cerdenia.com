@@ -65,17 +65,21 @@ export const getStaticProps = async (): Promise<{ props: NewsPageProps }> => {
       title: "Recent & Upcoming Events",
       items: events
         .filter(isRecent)
-        .map((event: NewsItem) => {
-          event.blurb = event.blurb
-            ? parseMarkdownInline(event.blurb)
-            : undefined;
-          return event;
-        })
-        .reverse(),
+        .reverse()
+        .map((item: NewsItem) => {
+          item.blurb = item.blurb ? parseMarkdownInline(item.blurb) : null;
+          return item;
+        }),
     },
     {
       title: "Recent Announcements",
-      items: announcements.filter(isRecent).reverse(),
+      items: announcements
+        .filter(isRecent)
+        .reverse()
+        .map((item: NewsItem) => {
+          delete item.blurb;
+          return item;
+        }),
     },
     {
       title: "Articles, Reviews & Interviews",

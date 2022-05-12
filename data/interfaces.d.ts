@@ -4,7 +4,7 @@ export interface NewsItem {
   source: string;
   date: string;
   location?: string;
-  blurb?: string;
+  blurb?: string | null;
 }
 
 export interface NewsItemGroup {

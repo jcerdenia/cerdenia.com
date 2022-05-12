@@ -1,41 +1,38 @@
-import LinkedIcon from "../components/LinkedIcon";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
+import { parseMarkdownInline } from "../utils/markdown";
+import { NewsItem } from "../data/interfaces";
 import announcements from "../data/news/announcements.json";
+import LatestNews from "../components/LatestNews";
 
-interface NewsItem {
-  title: string;
-  url: string;
+interface HomePageProps {
+  latestNews: NewsItem[];
 }
 
-const HomePage = (): JSX.Element => {
+const HomePage = ({ latestNews }: HomePageProps): JSX.Element => {
   return (
     <PageLayout exact title="Joshua Cerdenia, Composer">
       <Showcase />
-      <section className="my-3">
-        <h5>Latest News</h5>
-        <ul>
-          {announcements
-            .slice(announcements.length - 3, announcements.length)
-            .reverse()
-            .map((item: NewsItem, idx: number) => {
-              return (
-                <li className="my-2" key={idx}>
-                  <a href={item.url}>{item.title}</a>
-                </li>
-              );
-            })}
-        </ul>
-        <LinkedIcon
-          className="link-muted"
-          iconId="bi:arrow-return-right"
-          href="/news"
-        >
-          More News & Events
-        </LinkedIcon>
-      </section>
+      <LatestNews news={latestNews} />
     </PageLayout>
   );
+};
+
+export const getStaticProps = async (): Promise<{ props: HomePageProps }> => {
+  const latestNews = announcements
+    .slice(announcements.length - 3, announcements.length)
+    .reverse()
+    .map((announcement: NewsItem) => {
+      announcement.blurb = announcement.blurb
+        ? parseMarkdownInline(announcement.blurb)
+        : null;
+
+      return announcement;
+    });
+
+  return {
+    props: { latestNews },
+  };
 };
 
 export default HomePage;
