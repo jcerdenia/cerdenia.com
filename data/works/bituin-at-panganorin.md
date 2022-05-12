@@ -44,13 +44,13 @@ Whose mother is the Moon and father is the Sun,\
 The Sun, your father, as he set in the west\
 Warned me not to come near you.
 
-And I agreed even though I am Heaven,\
-Whose nature at midnight is to draw near the Star,\
+And I agreed though I am Heaven,\
+Whose nature is at midnight to draw near the Star,\
 Therefore you, my Star, have become mine.
 
 Your light and my darkness kiss all night,\
 But morning comes! ... I, who am darkness, slip away\
-In fear of your Father who rises in the east!
+In fear of your father who wakes in the east!
 
 ###### Duration
 
