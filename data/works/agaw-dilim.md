@@ -9,10 +9,6 @@ mediaUrl: "https://soundcloud.com/joshuacerdenia/agaw-dilim"
 scoreUrl: "https://drive.google.com/file/d/1p6bYnkDX8q4H_mTdjUDjFFIXyjdLw3fT/view?usp=sharing"
 ---
 
-<iframe class="mb-3" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/563545530&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-###### Composer's Note
-
 _Agaw-Dilim_ (Twilight) is a setting of a Tagalog poem by José Corazón de Jesús (1894–1932), also known as Huseng Batute. It was composed for Enrico Lagasca and completed in New York City in March 2017.
 
 ###### Text
@@ -69,3 +65,5 @@ have you not returned where I can find you?
 
 18 February 2018, Chicago, IL\
 Enrico Lagasca, bass-baritone; Victor Asuncion, piano
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/563545530&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
