@@ -9,7 +9,7 @@ const AccordionToggle = ({ eventKey, children }: any) => {
   return (
     <div
       className="accordion-toggle"
-      style={{ backgroundColor: !isActive ? "#e2e2e2" : "white" }}
+      style={{ backgroundColor: isActive ? "white" : "#e2e2e2" }}
       onClick={useAccordionButton(eventKey)}
     >
       <Card.Header className="d-flex justify-content-between align-items-center">
