@@ -7,7 +7,7 @@ const Footer = (): JSX.Element => {
     <div className="footer-container pt-4">
       <Container>
         <Row>
-          <Col className="d-flex align-items-center mb-3">
+          <Col className="mb-3">
             <strong>
               For scores and parts, commissions, teaching, and all other
               inquiries, please <a href="mailto:joshua@cerdenia.com">email</a>{" "}
