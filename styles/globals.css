@@ -55,6 +55,12 @@ footer a:hover {
   color: #070707;
 }
 
+.accordion-toggle {
+  font-weight: 400;
+  transition: 150ms;
+  cursor: pointer;
+}
+
 .brand {
   font-size: 2rem;
   font-weight: 300;
@@ -95,6 +101,10 @@ footer a:hover {
   opacity: 0.5;
 }
 
+.icon-transforming {
+  transition: transform 0.2s ease-in-out;
+}
+
 .link-muted {
   text-decoration: none;
   color: rgb(100, 100, 100);
@@ -102,6 +112,10 @@ footer a:hover {
 
 .link-muted:hover {
   color: #070707;
+}
+
+.main {
+  min-height: calc(100vh - 244px);
 }
 
 .navbar {
@@ -228,6 +242,10 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .main {
+    min-height: unset;
+  }
+
   .media-button {
     width: 100%;
   }

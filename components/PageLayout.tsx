@@ -45,7 +45,7 @@ const PageLayout = ({
         <title>{title}</title>
       </Head>
       <NavBar />
-      <Container className="pb-4" fluid={wide}>
+      <Container className="main pb-4" fluid={wide}>
         {children}
       </Container>
       <Footer />

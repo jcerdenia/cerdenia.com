@@ -17,7 +17,11 @@ const WorkPage = ({ works, work, note }: WorkPageProps): JSX.Element => {
     <PageLayout title={work.title} description={excerpt(note)}>
       <Row>
         <Col md={12} lg={4} className="mb-4 work-sidebar-container">
-          <WorksList works={works} activeKey={work.slug} />
+          <WorksList
+            works={works}
+            activeKey={work.slug}
+            activeGroupKey={work.category}
+          />
         </Col>
         <Col md={12} lg={8} className="mb-4 work-content-container">
           <WorkDetail work={work} note={note} />

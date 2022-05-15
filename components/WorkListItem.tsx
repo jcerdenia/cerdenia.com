@@ -2,13 +2,18 @@ import Link from "next/link";
 import { Work } from "../data/interfaces";
 
 interface WorkListItemProps {
+  className?: string;
   work: Work;
   active: boolean;
 }
 
-const WorkListItem = ({ work, active }: WorkListItemProps): JSX.Element => {
+const WorkListItem = ({
+  className,
+  work,
+  active,
+}: WorkListItemProps): JSX.Element => {
   return (
-    <nav className="my-2">
+    <nav className={className}>
       {active ? (
         <strong>{work.title}</strong>
       ) : (
