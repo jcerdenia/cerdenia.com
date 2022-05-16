@@ -32,16 +32,15 @@ const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
         <Col md={12} lg={8}>
           <section className="playlist-container">
             <h6>Playlists</h6>
-            {playlists.map((url: string, idx: number) => {
-              return (
-                <MediaWidget
-                  key={idx}
-                  className="my-2"
-                  height={315}
-                  src={url}
-                />
-              );
-            })}
+            <Row xs={1} xl={2}>
+              {playlists.map((url: string, idx: number) => {
+                return (
+                  <Col key={idx}>
+                    <MediaWidget className="my-2" height={315} src={url} />
+                  </Col>
+                );
+              })}
+            </Row>
           </section>
         </Col>
       </Row>
