@@ -11,7 +11,7 @@ const categories: CategoryMap = {
     slug: "orchestra",
   },
   CHAMBER: {
-    display: "Chamber (3+ instruments without voice)",
+    display: "Chamber (3+ instruments)",
     slug: "chamber",
   },
   SOLO: {

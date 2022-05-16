@@ -56,11 +56,18 @@ footer a:hover {
 }
 
 .accordion-toggle {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9rem;
   line-height: 2rem;
-  transition: 150ms;
+  border: 2px solid;
+  border-radius: 5px;
+  transition: 200ms;
+  user-select: none;
   cursor: pointer;
+}
+
+.accordion-toggle .card-header {
+  border: none;
 }
 
 .brand {
@@ -84,8 +91,13 @@ footer a:hover {
   transition: 250ms;
 }
 
+.card {
+  border: none;
+  background-color: #efefef;
+}
+
 .footer-container {
-  background-color: white;
+  background-color: #fff;
 }
 
 .grayscale {
@@ -223,6 +235,11 @@ footer a:hover {
     letter-spacing: 0px;
   }
 
+  .brand-sub {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -235,11 +252,6 @@ footer a:hover {
 
   .news-item-meta span {
     margin-right: 8px;
-  }
-
-  .brand-sub {
-    font-size: 1rem;
-    margin-left: 0.5rem;
   }
 }
 
