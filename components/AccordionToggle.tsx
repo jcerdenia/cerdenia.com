@@ -2,7 +2,12 @@ import { useContext } from "react";
 import { AccordionContext, useAccordionButton, Card } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 
-const AccordionToggle = ({ eventKey, children }: any) => {
+interface AccordionToggleProps {
+  eventKey: string;
+  children: any;
+}
+
+const AccordionToggle = ({ eventKey, children }: AccordionToggleProps) => {
   const { activeEventKey } = useContext(AccordionContext);
   const isActive = activeEventKey === eventKey;
 

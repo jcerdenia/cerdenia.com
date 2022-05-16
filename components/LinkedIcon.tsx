@@ -21,7 +21,7 @@ const LinkedIcon = ({
   const iconProps = {
     icon: iconId,
     className: iconClassName,
-    style: iconStyle,
+    ...iconStyle,
   };
 
   if (href.startsWith("/")) {

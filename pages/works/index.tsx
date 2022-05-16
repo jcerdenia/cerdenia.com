@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
 import MediaWidget from "../../components/MediaWidget";
@@ -10,11 +12,21 @@ interface WorkHomePageProps {
 }
 
 const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
+  const router = useRouter();
+  const activeGroup = router.query.q as string;
+
+  useEffect(() => {
+    // Clean up URL query params after page loads.
+    if (router.query.q?.length) {
+      router.replace("/works", undefined, { shallow: true });
+    }
+  }, [router]);
+
   return (
     <PageLayout title="Works">
       <Row xs={1} lg={2}>
         <Col md={12} lg={4}>
-          <WorksList works={works} />
+          <WorksList works={works} activeGroupKey={activeGroup} />
         </Col>
         <Col md={12} lg={8}>
           <MediaWidget

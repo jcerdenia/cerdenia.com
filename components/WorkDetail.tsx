@@ -12,9 +12,17 @@ interface WorkDetailProps {
 const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
   return (
     <>
-      <h5 className="page-content-header">
-        {work.title} {work.subtitle && `(${work.subtitle})`}
-      </h5>
+      <div className="d-flex justify-content-between">
+        <h5 className="page-content-header">
+          {work.title} {work.subtitle && `(${work.subtitle})`}
+        </h5>
+        <LinkedIcon
+          iconId="bi:x"
+          className="work-detail-close link-muted"
+          iconStyle={{ height: "1.25rem" }}
+          href={`/works?q=${work.category}`}
+        />
+      </div>
       <aside className="small text-muted mb-1">
         {work.instrumentation && `For ${work.instrumentation}`} ({work.year})
       </aside>
@@ -33,7 +41,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       <LinkedIcon
         className="mt-3 link-muted link-more-work"
         iconId="bi:arrow-return-left"
-        href="/works"
+        href={`/works?q=${work.category}`}
       >
         More Works
       </LinkedIcon>

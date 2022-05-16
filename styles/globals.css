@@ -273,6 +273,10 @@ footer a:hover {
     display: block;
   }
 
+  .work-detail-close {
+    display: none;
+  }
+
   .work-sidebar-container {
     display: none;
   }
