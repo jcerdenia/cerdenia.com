@@ -20,17 +20,17 @@ a {
 }
 
 a:hover {
-  color: rgb(40, 150, 90);
+  color: #28965a;
 }
 
 blockquote {
-  color: rgb(100, 100, 100);
+  color: #646464;
   padding-left: 1.5rem;
   border-left: solid;
 }
 
 blockquote p {
-  color: rgb(100, 100, 100);
+  color: #646464;
 }
 
 p,
@@ -42,13 +42,13 @@ span {
 footer {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  color: rgb(100, 100, 100);
+  color: #646464;
   font-weight: lighter;
   font-size: smaller;
 }
 
 footer a {
-  color: rgb(100, 100, 100);
+  color: #646464;
 }
 
 footer a:hover {
@@ -59,7 +59,6 @@ footer a:hover {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 2rem;
-  border: 2px solid;
   border-radius: 5px;
   transition: 200ms;
   user-select: none;
@@ -67,7 +66,12 @@ footer a:hover {
 }
 
 .accordion-toggle .card-header {
+  transition: 200ms;
   border: none;
+}
+
+.accordion-toggle .card-header:hover {
+  color: #525252;
 }
 
 .brand {
@@ -81,19 +85,23 @@ footer a:hover {
 .brand-sub {
   font-weight: 300;
   margin-left: 1rem;
-  color: rgb(100, 100, 100);
+  color: #646464;
   text-transform: none;
   vertical-align: text-top;
 }
 
 .brand:hover {
-  color: rgb(100, 100, 100) !important;
+  color: #646464 !important;
   transition: 250ms;
 }
 
 .card {
   border: none;
   background-color: #efefef;
+}
+
+.card .card-header {
+  background-color: unset;
 }
 
 .footer-container {
@@ -121,7 +129,7 @@ footer a:hover {
 
 .link-muted {
   text-decoration: none;
-  color: rgb(100, 100, 100);
+  color: #646464;
 }
 
 .link-muted:hover {
@@ -164,7 +172,7 @@ footer a:hover {
 }
 
 .shadowed {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px #a1a1a1;
 }
 
 .showcase {
@@ -173,7 +181,7 @@ footer a:hover {
 
 .showcase:hover {
   transform: translate(0, -8px);
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px #a1a1a1;
 }
 
 .showcase-container {
@@ -196,7 +204,7 @@ footer a:hover {
 }
 
 .socials-row .icon {
-  color: rgb(100, 100, 100);
+  color: #646464;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   transition: 200ms;

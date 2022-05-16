@@ -1,7 +1,8 @@
-import { Icon } from "@iconify/react";
 import { Button } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
+import { useAppState } from "../context/AppStateProvider";
+import { Icon } from "@iconify/react";
 import { Work } from "../data/interfaces";
 
 interface WorkDetailProps {
@@ -10,6 +11,8 @@ interface WorkDetailProps {
 }
 
 const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
+  const { activeWorkCategory } = useAppState();
+
   return (
     <>
       <div className="d-flex justify-content-between">
@@ -20,7 +23,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
           iconId="bi:x"
           className="work-detail-close link-muted"
           iconStyle={{ height: "1.25rem" }}
-          href={`/works?q=${work.category}`}
+          href={`/works?q=${activeWorkCategory}`}
         />
       </div>
       <aside className="small text-muted mb-1">
