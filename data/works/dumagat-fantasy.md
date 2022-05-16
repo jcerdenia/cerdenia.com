@@ -16,9 +16,13 @@ inspired by the tribespeople of his native Philippines. A beautifully crafted an
 
 ###### Composer's Note
 
-_Dumagat Fantasy_ grew out of my experience in 2009 of getting to know a Dumagat community in the southern Tagalog highlands. The three inner movements—"Lito," "Cando," and "Nene"—are musical impressions of three elders that continue to intrigue me. True to the fantasy genre, the music is episodic and contains elements of improvisation; some ideas are tenacious, while others are more fleeting. Ultimately, no amount of music is sufficient for what the Dumagat had expressed about their daily lives and and aspirations.
+_Dumagat Fantasy_ grew out of my experience in 2009 of getting to know a Dumagat community in the mountain ranges of the southern Tagalog region of the Philippines. The three inner movements—"Lito," "Cando," and "Nene"—are musical impressions of three elders that continue to intrigue me. As a whole, it represents my first attempt at a "Filipino-sounding" piece. 
 
-This piece was originally composed for Wong Kah Chun and the Asian Contemporary Ensemble as part of the National University of Singapore Arts Festival in March 2012. The premiere, which took place at the University Cultural Centre, incorporated visual images and narration by a storyteller. This revised version, completed in the same year, is a condensed and purely musical recounting of the Dumagat's stories.
+Many Dumagat, having been assimilated by urbanization, face the extinction of their cultural heritage. I recall in particular being a shown a photograph by the elder Cando of what he believed to be a genuine depiction of his people's identity: he is in the photo himself, clad in a washed-out loincloth over a pair of denim shorts. In quite the same spirit, the dramatic peak of my piece is a crude rendition of an imagined folk melody, signifying a tenuous grip on something that no longer exists.
+
+True to the fantasy genre, the music is episodic and contains elements of improvisation; some ideas are tenacious, while others are more fleeting. Ultimately, no amount of music is sufficient for what the Dumagat had expressed about their daily lives and and aspirations.
+
+_Dumagat Fantasy_ was originally composed for Wong Kah Chun and the Asian Contemporary Ensemble as part of the National University of Singapore Arts Festival in March 2012. The premiere, which took place at the University Cultural Centre, incorporated visual images and narration by a storyteller. This revised version, completed in the same year, is a condensed and purely musical recounting of the Dumagat's stories.
 
 ###### Instrumentation
 
