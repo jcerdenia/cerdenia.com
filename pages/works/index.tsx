@@ -6,12 +6,13 @@ import MediaWidget from "../../components/MediaWidget";
 import WorksList from "../../components/WorksList";
 import { parseMarkdown } from "../../utils/markdown";
 import { Work } from "../../data/interfaces";
+import playlists from "../../data/playlists";
 
-interface WorkHomePageProps {
+interface WorksHomePageProps {
   works: Work[];
 }
 
-const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
+const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
   const router = useRouter();
   const activeGroup = router.query.q as string;
 
@@ -29,24 +30,19 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
           <WorksList works={works} activeGroupKey={activeGroup} />
         </Col>
         <Col md={12} lg={8}>
-          <MediaWidget
-            className="my-2"
-            height={315}
-            visual={false}
-            src="https://api.soundcloud.com/playlists/690884643"
-          />
-          <MediaWidget
-            className="my-2"
-            height={315}
-            visual={false}
-            src="https://api.soundcloud.com/playlists/690843903"
-          />
-          <MediaWidget
-            className="my-2"
-            height={315}
-            visual={false}
-            src="https://api.soundcloud.com/playlists/690944991"
-          />
+          <section className="playlist-container">
+            <h6>Playlists</h6>
+            {playlists.map((url: string, idx: number) => {
+              return (
+                <MediaWidget
+                  key={idx}
+                  className="my-2"
+                  height={315}
+                  src={url}
+                />
+              );
+            })}
+          </section>
         </Col>
       </Row>
     </PageLayout>
@@ -54,7 +50,7 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
 };
 
 export const getStaticProps = async (): Promise<{
-  props: WorkHomePageProps;
+  props: WorksHomePageProps;
 }> => {
   const fs = require("fs");
 
@@ -70,4 +66,4 @@ export const getStaticProps = async (): Promise<{
   };
 };
 
-export default WorkHomePage;
+export default WorksHomePage;
