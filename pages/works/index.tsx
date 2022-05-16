@@ -19,19 +19,19 @@ const WorkHomePage = ({ works }: WorkHomePageProps): JSX.Element => {
         <Col md={12} lg={8}>
           <MediaWidget
             className="my-2"
-            height={350}
+            height={315}
             visual={false}
             src="https://api.soundcloud.com/playlists/690884643"
           />
           <MediaWidget
             className="my-2"
-            height={350}
+            height={315}
             visual={false}
             src="https://api.soundcloud.com/playlists/690843903"
           />
           <MediaWidget
             className="my-2"
-            height={350}
+            height={315}
             visual={false}
             src="https://api.soundcloud.com/playlists/690944991"
           />
