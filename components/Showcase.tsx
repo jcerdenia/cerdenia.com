@@ -18,9 +18,9 @@ const Showcase = (): JSX.Element => {
   };
 
   return (
-    <Row xs={1} lg={2} xl={3} className="g-2">
+    <Row xs={1} lg={2} xl={3} className="g-2 mb-4">
       {media.map((item: MediaItem, idx: number) => (
-        <Col className="showcase-container" key={idx}>
+        <Col key={idx}>
           <MediaWidget
             className="showcase"
             src={item.src}
@@ -28,12 +28,12 @@ const Showcase = (): JSX.Element => {
             onMouseLeave={() => setHoveredWidgetId(null)}
             style={getWidgetStyle(idx)}
           />
-          <p className="small">
+          <aside className="small">
             <a className={getShowcaseLinkClass(idx)} href={item.path}>
               {item.title}
             </a>{" "}
             {item.artist && <span className="text-muted">({item.artist})</span>}
-          </p>
+          </aside>
         </Col>
       ))}
     </Row>
