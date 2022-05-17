@@ -53,7 +53,6 @@ const PageLayout = ({
           name="twitter:image"
           content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
-        <link rel="icon" href="music-note.svg" />
         <title>{title}</title>
       </Head>
 
