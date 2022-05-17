@@ -22,9 +22,9 @@ const socials: Social[] = [
     iconId: "fa6-brands:soundcloud",
   },
   {
-    name: "Email",
-    url: "mailto:joshua@cerdenia.com",
-    iconId: "bi:envelope-fill",
+    name: "Instagram",
+    url: "https://www.instagram.com/joshuatopia/",
+    iconId: "bi:instagram",
   },
 ];
 
