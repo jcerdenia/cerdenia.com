@@ -18,7 +18,7 @@ const WorksList = ({
   return (
     <>
       <h5>Selected Works</h5>
-      <p className="small">
+      <p className="small text-height-1">
         List of compositions with notes, detailed instrumentations, perusal
         scores, and recordings
       </p>

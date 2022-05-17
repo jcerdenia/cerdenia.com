@@ -216,6 +216,10 @@ footer a:hover {
   color: #2a6041;
 }
 
+.text-height-1 {
+  line-height: 1.5rem !important;
+}
+
 .text-right {
   text-align: right;
 }

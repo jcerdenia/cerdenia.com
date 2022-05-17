@@ -26,11 +26,13 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
           href={`/works?q=${activeWorkCategory}`}
         />
       </div>
-      <aside className="small text-muted mb-1">
+      <aside className="small text-muted text-height-1">
         {work.instrumentation && `For ${work.instrumentation}`} ({work.year})
       </aside>
-      <aside className="small text-muted mb-3">{work.description}</aside>
-      <HtmlWrapper className="my-2">{note}</HtmlWrapper>
+      <aside className="small text-muted text-height-1">
+        {work.description}
+      </aside>
+      <HtmlWrapper className="my-3">{note}</HtmlWrapper>
       <Button
         className="media-button px-5 py-2 m-1"
         variant="outline-secondary"
