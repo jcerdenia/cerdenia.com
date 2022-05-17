@@ -1,6 +1,7 @@
 interface CategoryMap {
   [key: string]: {
     display: string;
+    description?: string;
     slug: string;
   };
 }
@@ -11,11 +12,13 @@ const categories: CategoryMap = {
     slug: "orchestra",
   },
   CHAMBER: {
-    display: "Chamber (3+ instruments)",
+    display: "Chamber",
+    description: "3 or more instruments without voice",
     slug: "chamber",
   },
   SOLO: {
     display: "Solo & Duet",
+    description: "Solo instrument with or without piano",
     slug: "solo",
   },
   VOCAL: {

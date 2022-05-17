@@ -19,7 +19,7 @@ const WorksList = ({
     <>
       <h5>Selected Works</h5>
       <p className="small">
-        List of compositions with program notes, detailed instrumentations,
+        List of compositions with notes, detailed instrumentations, perusal
         scores, and recordings
       </p>
       <Accordion defaultActiveKey={activeGroupKey}>
@@ -27,7 +27,12 @@ const WorksList = ({
           return (
             <Card key={key} className="my-4">
               <AccordionToggle eventKey={key}>
-                {categories[key].display}
+                <text>
+                  {categories[key].display}
+                  <aside className="text-muted">
+                    {categories[key].description}
+                  </aside>
+                </text>
               </AccordionToggle>
               <Accordion.Collapse eventKey={key}>
                 <Card.Body>

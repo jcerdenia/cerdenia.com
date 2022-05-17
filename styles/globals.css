@@ -58,20 +58,26 @@ footer a:hover {
 .accordion-toggle {
   font-weight: 500;
   font-size: 0.9rem;
-  line-height: 2rem;
+  padding-top: 0.33rem;
+  padding-bottom: 0.33rem;
   border-radius: 5px;
   transition: 200ms;
   user-select: none;
   cursor: pointer;
 }
 
-.accordion-toggle .card-header {
+.accordion-toggle .card-header,
+.accordion-toggle .card-header text {
   transition: 200ms;
   border: none;
 }
 
-.accordion-toggle .card-header:hover {
+.accordion-toggle .card-header:hover text {
   color: #525252;
+}
+
+.accordion-toggle .card-header aside {
+  font-weight: 400;
 }
 
 .brand {
@@ -216,6 +222,10 @@ footer a:hover {
 
 .wide {
   width: 100%;
+}
+
+.work-category-text aside {
+  font-weight: 300;
 }
 
 .work-content-container .link-more-work {
