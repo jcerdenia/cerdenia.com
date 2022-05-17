@@ -2,7 +2,6 @@ import { Button } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
 import { useAppState } from "../context/AppStateProvider";
-import { Icon } from "@iconify/react";
 import { Work } from "../data/interfaces";
 import email from "../data/email";
 
@@ -49,7 +48,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         target={work.scoreUrl && "_blank"}
         disabled={!work.scoreUrl}
       >
-        <Icon icon="bi:file-pdf-fill" className="me-1" /> Perusal Score
+        Perusal Score
         {!work.scoreUrl ? " Unavailable" : null}{" "}
       </Button>
       <Button
@@ -57,7 +56,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         variant="outline-secondary"
         href={getInquiryEmailLink(work.title, work.category)}
       >
-        <Icon icon="bi:envelope-fill" className="me-1" /> Contact to Perform
+        Contact to Perform
       </Button>
       <LinkedIcon
         className="mt-3 link-muted link-more-work"
