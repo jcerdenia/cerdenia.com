@@ -4,7 +4,7 @@ import socials, { Social } from "../data/socials";
 
 const Footer = (): JSX.Element => {
   return (
-    <div className="footer-container pt-4">
+    <div id="footer" className="footer-container pt-4">
       <Container>
         <Row>
           <Col className="mb-3">

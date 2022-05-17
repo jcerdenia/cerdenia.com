@@ -5,11 +5,10 @@ import { Icon } from "@iconify/react";
 import navs, { NavItem } from "../data/nav";
 
 const NavBar = (): JSX.Element => {
-  const { asPath } = useRouter();
-  const basePath = "/" + asPath.split("/")[1];
+  const { asPath: path } = useRouter();
 
   return (
-    <Navbar className="navbar" variant="light" expand="lg">
+    <Navbar id="nav-bar" className="navbar" variant="light" expand="lg">
       <Container>
         <Navbar.Brand className="d-flex align-items-center" href="/">
           <header className="brand">Joshua Cerdenia</header>
@@ -21,7 +20,7 @@ const NavBar = (): JSX.Element => {
           <Icon icon="bi:list" />
         </Navbar.Toggle>
         <Navbar.Collapse className="justify-content-end">
-          <Nav activeKey={basePath}>
+          <Nav activeKey={"/" + path.split("/")[1]}>
             {navs.map((nav: NavItem) => (
               <Link key={nav.path} href={nav.path} passHref>
                 <Nav.Link className="nav-item">{nav.title}</Nav.Link>
