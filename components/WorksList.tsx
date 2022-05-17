@@ -18,6 +18,10 @@ const WorksList = ({
   return (
     <>
       <h5>Selected Works</h5>
+      <p className="small">
+        List of compositions with program notes, detailed instrumentations,
+        scores, and recordings
+      </p>
       <Accordion defaultActiveKey={activeGroupKey}>
         {Object.keys(categories).map((key: string) => {
           return (
