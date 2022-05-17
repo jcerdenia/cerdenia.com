@@ -29,8 +29,8 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
               href="https://drive.google.com/drive/folders/1DGzXOmAL-m-obzNBZD5iO6Oa1rpBXG7E?usp=sharing"
               target="_blank"
             >
-              <Icon icon="bi:cloud-download" className="me-1" /> Photos & Bios
-              for Press
+              <Icon icon="bi:cloud-download:fill" className="me-1" /> Photos &
+              Bios for Press
             </Button>
           </div>
         </Col>

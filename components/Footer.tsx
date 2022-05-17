@@ -1,8 +1,11 @@
 import { Row, Col, Container } from "react-bootstrap";
 import LinkedIcon from "./LinkedIcon";
 import socials, { Social } from "../data/socials";
+import email from "../data/email";
 
 const Footer = (): JSX.Element => {
+  const emailUrl = `mailto:joshua@cerdenia.com?subject=${email.general.subject()}`;
+
   return (
     <div id="footer" className="footer-container pt-4">
       <Container>
@@ -10,8 +13,7 @@ const Footer = (): JSX.Element => {
           <Col className="mb-3">
             <strong>
               For scores and parts, commissions, teaching, and all other
-              inquiries, please <a href="mailto:joshua@cerdenia.com">email</a>{" "}
-              directly.
+              inquiries, please <a href={emailUrl}>email</a> directly.
             </strong>
           </Col>
           <Col xl="auto" className="d-flex align-items-center mb-3">

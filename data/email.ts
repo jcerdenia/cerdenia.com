@@ -1,13 +1,13 @@
 interface EmailTemplate {
   [key: string]: {
-    subject: (title: string) => string;
+    subject: (title?: string) => string;
     body?: string;
   };
 }
 
 const emailTemplate: EmailTemplate = {
   rental: {
-    subject(title: string) {
+    subject(title?: string) {
       return encodeURIComponent(`Rental Inquiry: ${title}`);
     },
     body: encodeURIComponent(
@@ -22,7 +22,7 @@ const emailTemplate: EmailTemplate = {
     ),
   },
   purchase: {
-    subject(title: string) {
+    subject(title?: string) {
       return encodeURIComponent(`Inquiry: ${title}`);
     },
     body: encodeURIComponent(
