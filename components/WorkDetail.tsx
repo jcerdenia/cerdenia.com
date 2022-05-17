@@ -56,8 +56,6 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         className="media-button px-5 py-2 m-1"
         variant="outline-secondary"
         href={getInquiryEmailLink(work.title, work.category)}
-        target={work.scoreUrl && "_blank"}
-        disabled={!work.scoreUrl}
       >
         <Icon icon="bi:envelope-fill" className="me-1" /> Contact to Perform
       </Button>
