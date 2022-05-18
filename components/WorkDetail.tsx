@@ -36,10 +36,10 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       </div>
 
       <aside className="small text-muted text-height-1">
-        {work.instrumentation && `For ${work.instrumentation}`} ({work.year})
+        {work.instrumentation && `For ${work.instrumentation} (${work.year})`}
       </aside>
       <aside className="small text-muted text-height-1">
-        {work.description}
+        {work.description} {!work.instrumentation && `(${work.year})`}
       </aside>
 
       <HtmlWrapper className="my-3">{note}</HtmlWrapper>
