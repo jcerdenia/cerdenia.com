@@ -245,6 +245,12 @@ footer a:hover {
   font-weight: 300;
 }
 
+.work-content-container img,
+.work-content-container iframe {
+  width: 100% !important;
+  margin-bottom: 1rem;
+}
+
 .work-content-container .link-more-work {
   display: none;
 }
