@@ -2,7 +2,7 @@
 title: "Celestine"
 subtitle: "Prelude for Orchestra"
 instrumentation: "orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 description: "Commissioned by the Manila Symphony Orchestra"
 year: 2017
 mediaUrl: "https://soundcloud.com/joshuacerdenia/celestine-prelude-for-orchestramock-up"

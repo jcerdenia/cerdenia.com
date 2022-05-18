@@ -3,7 +3,7 @@ title: "Bituin at Panganorin"
 subtitle: "Star and Heaven"
 instrumentation: "bass-baritone and piano"
 description: "For Enrico Lagasca"
-category: "VOCAL"
+category: "vocal"
 year: 2016
 scoreUrl: "https://drive.google.com/file/d/1b15QFU8iEuFBRBNfXSz06-7ORHEz-Oty/view?usp=sharing"
 ---

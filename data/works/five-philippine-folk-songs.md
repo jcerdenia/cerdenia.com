@@ -1,7 +1,7 @@
 ---
 title: "Five Philippine Folk Songs"
 instrumentation: "solo piano"
-category: "SOLO"
+category: "solo"
 year: 2016
 mediaUrl: "https://www.youtube.com/watch?v=xnmJFpS1x34"
 scoreUrl: "https://drive.google.com/file/d/17y6rYAd2FnXndy__4LSsb_lMwSA1ff9G/view?usp=sharing"

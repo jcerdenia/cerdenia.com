@@ -1,7 +1,7 @@
 ---
 title: "Turbulence"
 instrumentation: "solo piano"
-category: "SOLO"
+category: "solo"
 year: 2011
 scoreUrl: "https://drive.google.com/file/d/1A5AUf04O_Jlc7jXH8oOkLaU_ZzWGaaDb/view?usp=sharing"
 ---

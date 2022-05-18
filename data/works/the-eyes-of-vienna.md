@@ -1,7 +1,7 @@
 ---
 title: "The Eyes of Vienna"
 description: "Short Musical"
-category: "THEATER"
+category: "theater"
 year: 2019
 ---
 

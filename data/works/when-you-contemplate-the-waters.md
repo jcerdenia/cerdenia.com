@@ -1,7 +1,7 @@
 ---
 title: "When You Contemplate the Waters"
 instrumentation: "chamber orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 description: "For the Yong Siew Toh Conservatory New Music Ensemble"
 year: 2013
 mediaUrl: "https://soundcloud.com/joshuacerdenia/when-you-contemplate-the"

@@ -2,7 +2,7 @@
 title: "Air and Gigue"
 instrumentation: "flute quartet"
 description: "Commissioned by Achittapol Tinnarat for FLAUTISTA"
-category: "CHAMBER"
+category: "chamber"
 year: 2016
 scoreUrl: "https://drive.google.com/file/d/1S64SQ4SvAagWr2ObDRotn5Fg39KbVLXM/view?usp=sharing"
 ---

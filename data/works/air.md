@@ -2,7 +2,7 @@
 title: "Air"
 instrumentation: "viola and piano"
 description: "For Drew Alexander Forde"
-category: "SOLO"
+category: "solo"
 year: 2015
 mediaUrl: "api.soundcloud.com/tracks/267880661"
 scoreUrl: "https://drive.google.com/file/d/1NO7QLZzD6zW1tphhnBDFX9v16VPq-IaO/view?usp=sharing"

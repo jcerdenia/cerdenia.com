@@ -1,7 +1,7 @@
 ---
 title: "Dumagat Fantasy"
 instrumentation: "Pierrot ensemble"
-category: "CHAMBER"
+category: "chamber"
 description: "Commissioned by the Asian Contemporary Ensemble"
 year: 2012
 mediaUrl: "https://soundcloud.com/joshuacerdenia/dumagat-fantasy"

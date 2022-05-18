@@ -2,7 +2,7 @@
 title: "Feuertrunken"
 subtitle: "Fire-Drunk"
 instrumentation: "orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 description: "Commissioned by the Detroit Symphony Orchestra"
 year: 2017
 mediaUrl: "https://www.youtube.com/watch?v=xnmJFpS1x34"

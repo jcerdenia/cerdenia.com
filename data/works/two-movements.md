@@ -1,7 +1,7 @@
 ---
 title: "Two Movements"
 instrumentation: "for cello and piano"
-category: "SOLO"
+category: "solo"
 year: 2011
 mediaUrl: "api.soundcloud.com/playlists/231947372%3Fsecret_token%3Ds-iITfU"
 ---

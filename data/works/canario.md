@@ -2,7 +2,7 @@
 title: "Canario"
 instrumentation: "violin with/without piano"
 description: "For Jocelyn Zhu"
-category: "SOLO"
+category: "solo"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/canario-violin-and-piano-mockup"
 scoreUrl: "https://drive.google.com/file/d/1llHNT8GvRfUZMwRy3XoLgPMr1Zzf2kfN/view?usp=sharing"

@@ -11,7 +11,7 @@ interface WorkDetailProps {
 }
 
 const getInquiryEmailLink = (title: string, category: string) => {
-  const template = category === "ORCHESTRA" ? email.rental : email.purchase;
+  const template = category === "orchestra" ? email.rental : email.purchase;
   const subject = template.subject(title);
   const body = template.body;
 

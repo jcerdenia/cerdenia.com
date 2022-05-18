@@ -3,7 +3,7 @@ title: "Dark Lady"
 subtitle: "Four Shakespeare Sonnets"
 instrumentation: "tenor, violin, and piano"
 description: "For Adam De Wilde"
-category: "VOCAL"
+category: "vocal"
 year: 2014
 mediaUrl: "https://soundcloud.com/joshuacerdenia/dark-lady-four-shakespeare-sonnets"
 scoreUrl: "https://drive.google.com/file/d/15dtmO4pwDwydTHLmBk7ZY138GPShje5A/view?usp=sharing"

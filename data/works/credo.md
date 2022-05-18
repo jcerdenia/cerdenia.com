@@ -2,7 +2,7 @@
 title: "Credo"
 instrumentation: "orchestra"
 description: "For the Yong Siew Toh Conservatory Orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 year: 2013
 mediaUrl: "https://soundcloud.com/joshuacerdenia/creed-singapore-symphony-orchestra"
 scoreUrl: "https://drive.google.com/file/d/1EoypwaD_67TiT_lhIyMC54og2Dj11h2a/view?usp=sharing"

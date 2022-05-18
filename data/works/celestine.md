@@ -1,7 +1,7 @@
 ---
 title: "Celestine"
 instrumentation: "oboe and piano"
-category: "SOLO"
+category: "solo"
 description: "For Celina Hawkins"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/joshua-cerdenia-celina-hawkins-celestine-for-oboe-and-piano"

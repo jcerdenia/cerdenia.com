@@ -2,7 +2,7 @@
 title: "Magayon"
 instrumentation: "orchestra"
 description: "For the Juilliard Orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 year: 2015
 mediaUrl: "https://soundcloud.com/joshuacerdenia/magayon"
 scoreUrl: "https://drive.google.com/file/d/1nZNmvb9zOxwfabJeXud7ieyRxSkikxOF/view?usp=sharing"

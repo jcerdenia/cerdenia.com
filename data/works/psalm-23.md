@@ -2,7 +2,7 @@
 title: "Psalm 23"
 instrumentation: "chorus"
 description: "For the Philippine Madrigal Singers"
-category: "VOCAL"
+category: "vocal"
 year: 2016
 scoreUrl: "https://drive.google.com/file/d/1-SpwLHfePb3FmWKwHbS3bWB5qpURdt8F/view?usp=sharing"
 ---

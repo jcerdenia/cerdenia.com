@@ -2,7 +2,7 @@
 title: "Cariñosa"
 instrumentation: "violin, cello, and marimba"
 description: "Commissioned by Ensemble Gô"
-category: "CHAMBER"
+category: "chamber"
 year: 2015
 mediaUrl: "https://www.youtube.com/watch?v=mbSxyysJgh8"
 scoreUrl: "https://drive.google.com/file/d/1MYwrjgJ4hpSI2WtKG4JdGpvdtsLXcKNZ/view?usp=sharing"

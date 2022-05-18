@@ -1,7 +1,7 @@
 ---
 title: "Spoliarium"
 instrumentation: "chamber orchestra"
-category: "ORCHESTRA"
+category: "orchestra"
 description: "For the New Juilliard Ensemble"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/excerpt-spoliarium-for-chamber-orchestra-2016"

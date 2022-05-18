@@ -3,7 +3,7 @@ title: "On the Verge"
 subtitle: "Six Death Poems"
 instrumentation: "string quartet"
 description: "For the Kubrick Quartet"
-category: "CHAMBER"
+category: "chamber"
 year: 2013
 mediaUrl: "api.soundcloud.com/playlists/5352140"
 scoreUrl: "https://drive.google.com/file/d/1VsoiWoHXxdkFaTWmdpMaFWyWBnj6a45p/view?usp=sharing"

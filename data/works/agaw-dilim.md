@@ -3,7 +3,7 @@ title: "Agaw-Dilim"
 subtitle: "Twilight"
 instrumentation: "bass-baritone and piano"
 description: "For Enrico Lagasca"
-category: "VOCAL"
+category: "vocal"
 year: 2017
 mediaUrl: "https://soundcloud.com/joshuacerdenia/agaw-dilim"
 scoreUrl: "https://drive.google.com/file/d/1p6bYnkDX8q4H_mTdjUDjFFIXyjdLw3fT/view?usp=sharing"

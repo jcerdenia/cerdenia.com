@@ -1,7 +1,7 @@
 ---
 title: "The Getaway"
 description: "Short Musical"
-category: "THEATER"
+category: "theater"
 year: 2019
 ---
 **Listen to a radio production by Bite-Sized Broadway followed by a talkback with the writers:**

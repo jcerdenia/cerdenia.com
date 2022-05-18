@@ -2,7 +2,7 @@
 title: "Pierrot Songs"
 instrumentation: "soprano and Pierrot ensemble"
 description: "For Gemma New and the Lunar Ensemble"
-category: "VOCAL"
+category: "vocal"
 year: 2012
 mediaUrl: "api.soundcloud.com/playlists/3019115"
 scoreUrl: "https://drive.google.com/file/d/1e87m72YxH31yM7r0Cgk_FNGruivFKSxk/view?usp=sharing"
