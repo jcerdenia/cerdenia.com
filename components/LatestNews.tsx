@@ -15,6 +15,8 @@ const LatestNews = ({ news }: LatestNewsProps) => {
           return (
             <div key={idx} className="my-2">
               <a href={item.url}>{item.title}</a>
+              {item.language && ` (${item.language})`}
+
               {item.blurb && (
                 <HtmlWrapper className="small text-muted" parent="aside">
                   {item.blurb}

@@ -33,6 +33,7 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                   <a className="news-item-line" href={item.url}>
                     {item.title}
                   </a>
+                  {item.language && ` (${item.language})`}
                   {item.blurb && (
                     <HtmlWrapper
                       className="small news-item-line"
