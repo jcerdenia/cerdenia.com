@@ -58,6 +58,5 @@ In fear of your father who wakes in the east!
 
 ###### First Performance
 
-14 October 2016, Philippine Center, New York, NY\
-14 May 2019, National Gallery of Art, Washington, D.C. (revised version)\
+Revised version: 14 May 2019, National Gallery of Art, Washington, D.C.\
 Enrico Lagasca, bass-baritone; Joshua Cerdenia, piano
