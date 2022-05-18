@@ -3,6 +3,7 @@ export interface NewsItem {
   url: string;
   source: string;
   date: string;
+  language?: string;
   location?: string;
   blurb?: string | null;
 }
