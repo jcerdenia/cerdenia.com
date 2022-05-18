@@ -22,14 +22,13 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
               <Row key={idx} className="news-item my-3">
                 <Col className="d-flex" lg={12} xl={4}>
                   <div className="small news-item-line news-item-meta">
-                    <span>
-                      <strong>{item.source}</strong>
-                    </span>
+                    <span className="text-bold">{item.source}</span>
                     <span className="text-muted text-right news-item-date">
                       {item.date}
                     </span>
                   </div>
                 </Col>
+
                 <Col lg={12} xl={8}>
                   <a className="news-item-line" href={item.url}>
                     {item.title}

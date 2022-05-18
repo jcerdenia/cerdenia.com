@@ -32,6 +32,7 @@ const PageLayout = ({
     // Get combined height of navbar and footer to offset against viewport height.
     const navBarHeight = document.getElementById("nav-bar")?.clientHeight || 0;
     const footerHeight = document.getElementById("footer")?.clientHeight || 0;
+
     setHeightOffset(navBarHeight + footerHeight);
   }, [size.width]);
 
@@ -53,10 +54,12 @@ const PageLayout = ({
           name="twitter:image"
           content="https://music.cerdenia.com/images/headshot-wide-bw.jpeg"
         />
+
         <title>{title}</title>
       </Head>
 
       {resizeListener}
+
       <NavBar />
       <Container
         className="pb-4"

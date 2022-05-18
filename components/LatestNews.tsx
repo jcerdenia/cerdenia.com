@@ -24,6 +24,7 @@ const LatestNews = ({ news }: LatestNewsProps) => {
           );
         })}
       </div>
+
       <LinkedIcon
         className="link-muted"
         iconId="bi:arrow-return-right"

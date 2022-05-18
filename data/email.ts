@@ -34,11 +34,6 @@ const emailTemplate: EmailTemplate = {
         "Other requests:\n\n"
     ),
   },
-  general: {
-    subject() {
-      return encodeURIComponent("General Inquiry");
-    },
-  },
 };
 
 export default emailTemplate;

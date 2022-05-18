@@ -15,11 +15,11 @@ const WorkListItem = ({
   return (
     <nav className={className}>
       {active ? (
-        <strong>{work.title}</strong>
+        <text className="text-bold">{work.title}</text>
       ) : (
         <Link href={`/works/${work.slug}`}>{work.title}</Link>
       )}{" "}
-      {work.subtitle && `(${work.subtitle})`}{" "}
+      {work.subtitle && `(${work.subtitle})`}
       <aside className="small text-muted">
         {work.instrumentation
           ? `for ${work.instrumentation}`

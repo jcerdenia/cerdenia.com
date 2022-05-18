@@ -22,6 +22,7 @@ const WorksList = ({
         List of compositions with notes, detailed instrumentations, perusal
         scores, and recordings
       </p>
+
       <Accordion defaultActiveKey={activeGroupKey}>
         {Object.keys(categories).map((key: string) => {
           return (
@@ -34,6 +35,7 @@ const WorksList = ({
                   </aside>
                 </text>
               </AccordionToggle>
+
               <Accordion.Collapse eventKey={key}>
                 <Card.Body>
                   {works

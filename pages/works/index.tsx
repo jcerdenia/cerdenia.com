@@ -29,6 +29,7 @@ const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
         <Col md={12} lg={4}>
           <WorksList works={works} activeGroupKey={activeGroup} />
         </Col>
+
         <Col md={12} lg={8}>
           <section className="playlist-container">
             <h6>Playlists</h6>

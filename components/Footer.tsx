@@ -1,20 +1,18 @@
 import { Row, Col, Container } from "react-bootstrap";
 import LinkedIcon from "./LinkedIcon";
 import socials, { Social } from "../data/socials";
-import email from "../data/email";
 
 const Footer = (): JSX.Element => {
-  const emailUrl = `mailto:joshua@cerdenia.com?subject=${email.general.subject()}`;
+  const mailto = "mailto:joshua@cerdenia.com?subject=General Inquiry";
+  const repo = "https://github.com/joshuacerdenia/music.cerdenia.com";
 
   return (
     <div id="footer" className="footer-container pt-4">
       <Container>
         <Row>
-          <Col className="mb-3">
-            <strong>
-              For scores and parts, commissions, teaching, and all other
-              inquiries, please <a href={emailUrl}>email</a> directly.
-            </strong>
+          <Col className="mb-3 text-bold">
+            For scores and parts, commissions, teaching, and all other
+            inquiries, please <a href={mailto}>email</a> directly.
           </Col>
           <Col xl="auto" className="d-flex align-items-center mb-3">
             <span className="socials-row">
@@ -31,12 +29,10 @@ const Footer = (): JSX.Element => {
               })}
             </span>
           </Col>
+
           <footer>
             © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}
-            <a href="https://github.com/joshuacerdenia/music.cerdenia.com">
-              open-source
-            </a>
-            .
+            <a href={repo}>open-source</a>.
           </footer>
         </Row>
       </Container>

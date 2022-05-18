@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
           />
           <link rel="icon" href="music-note.svg" />
         </Head>
+
         <body>
           <Main />
           <NextScript />

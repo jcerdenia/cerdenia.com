@@ -18,9 +18,10 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
             src="/images/headshot-tall.jpeg"
             alt="headshot"
           />
-          <figcaption className="small text-muted">
+          <figcaption className="small text-muted mt-1">
             Photo by Rashidah De Vore
           </figcaption>
+
           <div className="d-flex justify-content-center mt-3">
             <Button
               className="media-button px-5 py-2"
@@ -32,6 +33,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
             </Button>
           </div>
         </Col>
+
         <Col md={12} lg={7}>
           <h5 className="mb-4">Biography</h5>
           <HtmlWrapper>{bio}</HtmlWrapper>

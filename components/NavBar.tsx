@@ -16,16 +16,20 @@ const NavBar = (): JSX.Element => {
             <Navbar.Text className="brand-sub">Composer</Navbar.Text>
           </aside>
         </Navbar.Brand>
+
         <Navbar.Toggle>
           <Icon icon="bi:list" />
         </Navbar.Toggle>
+
         <Navbar.Collapse className="justify-content-end">
           <Nav activeKey={"/" + path.split("/")[1]}>
-            {navs.map((nav: NavItem) => (
-              <Link key={nav.path} href={nav.path} passHref>
-                <Nav.Link className="nav-item">{nav.title}</Nav.Link>
-              </Link>
-            ))}
+            {navs.map((nav: NavItem) => {
+              return (
+                <Link key={nav.path} href={nav.path} passHref>
+                  <Nav.Link className="nav-item">{nav.title}</Nav.Link>
+                </Link>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
       </Container>
