@@ -13,6 +13,11 @@ scoreUrl: "https://drive.google.com/file/d/1FQAV4IsHFL_Y1JtqA9nyUZu7KSWi0ZUd/vie
 >A wider palette of colours was exploited by [Joshua Cerdenia] in _When You Contemplate The Waters_ (2013). Piano, [vibraphone] and more brass joined the ensemble in the metamorphosis of a rising three note motif, evoking a lotus blooming. Stillness with Rit Xu’s alto flute accompanied by Chen Yang’s [vibraphone], and the climactic orchestral roar near the end were some memorable moments.\
 **–Chang Tou Liang, _The Straits Times_**
 
+<!--
+>... the most impressive and striking new composition I've heard in a long, long time. A most compelling performance.\
+**–Kelly Tang, composer**
+-->
+
 ###### Composer's Note
 
 An old haiku by Kyokusai (1816-1874) goes: "When you contemplate the waters at day break, you can hear the lotus blossom" (English translation from _Japanese Death Poems,_ ed. Yoel Hoffman, 1986), alluding to a popular but unsubstantiated belief that the lotus flower makes a subtle noise when it opens. Instead of approximating that imagined noise, _When You Contemplate the Waters_ affirms what the lotus traditionally symbolizes: purity, awakening, and life. The piece is built around two opposite forces: the water—fluid, unstable, and freely given to transformation; and the lotus—solid and assured in its purpose. Sometimes they are directly opposed; at other times it is more difficult to tell them apart. In the end the flower blossoms, emerging out of the murky waters.
