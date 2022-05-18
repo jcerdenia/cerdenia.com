@@ -101,6 +101,15 @@ footer a:hover {
   transition: 250ms;
 }
 
+.btn-outline-success {
+  color: #2a6041;
+  border-color: #2a6041;
+}
+
+.btn-outline-success:hover {
+  background-color: #2a6041;
+}
+
 .card {
   border: none;
   background-color: #efefef;

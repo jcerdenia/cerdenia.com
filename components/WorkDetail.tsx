@@ -46,7 +46,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
 
       <Button
         className="media-button px-5 py-2 m-1"
-        variant="outline-secondary"
+        variant="outline-success"
         href={work.scoreUrl}
         target={work.scoreUrl && "_blank"}
         disabled={!work.scoreUrl}
@@ -56,7 +56,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       </Button>
       <Button
         className="media-button px-5 py-2 m-1"
-        variant="outline-secondary"
+        variant="outline-success"
         href={getInquiryEmailLink(work.title, work.category)}
       >
         Contact to Perform
