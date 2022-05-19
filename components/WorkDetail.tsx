@@ -29,7 +29,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         </h5>
         <LinkedIcon
           iconId="bi:x"
-          className="work-detail-close link-muted"
+          className="link-muted lg-up"
           iconStyle={{ height: "1.25rem" }}
           href={`/works?q=${activeWorkCategory}`}
         />
@@ -63,7 +63,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       </Button>
 
       <LinkedIcon
-        className="mt-3 link-muted link-more-work"
+        className="mt-4 link-muted lg-down"
         iconId="bi:arrow-return-left"
         href={`/works?q=${work.category}`}
       >

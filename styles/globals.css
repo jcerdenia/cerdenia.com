@@ -151,6 +151,7 @@ footer a:hover {
   color: #070707;
 }
 
+.lg-down,
 .xl-down {
   display: none;
 }
@@ -291,10 +292,6 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
-.work-content-container .link-more-work {
-  display: none;
-}
-
 @media screen and (max-width: 576px) {
   .showcase {
     filter: brightness(100%) !important;
@@ -334,6 +331,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 992px) {
+  .lg-up {
+    display: none;
+  }
+
+  .lg-down {
+    display: initial;
+  }
+
   .media-button {
     width: 100%;
   }
@@ -344,18 +349,6 @@ footer a:hover {
   }
 
   .playlist-container {
-    display: none;
-  }
-
-  .work-content-container .link-more-work {
-    display: block;
-  }
-
-  .work-detail-close {
-    display: none;
-  }
-
-  .work-sidebar-container {
     display: none;
   }
 }
