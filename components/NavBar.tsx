@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import navs, { NavItem } from "../data/nav";
 
@@ -30,6 +30,14 @@ const NavBar = (): JSX.Element => {
                 </Link>
               );
             })}
+
+            <Button
+              className="nav-item"
+              variant="outline-success"
+              href="mailto:joshua@cerdenia.com?subject=General Inquiry"
+            >
+              Contact
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

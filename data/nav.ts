@@ -9,16 +9,16 @@ const navs: NavItem[] = [
     path: "/",
   },
   {
+    title: "About",
+    path: "/about",
+  },
+  {
     title: "Works",
     path: "/works",
   },
   {
     title: "News & Events",
     path: "/news",
-  },
-  {
-    title: "About",
-    path: "/about",
   },
 ];
 
