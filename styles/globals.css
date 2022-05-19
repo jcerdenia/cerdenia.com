@@ -156,10 +156,6 @@ footer a:hover {
   display: none;
 }
 
-.modal-header {
-  border: none;
-}
-
 .navbar {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -174,6 +170,14 @@ footer a:hover {
 
 .nav-modal .active {
   color: #070707 !important;
+}
+
+.nav-modal .modal-header {
+  border: none;
+}
+
+.nav-modal .modal-body {
+  padding-bottom: 2rem;
 }
 
 .nav-modal .nav-button {
