@@ -15,6 +15,7 @@ const NavModal = ({ show, setShow, activeKey }: NavModalProps) => {
     <Modal
       className="nav-modal"
       fullscreen="md-down"
+      scrollable
       show={show}
       onHide={() => setShow(false)}
     >
