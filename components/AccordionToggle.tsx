@@ -16,7 +16,7 @@ const AccordionToggle = ({ eventKey, children }: AccordionToggleProps) => {
 
   const toggleStyle = {
     backgroundColor: active ? "#fbfbfb" : "#e2e2e2",
-    outline: active ? "2px solid #2a6041" : "1px solid #d5d5d5",
+    outline: active ? "2px solid rgba(42, 96, 65, 0.5)" : "1px solid #d5d5d5",
   };
 
   useEffect(() => {

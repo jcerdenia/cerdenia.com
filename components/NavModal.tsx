@@ -12,12 +12,7 @@ const NavModal = ({ show, setShow, activeKey }: NavModalProps) => {
   const active = (path: string) => path.split("/")[1] === activeKey;
 
   return (
-    <Modal
-      className="nav-modal"
-      scrollable
-      show={show}
-      onHide={() => setShow(false)}
-    >
+    <Modal className="nav-modal" show={show} onHide={() => setShow(false)}>
       <Modal.Header closeButton />
       <Modal.Body className="d-flex flex-column">
         {navs.map((nav: NavItem) => {
