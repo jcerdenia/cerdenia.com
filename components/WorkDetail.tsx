@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
-import { useAppState } from "../context/AppStateProvider";
+import { useAppState } from "../hooks/useAppState";
 import { Work } from "../data/interfaces";
 import email from "../data/email";
 
