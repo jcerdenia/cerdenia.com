@@ -40,7 +40,7 @@ const useBreakpoint = (): Breakpoint => {
   useEffect(() => {
     const calcInnerWidth = throttle(() => {
       setBreakpoint(getDeviceConfig(window.innerWidth));
-    }, 200); // Invoke function at most once per 200 millis.
+    });
 
     window.addEventListener("resize", calcInnerWidth);
     return () => window.removeEventListener("resize", calcInnerWidth);
