@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
-import { parseMarkdownInline } from "../utils/markdown";
+import { parseMarkdownInline } from "../helpers/markdown";
 import { NewsItem } from "../data/interfaces";
 import announcements from "../data/news/announcements.json";
 import LatestNews from "../components/LatestNews";

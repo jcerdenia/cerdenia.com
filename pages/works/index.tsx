@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
 import MediaWidget from "../../components/MediaWidget";
 import WorksList from "../../components/WorksList";
-import { parseMarkdown } from "../../utils/markdown";
+import { parseMarkdown } from "../../helpers/markdown";
 import { Work } from "../../data/interfaces";
 import playlists from "../../data/playlists";
 

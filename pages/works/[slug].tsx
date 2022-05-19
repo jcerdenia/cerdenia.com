@@ -2,8 +2,8 @@ import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
 import WorksList from "../../components/WorksList";
 import WorkDetail from "../../components/WorkDetail";
-import { parseMarkdown } from "../../utils/markdown";
-import { excerpt } from "../../utils/excerpt";
+import { parseMarkdown } from "../../helpers/markdown";
+import { excerpt } from "../../helpers/utils";
 import { Work } from "../../data/interfaces";
 
 interface WorkPageProps {
