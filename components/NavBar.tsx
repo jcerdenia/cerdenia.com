@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
+import useBreakpoint from "../hooks/useBreakpoint";
 import { Icon } from "@iconify/react";
 import navs, { NavItem } from "../data/nav";
 import NavModal from "./NavModal";
@@ -9,8 +10,15 @@ import NavModal from "./NavModal";
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
   const [showModal, setShowModal] = useState(false);
+  const breakpoint = useBreakpoint();
 
   const basePath = asPath.split("/")[1];
+
+  useEffect(() => {
+    if (breakpoint === "xl") {
+      setShowModal(false);
+    }
+  }, [breakpoint]);
 
   return (
     <Navbar id="nav-bar" className="navbar" variant="light" expand="lg">
