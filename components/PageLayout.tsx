@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import useBreakpoint from "../hooks/useBreakpoint";
 import meta from "../data/meta";
-import useResizeAware from "react-resize-aware";
 
 interface PageLayoutProps {
   title: string;
@@ -21,7 +21,7 @@ const PageLayout = ({
   wide = false,
   children,
 }: PageLayoutProps): JSX.Element => {
-  const [resizeListener, size] = useResizeAware();
+  const breakpoint = useBreakpoint();
   const [heightOffset, setHeightOffset] = useState(0);
 
   if (!exact) {
@@ -34,7 +34,7 @@ const PageLayout = ({
     const footerHeight = document.getElementById("footer")?.clientHeight || 0;
 
     setHeightOffset(navBarHeight + footerHeight);
-  }, [size.width]);
+  }, [breakpoint]);
 
   return (
     <>
@@ -57,8 +57,6 @@ const PageLayout = ({
 
         <title>{title}</title>
       </Head>
-
-      {resizeListener}
 
       <NavBar />
       <Container

@@ -10,16 +10,17 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "lodash.throttle": "^4.1.1",
     "markdown-it": "^12.2.0",
     "next": "^12.1.6",
     "react": "^17.0.2",
     "react-bootstrap": "^2.4.0",
-    "react-dom": "^17.0.2",
-    "react-resize-aware": "^3.1.1"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@iconify/react": "^3.1.4",
     "@iconify/types": "^1.0.12",
+    "@types/lodash.throttle": "^4.1.7",
     "@types/node": "^16.7.8",
     "@types/react": "^17.0.19",
     "@types/react-bootstrap": "^0.32.26",
