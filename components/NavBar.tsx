@@ -35,6 +35,7 @@ const NavBar = (): JSX.Element => {
             if (nav.special) {
               return (
                 <Button
+                  key={nav.path}
                   className="nav-item"
                   variant="outline-success"
                   href={nav.path}

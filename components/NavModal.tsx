@@ -24,6 +24,7 @@ const NavModal = ({ show, setShow, activeKey }: NavModalProps) => {
           if (nav.special) {
             return (
               <Button
+                key={nav.path}
                 className="nav-button"
                 variant="outline-success"
                 href={nav.path}
