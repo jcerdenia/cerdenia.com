@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #28965a;
+  color: #070707;
 }
 
 blockquote {
@@ -93,7 +93,6 @@ footer a:hover {
   margin-left: 1rem;
   color: #646464;
   text-transform: none;
-  vertical-align: text-top;
 }
 
 .brand:hover {
@@ -152,6 +151,14 @@ footer a:hover {
   color: #070707;
 }
 
+.xl-down {
+  display: none;
+}
+
+.modal-header {
+  border: none;
+}
+
 .navbar {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -161,6 +168,39 @@ footer a:hover {
   font-weight: 400;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  text-transform: uppercase;
+}
+
+.nav-modal .active {
+  color: #070707 !important;
+}
+
+.nav-modal .nav-button {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.nav-modal .nav-item {
+  color: #646464;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: unset;
+}
+
+.nav-modal .nav-item:hover {
+  color: #070707;
+}
+
+.nav-item-modal-btn {
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -275,6 +315,7 @@ footer a:hover {
   .brand-sub {
     font-size: 1rem;
     margin-left: 0.5rem;
+    vertical-align: text-top;
   }
 
   .navbar {
@@ -322,5 +363,13 @@ footer a:hover {
 @media screen and (max-width: 1200px) {
   .footer-container {
     text-align: center;
+  }
+
+  .xl-up {
+    display: none;
+  }
+
+  .xl-down {
+    display: initial;
   }
 }

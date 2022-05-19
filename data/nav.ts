@@ -1,6 +1,7 @@
 export interface NavItem {
   title: string;
   path: string;
+  special?: true;
 }
 
 const navs: NavItem[] = [
@@ -19,6 +20,11 @@ const navs: NavItem[] = [
   {
     title: "News & Events",
     path: "/news",
+  },
+  {
+    title: "Contact",
+    path: "mailto:joshua@cerdenia.com?subject=General Inquiry",
+    special: true,
   },
 ];
 

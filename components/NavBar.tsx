@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import navs, { NavItem } from "../data/nav";
+import NavModal from "./NavModal";
 
 const NavBar = (): JSX.Element => {
-  const { asPath: path } = useRouter();
+  const { asPath } = useRouter();
+  const [showModal, setShowModal] = useState(false);
+
+  const basePath = asPath.split("/")[1];
 
   return (
     <Navbar id="nav-bar" className="navbar" variant="light" expand="lg">
@@ -17,30 +22,38 @@ const NavBar = (): JSX.Element => {
           </aside>
         </Navbar.Brand>
 
-        <Navbar.Toggle>
+        <Button
+          className="xl-down"
+          variant="outline-secondary"
+          onClick={() => setShowModal(true)}
+        >
           <Icon icon="bi:list" />
-        </Navbar.Toggle>
+        </Button>
 
-        <Navbar.Collapse className="justify-content-end">
-          <Nav activeKey={"/" + path.split("/")[1]}>
-            {navs.map((nav: NavItem) => {
+        <Nav className="xl-up" activeKey={`/${basePath}`}>
+          {navs.map((nav: NavItem) => {
+            if (nav.special) {
               return (
-                <Link key={nav.path} href={nav.path} passHref>
-                  <Nav.Link className="nav-item">{nav.title}</Nav.Link>
-                </Link>
+                <Button
+                  className="nav-item"
+                  variant="outline-success"
+                  href={nav.path}
+                >
+                  {nav.title}
+                </Button>
               );
-            })}
+            }
 
-            <Button
-              className="nav-item"
-              variant="outline-success"
-              href="mailto:joshua@cerdenia.com?subject=General Inquiry"
-            >
-              Contact
-            </Button>
-          </Nav>
-        </Navbar.Collapse>
+            return (
+              <Link key={nav.path} href={nav.path} passHref>
+                <Nav.Link className="nav-item">{nav.title}</Nav.Link>
+              </Link>
+            );
+          })}
+        </Nav>
       </Container>
+
+      <NavModal show={showModal} setShow={setShowModal} activeKey={basePath} />
     </Navbar>
   );
 };
