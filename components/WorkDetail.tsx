@@ -62,13 +62,15 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         Contact to Perform
       </Button>
 
-      <LinkedIcon
-        className="mt-4 link-muted lg-down"
-        iconId="bi:arrow-return-left"
-        href={`/works?q=${work.category}`}
-      >
-        More Works
-      </LinkedIcon>
+      <div className="mt-3">
+        <LinkedIcon
+          className="link-muted lg-down"
+          iconId="bi:arrow-return-left"
+          href={`/works?q=${work.category}`}
+        >
+          More Works
+        </LinkedIcon>
+      </div>
     </>
   );
 };
