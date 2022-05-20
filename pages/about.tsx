@@ -46,7 +46,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
 export const getStaticProps = async (): Promise<{ props: AboutPageProps }> => {
   return {
     props: {
-      bio: parseMarkdown("data/bio-full.md", ["content"]).content || "",
+      bio: parseMarkdown("data/bio-full.md", ["content"]),
     },
   };
 };

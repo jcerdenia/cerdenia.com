@@ -4,7 +4,7 @@ export const parseMarkdown = (
   filePath: string,
   options: ParseOption[] = ["metadata", "content"],
   onBeforeRender: (content: string) => string = (content) => content
-): object => {
+): any => {
   const fs = require("fs");
   const matter = require("gray-matter");
   const md = require("markdown-it")({ html: true });
