@@ -2,10 +2,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
-import useBreakpoint from "../hooks/useBreakpoint";
 import { Icon } from "@iconify/react";
-import navs, { NavItem } from "../data/nav";
 import NavModal from "./NavModal";
+import useBreakpoint from "../hooks/useBreakpoint";
+import navs, { NavItem } from "../data/nav";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();

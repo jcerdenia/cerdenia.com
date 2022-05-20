@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { AccordionContext, useAccordionButton, Card } from "react-bootstrap";
-import { useAppState } from "../hooks/useAppState";
 import { Icon } from "@iconify/react";
+import { useAppState } from "../hooks/useAppState";
 
 interface AccordionToggleProps {
   eventKey: string;
