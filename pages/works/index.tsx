@@ -53,13 +53,12 @@ export const getStaticProps = async (): Promise<{
   props: WorksHomePageProps;
 }> => {
   const fs = require("fs");
+  const dir = "/data/works";
 
   const works: Work[] = fs
-    .readdirSync(`${process.cwd()}/data/works`)
-    .filter((fileName: string): boolean => fileName.endsWith(".md"))
-    .map((fileName: string): {} | null => {
-      return parseMarkdown(`data/works/${fileName}`, ["metadata"]).metadata;
-    });
+    .readdirSync(`${process.cwd()}/${dir}`)
+    .filter((name: string) => name.endsWith(".md"))
+    .map((name: string) => parseMarkdown(`${dir}/${name}`, ["metadata"]));
 
   return {
     props: { works },

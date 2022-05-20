@@ -53,9 +53,10 @@ export const getStaticProps = async (
 ): Promise<{ props: WorkPageProps }> => {
   const fs = require("fs");
   const slug = context.params.slug;
+  const dir = "/data/works";
 
   const { metadata: work, content: note }: any = parseMarkdown(
-    `/data/works/${slug}.md`,
+    `${dir}/${slug}.md`,
     ["metadata", "content"],
     (content) => {
       return content
@@ -66,11 +67,9 @@ export const getStaticProps = async (
   );
 
   const works: Work[] = fs
-    .readdirSync(`${process.cwd()}/data/works`)
-    .filter((fileName: string) => fileName.endsWith(".md"))
-    .map((fileName: string) => {
-      return parseMarkdown(`data/works/${fileName}`, ["metadata"]).metadata;
-    });
+    .readdirSync(`${process.cwd()}/${dir}`)
+    .filter((name: string) => name.endsWith(".md"))
+    .map((name: string) => parseMarkdown(`${dir}/${name}`, ["metadata"]));
 
   return {
     props: { works, work, note },
