@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
+:root {
+  --color-accent: #357851; /* Formerly #2a6041;*/
+  --color-accent-secondary: #224d34;
+  --color-background: #efefef;
+  --color-text: #070707;
+  --color-muted: #646464;
+  --weight-normal: 300;
+  --weight-bold: 400;
+  --weight-bolder: 500;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,55 +19,51 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-weight: 300;
+  font-weight: var(--weight-normal);
   font-family: "Rubik", sans-serif;
-  background-color: #efefef;
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 a {
-  color: #2a6041;
-  transition: 250ms;
-  font-weight: 400;
+  color: var(--color-accent);
+  transition: 200ms;
+  font-weight: var(--weight-bold);
+  text-decoration: none;
 }
 
 a:hover {
-  color: #070707;
+  color: var(--color-accent-secondary);
 }
 
 blockquote {
-  color: #646464;
+  color: var(--color-muted);
   padding-left: 1.5rem;
   border-left: solid;
 }
 
 blockquote p {
-  color: #646464;
-}
-
-p,
-div,
-span {
-  color: #070707;
+  color: var(--color-muted);
 }
 
 footer {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #646464;
+  color: var(--color-muted);
   font-weight: lighter;
   font-size: smaller;
 }
 
 footer a {
-  color: #646464;
+  color: var(--color-muted);
 }
 
 footer a:hover {
-  color: #070707;
+  color: var(--color-text);
 }
 
 .accordion-toggle {
-  font-weight: 500;
+  font-weight: var(--weight-bolder);
   font-size: 0.9rem;
   padding-top: 0.33rem;
   padding-bottom: 0.33rem;
@@ -67,50 +74,52 @@ footer a:hover {
 }
 
 .accordion-toggle .card-header,
-.accordion-toggle .card-header text {
+.accordion-toggle .card-header text,
+.accordion-toggle .card-header .icon-transforming {
   transition: 200ms;
   border: none;
 }
 
-.accordion-toggle .card-header:hover text {
-  color: #525252;
+.accordion-toggle .card-header:hover text,
+.accordion-toggle .card-header:hover .icon-transforming {
+  color: var(--color-muted);
 }
 
 .accordion-toggle .card-header aside {
-  font-weight: 400;
+  font-weight: var(--weight-bold);
 }
 
 .brand {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: var(--weight-normal);
   text-transform: uppercase;
-  color: #070707 !important;
+  color: var(--color-text) !important;
 }
 
 .brand-sub {
-  font-weight: 300;
+  font-weight: var(--weight-normal);
   margin-left: 1rem;
-  color: #646464;
+  color: var(--color-muted);
   text-transform: none;
 }
 
 .brand:hover {
-  color: #646464 !important;
-  transition: 250ms;
+  color: var(--color-muted) !important;
+  transition: 200ms;
 }
 
 .btn-outline-success {
-  color: #2a6041;
-  border-color: #2a6041;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn-outline-success:hover {
-  background-color: #2a6041;
+  background-color: var(--color-accent);
 }
 
 .card {
   border: none;
-  background-color: #efefef;
+  background-color: var(--color-background);
 }
 
 .card .card-header {
@@ -132,22 +141,17 @@ footer a:hover {
   opacity: 0.9;
 }
 
-.half-opaque {
-  transition: 300ms;
-  opacity: 0.5;
-}
-
 .icon-transforming {
   transition: transform 0.2s ease-in-out;
 }
 
 .link-muted {
   text-decoration: none;
-  color: #646464;
+  color: var(--color-muted);
 }
 
 .link-muted:hover {
-  color: #070707;
+  color: var(--color-text);
 }
 
 .lg-down,
@@ -161,7 +165,7 @@ footer a:hover {
 }
 
 .nav-item {
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   text-transform: uppercase;
@@ -169,7 +173,7 @@ footer a:hover {
 }
 
 .nav-modal .active {
-  color: #070707 !important;
+  color: var(--color-text) !important;
 }
 
 .nav-modal .modal-header {
@@ -188,19 +192,19 @@ footer a:hover {
 }
 
 .nav-modal .nav-item {
-  color: #646464;
+  color: var(--color-muted);
   font-size: 1.25rem;
   margin-bottom: 2rem;
   text-decoration: unset;
 }
 
 .nav-modal .nav-item:hover {
-  color: #070707;
+  color: var(--color-text);
 }
 
 .nav-item-modal-btn {
   width: fit-content;
-  font-weight: 400;
+  font-weight: var(--weight-bold);
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -218,12 +222,8 @@ footer a:hover {
   padding-left: 2px;
 }
 
-.page-content-header {
-  line-height: 1.5rem;
-}
-
 .playlist-container h6 {
-  font-weight: 400;
+  font-weight: var(--weight-bold);
 }
 
 .shadowed {
@@ -240,7 +240,7 @@ footer a:hover {
 }
 
 .showcase-link {
-  color: #070707;
+  color: var(--color-text);
   cursor: pointer;
   text-decoration: none;
   transition: 200ms;
@@ -254,18 +254,18 @@ footer a:hover {
 }
 
 .socials-row .icon {
-  color: #646464;
+  color: var(--color-muted);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   transition: 200ms;
 }
 
 .socials-row .icon:hover {
-  color: #2a6041;
+  color: var(--color-accent);
 }
 
 .text-bold {
-  font-weight: 400;
+  font-weight: var(--weight-bold);
 }
 
 .text-height-1 {
@@ -281,7 +281,7 @@ footer a:hover {
 }
 
 .work-category-text aside {
-  font-weight: 300;
+  font-weight: var(--weight-normal);
 }
 
 .work-content-container img,
