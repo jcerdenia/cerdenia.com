@@ -39,26 +39,28 @@ const NavBar = (): JSX.Element => {
         </Button>
 
         <Nav className="xl-up" activeKey={`/${basePath}`}>
-          {navs.map((nav: NavItem) => {
-            if (nav.special) {
-              return (
-                <Button
-                  key={nav.path}
-                  className="nav-item"
-                  variant="outline-success"
-                  href={nav.path}
-                >
-                  {nav.title}
-                </Button>
-              );
-            }
+          {navs
+            .filter((nav) => !nav.hidden)
+            .map((nav) => {
+              if (nav.special) {
+                return (
+                  <Button
+                    key={nav.path}
+                    className="nav-item"
+                    variant="outline-success"
+                    href={nav.path}
+                  >
+                    {nav.title}
+                  </Button>
+                );
+              }
 
-            return (
-              <Link key={nav.path} href={nav.path} passHref>
-                <Nav.Link className="nav-item">{nav.title}</Nav.Link>
-              </Link>
-            );
-          })}
+              return (
+                <Link key={nav.path} href={nav.path} passHref>
+                  <Nav.Link className="nav-item">{nav.title}</Nav.Link>
+                </Link>
+              );
+            })}
         </Nav>
       </Container>
 

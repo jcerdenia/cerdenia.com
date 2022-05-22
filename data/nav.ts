@@ -1,6 +1,7 @@
 export interface NavItem {
   title: string;
   path: string;
+  hidden?: true;
   special?: true;
 }
 
@@ -20,6 +21,11 @@ const navs: NavItem[] = [
   {
     title: "News & Events",
     path: "/news",
+  },
+  {
+    title: "Writings",
+    path: "/writings",
+    hidden: true,
   },
   {
     title: "Contact",

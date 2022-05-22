@@ -20,6 +20,13 @@ export interface Work {
   year: number;
   description?: string;
   category: string;
-  slug: string;
   scoreUrl?: string;
+  slug: string;
+}
+
+export interface Writing {
+  title: string;
+  date: string;
+  location?: string;
+  slug: string;
 }
