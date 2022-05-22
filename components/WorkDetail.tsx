@@ -24,7 +24,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
   return (
     <>
       <div className="d-flex justify-content-between">
-        <h5 className="page-content-header">
+        <h5 className="text-height-1">
           {work.title} {work.subtitle && `(${work.subtitle})`}
         </h5>
         <LinkedIcon

@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
         <Row>
           <Col className="mb-3 text-bold">
             For scores and parts, commissions, teaching, and all other
-            inquiries, please <a href={mailto}>email</a> directly.
+            inquiries, please <a href={mailto}>email directly</a>.
           </Col>
           <Col xl="auto" className="d-flex align-items-center mb-3">
             <span className="socials-row">
