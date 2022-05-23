@@ -11,7 +11,7 @@ export interface NewsItem {
 export interface NewsItemGroup {
   title: string;
   items: NewsItem[];
-  blurbs: true;
+  blurbs?: true;
 }
 
 export interface Work {
