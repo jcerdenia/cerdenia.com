@@ -1,18 +1,34 @@
 import { Row, Col } from "react-bootstrap";
 import HtmlWrapper from "../components/HtmlWrapper";
 import PageLayout from "../components/PageLayout";
-import { parseMarkdownInline } from "../helpers/markdown";
 import { NewsItem, NewsItemGroup } from "../data/interfaces";
 import { compareBy, formatDate } from "../helpers/utils";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
 
-interface NewsPageProps {
-  news: NewsItemGroup[];
-}
+const NewsPage = (): JSX.Element => {
+  const isRecent = (item: NewsItem) => {
+    // Return true if the item is dated from at least the previous year:
+    return parseInt(item.date.slice(0, 4)) >= new Date().getFullYear() - 1;
+  };
 
-const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
+  const news: NewsItemGroup[] = [
+    {
+      title: "Recent & Upcoming Events",
+      items: events.filter(isRecent).sort(compareBy("date")).reverse(),
+      blurbs: true,
+    },
+    {
+      title: "Recent Announcements",
+      items: announcements.filter(isRecent).sort(compareBy("date")).reverse(),
+    },
+    {
+      title: "Articles, Reviews & Interviews",
+      items: articles.sort(compareBy("date")).reverse(),
+    },
+  ];
+
   return (
     <PageLayout title="News">
       {news.map((group: NewsItemGroup) => {
@@ -35,13 +51,15 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
                     {item.title}
                   </a>
                   {item.language && ` (${item.language})`}
-                  {item.blurb && (
-                    <HtmlWrapper className="text-height-1" parent="aside">
+
+                  {group.blurbs && item.blurb && (
+                    <HtmlWrapper className="small text-height-1" parent="aside">
                       {item.blurb}
                     </HtmlWrapper>
                   )}
+
                   {item.location && (
-                    <aside className="text-muted">{item.location}</aside>
+                    <aside className="small text-muted">{item.location}</aside>
                   )}
                 </Col>
               </Row>
@@ -51,46 +69,6 @@ const NewsPage = ({ news }: NewsPageProps): JSX.Element => {
       })}
     </PageLayout>
   );
-};
-
-export const getStaticProps = async (): Promise<{ props: NewsPageProps }> => {
-  const isRecent = (item: NewsItem) => {
-    // Return only items dated 2021 and onward.
-    return item.date.split(" ").reverse()[0] >= "2021";
-  };
-
-  const news: NewsItemGroup[] = [
-    {
-      title: "Recent & Upcoming Events",
-      items: events
-        .filter(isRecent)
-        .sort(compareBy("date"))
-        .reverse()
-        .map((item: NewsItem) => {
-          item.blurb = item.blurb ? parseMarkdownInline(item.blurb) : null;
-          return item;
-        }),
-    },
-    {
-      title: "Recent Announcements",
-      items: announcements
-        .filter(isRecent)
-        .sort(compareBy("date"))
-        .reverse()
-        .map((item: NewsItem) => {
-          delete item.blurb;
-          return item;
-        }),
-    },
-    {
-      title: "Articles, Reviews & Interviews",
-      items: articles.sort(compareBy("date")).reverse(),
-    },
-  ];
-
-  return {
-    props: { news },
-  };
 };
 
 export default NewsPage;

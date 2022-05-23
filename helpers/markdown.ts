@@ -33,7 +33,3 @@ export const parseMarkdown = (
       return result;
   }
 };
-
-export const parseMarkdownInline = (markdown: string): string => {
-  return require("markdown-it")().renderInline(markdown);
-};
