@@ -10,15 +10,17 @@ interface PageLayoutProps {
   title: string;
   exact?: boolean;
   description?: string;
+  navBar?: boolean;
+  footer?: boolean;
   children: any;
-  wide?: boolean;
 }
 
 const PageLayout = ({
   title,
   exact,
   description = meta.description,
-  wide = false,
+  navBar = true,
+  footer = true,
   children,
 }: PageLayoutProps): JSX.Element => {
   const breakpoint = useBreakpoint();
@@ -29,12 +31,14 @@ const PageLayout = ({
   }
 
   useEffect(() => {
-    // Get combined height of navbar and footer to offset against viewport height.
-    const navBarHeight = document.getElementById("nav-bar")?.clientHeight || 0;
-    const footerHeight = document.getElementById("footer")?.clientHeight || 0;
+    if (navBar && footer) {
+      // Get combined height of navbar and footer to offset against viewport height.
+      const nHeight = document.getElementById("nav-bar")?.clientHeight || 0;
+      const fHeight = document.getElementById("footer")?.clientHeight || 0;
 
-    setHeightOffset(navBarHeight + footerHeight);
-  }, [breakpoint]);
+      setHeightOffset(nHeight + fHeight);
+    }
+  }, [breakpoint, navBar, footer]);
 
   return (
     <>
@@ -58,15 +62,16 @@ const PageLayout = ({
         <title>{title}</title>
       </Head>
 
-      <NavBar />
+      {navBar ? <NavBar /> : null}
+
       <Container
         className="pb-4"
         style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
-        fluid={wide}
       >
         {children}
       </Container>
-      <Footer />
+
+      {footer ? <Footer /> : null}
     </>
   );
 };
