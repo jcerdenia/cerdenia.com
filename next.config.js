@@ -7,6 +7,11 @@ module.exports = {
         destination: "/works/:path*",
         permanent: false,
       },
+      {
+        source: "/music/:path*",
+        destination: "/works/:path*",
+        permanent: false,
+      },
       // Temporary redirect until writings section is ready:
       {
         source: "/writings/:path*",
