@@ -5,23 +5,24 @@ import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import NavModal from "./NavModal";
 import useAppState from "../hooks/useAppState";
-import useBreakpoint from "../hooks/useBreakpoint";
+import useInnerWidth from "../hooks/useInnerWidth";
 import navs from "../data/nav";
+import breakpoints from "../data/breakpoints";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
   const { enableHomeBackground } = useAppState();
   const [showModal, setShowModal] = useState(false);
-  const breakpoint = useBreakpoint();
+  const innerWidth = useInnerWidth();
 
   const basePath = asPath.split("/")[1];
   const background = !basePath.length && enableHomeBackground;
 
   useEffect(() => {
-    if (breakpoint === "xl") {
+    if (innerWidth >= breakpoints.XL) {
       setShowModal(false);
     }
-  }, [breakpoint]);
+  }, [innerWidth]);
 
   return (
     <Navbar
@@ -41,7 +42,7 @@ const NavBar = (): JSX.Element => {
         <Button
           className="xl-down"
           variant={background ? "outline-light" : "outline-secondary"}
-          size={breakpoint === "md" || breakpoint === "lg" ? "lg" : undefined}
+          size={innerWidth >= breakpoints.MD ? "lg" : undefined}
           onClick={() => setShowModal(true)}
         >
           <Icon icon="bi:list" />

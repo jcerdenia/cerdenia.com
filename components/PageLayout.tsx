@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import useBreakpoint from "../hooks/useBreakpoint";
+import useInnerWidth from "../hooks/useInnerWidth";
 import meta from "../data/meta";
 
 interface PageLayoutProps {
@@ -25,7 +25,7 @@ const PageLayout = ({
   footer = true,
   children,
 }: PageLayoutProps): JSX.Element => {
-  const breakpoint = useBreakpoint();
+  const innerWidth = useInnerWidth();
   const [heightOffset, setHeightOffset] = useState(0);
 
   if (!exact) {
@@ -41,7 +41,7 @@ const PageLayout = ({
     const fHeight = footer ? getElementHeight("footer") : 0;
 
     setHeightOffset(nHeight + fHeight);
-  }, [breakpoint, navBar, footer]);
+  }, [innerWidth, navBar, footer]);
 
   return (
     <>
