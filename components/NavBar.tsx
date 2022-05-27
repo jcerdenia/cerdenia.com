@@ -4,15 +4,18 @@ import { useEffect, useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import NavModal from "./NavModal";
+import useAppState from "../hooks/useAppState";
 import useBreakpoint from "../hooks/useBreakpoint";
-import navs, { NavItem } from "../data/nav";
+import navs from "../data/nav";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
+  const { enableHomeBackground } = useAppState();
   const [showModal, setShowModal] = useState(false);
   const breakpoint = useBreakpoint();
 
   const basePath = asPath.split("/")[1];
+  const background = !basePath.length && enableHomeBackground;
 
   useEffect(() => {
     if (breakpoint === "xl") {
@@ -21,18 +24,24 @@ const NavBar = (): JSX.Element => {
   }, [breakpoint]);
 
   return (
-    <Navbar id="nav-bar" className="navbar" variant="light" expand="lg">
+    <Navbar
+      id="nav-bar"
+      className="nav-bar"
+      variant={background ? "dark" : "light"}
+    >
       <Container>
-        <Navbar.Brand className="d-flex align-items-center" href="/">
-          <header className="brand">Joshua Cerdenia</header>
-          <aside>
-            <Navbar.Text className="brand-sub">Composer</Navbar.Text>
-          </aside>
-        </Navbar.Brand>
+        <Nav>
+          <Navbar.Brand className="brand" href="/">
+            Joshua Cerdenia
+          </Navbar.Brand>
+
+          <Navbar.Text className="brand-sub">Composer</Navbar.Text>
+        </Nav>
 
         <Button
           className="xl-down"
-          variant="outline-secondary"
+          variant={background ? "outline-light" : "outline-secondary"}
+          size={breakpoint === "md" || breakpoint === "lg" ? "lg" : undefined}
           onClick={() => setShowModal(true)}
         >
           <Icon icon="bi:list" />
@@ -47,7 +56,7 @@ const NavBar = (): JSX.Element => {
                   <Button
                     key={nav.path}
                     className="nav-item"
-                    variant="outline-success"
+                    variant={background ? "outline-light" : "outline-success"}
                     href={nav.path}
                   >
                     {nav.title}

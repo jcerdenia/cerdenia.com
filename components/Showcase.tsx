@@ -3,7 +3,12 @@ import { Row, Col } from "react-bootstrap";
 import MediaWidget from "../components/MediaWidget";
 import media, { MediaItem } from "../data/showcase";
 
-const Showcase = (): JSX.Element => {
+interface ShowcaseProps {
+  columns?: number;
+  limit?: number;
+}
+
+const Showcase = ({ columns = 3, limit = 6 }: ShowcaseProps): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
   const getWidgetStyle = (widgetId: number): {} => ({
@@ -18,8 +23,8 @@ const Showcase = (): JSX.Element => {
   };
 
   return (
-    <Row xs={1} lg={2} xl={3} className="g-2 mb-4">
-      {media.map((item: MediaItem, idx: number) => {
+    <Row xs={1} lg={columns} className="g-2 mb-4">
+      {media.slice(0, limit).map((item: MediaItem, idx: number) => {
         return (
           <Col key={idx}>
             <MediaWidget

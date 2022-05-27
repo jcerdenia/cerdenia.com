@@ -14,11 +14,11 @@ interface WorksHomePageProps {
 
 const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
   const router = useRouter();
-  const activeGroup = router.query.q as string;
+  const activeGroup = router.query.category as string;
 
   useEffect(() => {
     // Clean up URL query params after page loads.
-    if (router.query.q?.length) {
+    if (router.query.category?.length) {
       router.replace("/works", undefined, { shallow: true });
     }
   }, [router]);
@@ -32,7 +32,8 @@ const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
 
         <Col md={12} lg={8}>
           <section className="playlist-container">
-            <h6>Playlists</h6>
+            <h6 className="text-bold">Playlists</h6>
+
             <Row xs={1} xl={2}>
               {playlists.map((url: string, idx: number) => {
                 return (

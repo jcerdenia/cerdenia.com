@@ -1,0 +1,61 @@
+.background {
+  position: relative;
+  height: 100vh;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/bklyn-1.jpeg);
+  background-color: #262528;
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.66) saturate(0.5) contrast(1.25);
+}
+
+.inside {
+  position: relative; /* Stack on top of the home-background::before */
+  user-select: none;
+  color: var(--color-background);
+}
+
+.inside :global .brand:hover {
+  color: var(--color-muted-secondary) !important;
+}
+
+.inside :global .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.inside :global .main a {
+  color: var(--color-background);
+}
+
+.inside :global .main a:hover {
+  color: var(--color-muted-secondary);
+}
+
+.inside :global .text-muted {
+  color: var(--color-muted-secondary) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .background::before {
+    background-position: 75% -25% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background::before {
+    background-size: auto 66% !important;
+    background-color: #555760;
+  }
+}

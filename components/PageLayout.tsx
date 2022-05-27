@@ -10,6 +10,7 @@ interface PageLayoutProps {
   title: string;
   exact?: boolean;
   description?: string;
+  bodyClassName?: string;
   navBar?: boolean;
   footer?: boolean;
   children: any;
@@ -19,6 +20,7 @@ const PageLayout = ({
   title,
   exact,
   description = meta.description,
+  bodyClassName,
   navBar = true,
   footer = true,
   children,
@@ -31,13 +33,14 @@ const PageLayout = ({
   }
 
   useEffect(() => {
-    if (navBar && footer) {
-      // Get combined height of navbar and footer to offset against viewport height.
-      const nHeight = document.getElementById("nav-bar")?.clientHeight || 0;
-      const fHeight = document.getElementById("footer")?.clientHeight || 0;
+    const getElementHeight = (id: string) => {
+      return document.getElementById(id)?.clientHeight || 0;
+    };
 
-      setHeightOffset(nHeight + fHeight);
-    }
+    const nHeight = navBar ? getElementHeight("nav-bar") : 0;
+    const fHeight = footer ? getElementHeight("footer") : 0;
+
+    setHeightOffset(nHeight + fHeight);
   }, [breakpoint, navBar, footer]);
 
   return (
@@ -62,16 +65,18 @@ const PageLayout = ({
         <title>{title}</title>
       </Head>
 
-      {navBar ? <NavBar /> : null}
+      <div className={bodyClassName}>
+        {navBar ? <NavBar /> : null}
 
-      <Container
-        className="pb-4"
-        style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
-      >
-        {children}
-      </Container>
+        <Container
+          className="main pb-4"
+          style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
+        >
+          {children}
+        </Container>
 
-      {footer ? <Footer /> : null}
+        {footer ? <Footer /> : null}
+      </div>
     </>
   );
 };
