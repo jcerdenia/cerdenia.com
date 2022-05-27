@@ -20,7 +20,7 @@ const AccordionToggle = ({ eventKey, children }: AccordionToggleProps) => {
   };
 
   useEffect(() => {
-    setActiveWorkCategory(activeEventKey);
+    setActiveWorkCategory(activeEventKey as string);
   }, [activeEventKey, setActiveWorkCategory]);
 
   return (
