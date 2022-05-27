@@ -6,6 +6,7 @@
   --color-background: #efefef;
   --color-text: #070707;
   --color-muted: #646464;
+  --color-muted-secondary: #b5b5b5;
   --weight-normal: 300;
   --weight-bold: 400;
   --weight-bolder: 500;
@@ -90,22 +91,19 @@ footer a:hover {
 }
 
 .brand {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: var(--weight-normal);
   text-transform: uppercase;
-  color: var(--color-text) !important;
-}
-
-.brand-sub {
-  font-weight: var(--weight-normal);
-  margin-left: 1rem;
-  color: var(--color-muted);
-  text-transform: none;
+  transition: 300ms;
 }
 
 .brand:hover {
   color: var(--color-muted) !important;
-  transition: 200ms;
+}
+
+.brand-sub {
+  font-size: 1.5rem;
+  align-self: center;
 }
 
 .btn-outline-success {
@@ -159,9 +157,10 @@ footer a:hover {
   display: none;
 }
 
-.navbar {
+.nav-bar {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+  user-select: none;
 }
 
 .nav-item {
@@ -223,10 +222,6 @@ footer a:hover {
   padding-left: 2px;
 }
 
-.playlist-container h6 {
-  font-weight: var(--weight-bold);
-}
-
 .shadowed {
   box-shadow: 0px 3px 15px #a1a1a1;
 }
@@ -277,6 +272,10 @@ footer a:hover {
   text-align: right;
 }
 
+.text-size-4 {
+  font-size: 4rem;
+}
+
 .wide {
   width: 100%;
 }
@@ -305,13 +304,11 @@ footer a:hover {
 @media screen and (max-width: 768px) {
   .brand {
     font-size: 1.25rem;
-    letter-spacing: 0px;
   }
 
   .brand-sub {
     font-size: 1rem;
-    margin-left: 0.5rem;
-    vertical-align: text-top;
+    margin-left: -0.5rem;
   }
 
   .navbar {
