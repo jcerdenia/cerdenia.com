@@ -43,13 +43,25 @@ const MediaWidget = ({
     case src.includes("soundcloud.com"): {
       src = src.replace(/http(s?):\/\//i, "");
 
+      const url =
+        `https://w.soundcloud.com/player/` +
+        `?url=https%3A//${src}` +
+        "&color=%23484440" +
+        "&auto_play=false" +
+        "&hide_related=true" +
+        "&show_comments=false" +
+        "&show_user=true" +
+        "&show_reposts=false" +
+        "&show_teaser=false" +
+        `&visual=${visual}`;
+
       return (
         <iframe
           className={className}
           width={width}
           height={height}
           style={style}
-          src={`https://w.soundcloud.com/player/?url=https%3A//${src}&color=%23484440&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=${visual}`}
+          src={url}
           scrolling="no"
           frameBorder="no"
           allow="autoplay"

@@ -35,7 +35,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
         </Col>
 
         <Col md={12} lg={7}>
-          <h5 className="mb-4">Biography</h5>
+          <h5>Biography</h5>
           <HtmlWrapper>{bio}</HtmlWrapper>
         </Col>
       </Row>

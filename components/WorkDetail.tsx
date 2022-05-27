@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
-import { useAppState } from "../hooks/useAppState";
+import useAppState from "../hooks/useAppState";
 import { Work } from "../data/interfaces";
 import email from "../data/email";
 
@@ -31,7 +31,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
           iconId="bi:x"
           className="link-muted lg-up"
           iconStyle={{ height: "1.25rem" }}
-          href={`/works?q=${activeWorkCategory}`}
+          href={`/works?category=${activeWorkCategory}`}
         />
       </div>
 
@@ -66,7 +66,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         <LinkedIcon
           className="link-muted lg-down"
           iconId="bi:arrow-return-left"
-          href={`/works?q=${work.category}`}
+          href={`/works?category=${work.category}`}
         >
           More Works
         </LinkedIcon>

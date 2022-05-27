@@ -35,6 +35,7 @@ const NewsPage = (): JSX.Element => {
         return (
           <section key={group.title} className="mb-4">
             <h5>{group.title}</h5>
+
             {group.items.map((item: NewsItem, idx: number) => (
               <Row key={idx} className="news-item my-3">
                 <Col lg={12} xl={4}>
