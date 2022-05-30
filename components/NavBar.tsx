@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { Icon } from "@iconify/react";
-import NavModal from "./NavModal";
+import NavOffcanvas from "./NavOffcanvas";
 import useAppState from "../hooks/useAppState";
 import useInnerWidth from "../hooks/useInnerWidth";
 import navs from "../data/nav";
@@ -12,7 +12,7 @@ import breakpoints from "../data/breakpoints";
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
   const { enableHomeBackground } = useAppState();
-  const [showModal, setShowModal] = useState(false);
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
   const innerWidth = useInnerWidth();
 
   const basePath = asPath.split("/")[1];
@@ -20,7 +20,7 @@ const NavBar = (): JSX.Element => {
 
   useEffect(() => {
     if (innerWidth >= breakpoints.XL) {
-      setShowModal(false);
+      setShowOffcanvas(false);
     }
   }, [innerWidth]);
 
@@ -43,7 +43,7 @@ const NavBar = (): JSX.Element => {
           className="xl-down"
           variant={background ? "outline-light" : "outline-secondary"}
           size={innerWidth >= breakpoints.MD ? "lg" : undefined}
-          onClick={() => setShowModal(true)}
+          onClick={() => setShowOffcanvas(true)}
         >
           <Icon icon="bi:list" />
         </Button>
@@ -74,7 +74,11 @@ const NavBar = (): JSX.Element => {
         </Nav>
       </Container>
 
-      <NavModal show={showModal} setShow={setShowModal} activeKey={basePath} />
+      <NavOffcanvas
+        show={showOffcanvas}
+        setShow={setShowOffcanvas}
+        activeKey={basePath}
+      />
     </Navbar>
   );
 };

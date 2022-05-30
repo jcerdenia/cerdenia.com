@@ -1,20 +1,26 @@
 import Link from "next/link";
-import { Modal, Button } from "react-bootstrap";
-import navs, { NavItem } from "../data/nav";
+import { Offcanvas, Button } from "react-bootstrap";
+import navs from "../data/nav";
 
-interface NavModalProps {
+interface NavOffcanvasProps {
   show: boolean;
   setShow: (show: boolean) => void;
   activeKey: string;
 }
 
-const NavModal = ({ show, setShow, activeKey }: NavModalProps) => {
+const NavOffcanvas = ({ show, setShow, activeKey }: NavOffcanvasProps) => {
   const active = (path: string) => path.split("/")[1] === activeKey;
 
   return (
-    <Modal className="nav-modal" show={show} onHide={() => setShow(false)}>
-      <Modal.Header closeButton />
-      <Modal.Body className="d-flex flex-column">
+    <Offcanvas
+      className="nav-offcanvas"
+      placement="top"
+      scroll={false}
+      show={show}
+      onHide={() => setShow(false)}
+    >
+      <Offcanvas.Header closeButton />
+      <Offcanvas.Body className="d-flex flex-column">
         {navs
           .filter((nav) => !nav.hidden)
           .map((nav) => {
@@ -42,9 +48,9 @@ const NavModal = ({ show, setShow, activeKey }: NavModalProps) => {
               </Link>
             );
           })}
-      </Modal.Body>
-    </Modal>
+      </Offcanvas.Body>
+    </Offcanvas>
   );
 };
 
-export default NavModal;
+export default NavOffcanvas;

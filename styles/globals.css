@@ -173,33 +173,40 @@ footer a:hover {
   min-width: fit-content;
 }
 
-.nav-modal .active {
+.nav-offcanvas {
+  height: fit-content;
+  background-color: var(--color-background);
+}
+
+.nav-offcanvas .active {
   color: var(--color-text) !important;
 }
 
-.nav-modal .modal-header {
+.nav-offcanvas .offcanvas-header {
+  display: flex;
+  justify-content: end;
   border: none;
 }
 
-.nav-modal .modal-body {
+.nav-offcanvas .offcanvas-body {
   padding-bottom: 1.5rem;
 }
 
-.nav-modal .nav-button {
+.nav-offcanvas .nav-button {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   width: fit-content;
 }
 
-.nav-modal .nav-item {
+.nav-offcanvas .nav-item {
   color: var(--color-muted);
   font-size: 1.25rem;
   margin-bottom: 2rem;
   text-decoration: unset;
 }
 
-.nav-modal .nav-item:hover {
+.nav-offcanvas .nav-item:hover {
   color: var(--color-text);
 }
 
