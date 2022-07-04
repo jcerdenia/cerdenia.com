@@ -92,7 +92,7 @@ footer a:hover {
 }
 
 .brand {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: var(--weight-normal);
   text-transform: uppercase;
   transition: 300ms;
