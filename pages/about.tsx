@@ -1,7 +1,7 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
 import PageLayout from "../components/PageLayout";
 import HtmlWrapper from "../components/HtmlWrapper";
-import { parseMarkdown } from "../helpers/markdown";
+import { parseMarkdown } from "../lib/markdown";
 
 interface AboutPageProps {
   bio: string;

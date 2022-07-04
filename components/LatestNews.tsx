@@ -1,7 +1,7 @@
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
 import { NewsItem } from "../data/interfaces";
-import { compareBy } from "../helpers/utils";
+import { compareBy } from "../lib/utils";
 import announcements from "../data/news/announcements.json";
 
 const LatestNews = () => {

@@ -1,7 +1,7 @@
 import PageLayout from "../../components/PageLayout";
 import WritingsList from "../../components/WritingsList";
-import { parseMarkdown } from "../../helpers/markdown";
-import { compareBy } from "../../helpers/utils";
+import { parseMarkdown } from "../../lib/markdown";
+import { compareBy } from "../../lib/utils";
 import { Writing } from "../../data/interfaces";
 
 interface WritingsHomePageProps {

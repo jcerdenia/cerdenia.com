@@ -3,8 +3,8 @@ import PageLayout from "../../components/PageLayout";
 import HtmlWrapper from "../../components/HtmlWrapper";
 import WritingsList from "../../components/WritingsList";
 import LinkedIcon from "../../components/LinkedIcon";
-import { parseMarkdown } from "../../helpers/markdown";
-import { formatDate, compareBy } from "../../helpers/utils";
+import { parseMarkdown } from "../../lib/markdown";
+import { formatDate, compareBy } from "../../lib/utils";
 import { Writing } from "../../data/interfaces";
 
 interface WritingPageProps {

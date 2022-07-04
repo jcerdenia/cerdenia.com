@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import HtmlWrapper from "../components/HtmlWrapper";
 import PageLayout from "../components/PageLayout";
 import { NewsItem, NewsItemGroup } from "../data/interfaces";
-import { compareBy, formatDate } from "../helpers/utils";
+import { compareBy, formatDate } from "../lib/utils";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
