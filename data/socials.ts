@@ -7,11 +7,6 @@ export interface Social {
 
 const socials: Social[] = [
   {
-    name: "Website",
-    url: "https://cerdenia.com",
-    iconId: "bi:house-fill",
-  },
-  {
     name: "YouTube",
     url: "https://www.youtube.com/channel/UC8AFaXkEZtpE-G_MsB2crqw",
     iconId: "bi:youtube",
@@ -25,6 +20,11 @@ const socials: Social[] = [
     name: "Instagram",
     url: "https://www.instagram.com/joshuatopia/",
     iconId: "bi:instagram",
+  },
+  {
+    name: `"Digital Garden"`,
+    url: "https://garden.cerdenia.com",
+    iconId: "fa6-solid:leaf",
   },
 ];
 
