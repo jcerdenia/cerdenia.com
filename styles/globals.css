@@ -311,12 +311,11 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   .brand {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .brand-sub {
-    font-size: 1rem;
-    margin-left: -0.5rem;
+    display: none;
   }
 
   .navbar {
