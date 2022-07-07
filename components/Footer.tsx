@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => {
             </div>
 
             <div className="mt-2">
-              <a href={meta.newsletter}>Join my newsletter</a> for irregular
+              Join my <a href={meta.newsletter}>newsletter</a> for occasional
               updates on life and music on a personal scale.
             </div>
           </Col>
