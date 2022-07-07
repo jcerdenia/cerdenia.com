@@ -1,3 +1,5 @@
+import meta from "./meta";
+
 export interface NavItem {
   title: string;
   path: string;
@@ -29,7 +31,7 @@ const navs: NavItem[] = [
   },
   {
     title: "Contact",
-    path: "mailto:joshua@cerdenia.com?subject=General Inquiry",
+    path: meta.mailto,
     special: true,
   },
 ];
