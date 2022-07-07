@@ -1,6 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-import LinkedIcon from "./LinkedIcon";
-import socials, { Social } from "../data/socials";
+import Socials from "./Socials";
 import meta from "../data/meta";
 
 const Footer = (): JSX.Element => {
@@ -20,19 +19,7 @@ const Footer = (): JSX.Element => {
             </div>
           </Col>
           <Col xl="auto" className="d-flex align-items-center mb-3">
-            <span className="socials-row">
-              {socials.map((social: Social) => {
-                return (
-                  <LinkedIcon
-                    key={social.name}
-                    iconId={social.iconId}
-                    iconClassName="icon"
-                    iconStyle={social.iconStyle}
-                    href={social.url}
-                  />
-                );
-              })}
-            </span>
+            <Socials />
           </Col>
 
           <footer>
