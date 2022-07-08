@@ -1,8 +1,7 @@
-import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
-import { NewsItem } from "../data/interfaces";
 import { compareBy } from "../lib/utils";
 import announcements from "../data/news/announcements.json";
+import NewsListItem from "./NewsListItem";
 
 const LatestNews = () => {
   return (
@@ -13,18 +12,15 @@ const LatestNews = () => {
           .sort(compareBy("date"))
           .reverse()
           .slice(0, 3)
-          .map((item: NewsItem, idx: number) => {
+          .map((item, idx) => {
             return (
-              <div key={idx} className="my-2">
-                <a href={item.url}>{item.title}</a>
-                {item.language ? ` (${item.language})` : null}
-
-                {item.blurb ? (
-                  <HtmlWrapper className="small text-muted" parent="aside">
-                    {item.blurb}
-                  </HtmlWrapper>
-                ) : null}
-              </div>
+              <NewsListItem
+                key={idx}
+                item={item}
+                columnSpans={[12, 12]}
+                noSources
+                noDates
+              />
             );
           })}
       </div>
