@@ -4,7 +4,7 @@ import WorksList from "../../components/WorksList";
 import WorkDetail from "../../components/WorkDetail";
 import { parseMarkdown } from "../../lib/markdown";
 import { excerpt } from "../../lib/utils";
-import { Work } from "../../data/interfaces";
+import { Work } from "../../lib/interfaces";
 
 interface WorkPageProps {
   works: Work[];

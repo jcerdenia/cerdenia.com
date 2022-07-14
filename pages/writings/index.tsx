@@ -2,7 +2,7 @@ import PageLayout from "../../components/PageLayout";
 import WritingsList from "../../components/WritingsList";
 import { parseMarkdown } from "../../lib/markdown";
 import { compareBy } from "../../lib/utils";
-import { Writing } from "../../data/interfaces";
+import { Writing } from "../../lib/interfaces";
 
 interface WritingsHomePageProps {
   writings: Writing[];

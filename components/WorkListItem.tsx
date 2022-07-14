@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Work } from "../data/interfaces";
+import { Work } from "../lib/interfaces";
 
 interface WorkListItemProps {
   className?: string;

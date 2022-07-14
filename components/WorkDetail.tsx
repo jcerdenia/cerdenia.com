@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
 import useAppState from "../hooks/useAppState";
-import { Work } from "../data/interfaces";
+import { Work } from "../lib/interfaces";
 import email from "../data/email";
 
 interface WorkDetailProps {

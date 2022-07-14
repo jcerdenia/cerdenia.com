@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import NewsListItem from "../components/NewsListItem";
-import { NewsItem, NewsItemGroup } from "../data/interfaces";
+import { NewsItem, NewsItemGroup } from "../lib/interfaces";
 import { compareBy } from "../lib/utils";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";

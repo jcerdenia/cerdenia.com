@@ -7,7 +7,7 @@ import NavOffcanvas from "./NavOffcanvas";
 import useAppState from "../hooks/useAppState";
 import useInnerWidth from "../hooks/useInnerWidth";
 import navs from "../data/nav";
-import breakpoints from "../data/breakpoints";
+import breakpoints from "../lib/breakpoints";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
