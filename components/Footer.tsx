@@ -9,12 +9,12 @@ const Footer = (): JSX.Element => {
         <Row>
           <Col className="mb-3 text-bold">
             <div>
-              For scores and parts, commissions, teaching, and all other
-              inquiries, please <a href={meta.mailto}>email directly</a>.
+              For scores and parts, commissions, and all other inquiries, please{" "}
+              <a href={meta.mailto}>email directly</a>.
             </div>
 
             <div className="mt-2">
-              Join my <a href={meta.newsletter}>newsletter</a> for occasional
+              <a href={meta.newsletter}>Join my newsletter</a> for occasional
               updates on life and music on a personal scale.
             </div>
           </Col>
