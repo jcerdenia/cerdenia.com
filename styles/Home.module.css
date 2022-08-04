@@ -1,6 +1,7 @@
 .background {
   position: relative;
   height: 100vh;
+  padding: 0;
 }
 
 .background::before {
@@ -55,7 +56,7 @@
 
 @media screen and (max-width: 768px) {
   .background::before {
-    background-size: auto 66% !important;
-    background-color: #555760;
+    background-size: 100% auto !important;
+    background-position: top !important;
   }
 }
