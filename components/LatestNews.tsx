@@ -19,7 +19,6 @@ const LatestNews = () => {
                 item={item}
                 columnSpans={[12, 12]}
                 noSources
-                noDates
               />
             );
           })}
