@@ -230,10 +230,6 @@ footer a:hover {
   padding-left: 2px;
 }
 
-.shadowed {
-  box-shadow: 0px 3px 15px #a1a1a1;
-}
-
 .showcase {
   transition: 300ms;
 }
