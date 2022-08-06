@@ -14,8 +14,8 @@
   background-image: url(/images/bklyn-1.jpeg);
   background-color: #525056;
   background-blend-mode: lighten;
-  background-size: cover;
-  background-position: center;
+  background-size: 112%;
+  background-position: left center;
   background-repeat: no-repeat;
   filter: brightness(0.66) saturate(0.5) contrast(1.25);
   box-shadow: 0px 3px 15px #e0e0e0;
@@ -49,15 +49,15 @@
   color: var(--color-muted-secondary) !important;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .background::before {
-    background-position: 75% -25% !important;
+    background-position: left top !important;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .background::before {
-    background-size: 175% auto !important;
+    background-size: 133% !important;
     background-position: 75% top !important;
   }
 }
