@@ -34,14 +34,13 @@ const HomePageWithBackground = (): JSX.Element => {
 const HomePage = (): JSX.Element => {
   const { enableHomeBackground } = useAppState();
 
-  // This is currently set to false.
   if (enableHomeBackground) {
     return <HomePageWithBackground />;
   }
 
   return (
     <PageLayout bodyClassName={styles.default} title={meta.title} exact>
-      <Showcase limit={6} />
+      <Showcase limit={6} noMoreWorksLink />
       <LatestNews />
     </PageLayout>
   );

@@ -16,7 +16,7 @@ const AppStateProvider = ({ children }: any): JSX.Element => {
   const value: AppState = {
     activeWorkCategory,
     setActiveWorkCategory,
-    enableHomeBackground: false,
+    enableHomeBackground: true,
   };
 
   return (
