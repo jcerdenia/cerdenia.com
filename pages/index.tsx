@@ -3,11 +3,19 @@ import PageLayout from "../components/PageLayout";
 import LatestNews from "../components/LatestNews";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
+import HtmlWrapper from "../components/HtmlWrapper";
 import useAppState from "../hooks/useAppState";
+import { parseMarkdown } from "../lib/markdown";
 import meta from "../data/meta";
 import styles from "../styles/Home.module.css";
 
-const HomePageWithBackground = (): JSX.Element => {
+interface HomePageProps {
+  featuredText: string;
+}
+
+const HomePageWithBackground = ({
+  featuredText,
+}: HomePageProps): JSX.Element => {
   return (
     <>
       <Container className={styles.background} fluid>
@@ -22,7 +30,10 @@ const HomePageWithBackground = (): JSX.Element => {
       </Container>
 
       <Container className="my-5">
-        <h6 className="text-bold mb-3">Watch</h6>
+        <HtmlWrapper className={styles.featuredText}>
+          {featuredText}
+        </HtmlWrapper>
+
         <Showcase limit={3} />
       </Container>
 
@@ -31,11 +42,11 @@ const HomePageWithBackground = (): JSX.Element => {
   );
 };
 
-const HomePage = (): JSX.Element => {
+const HomePage = (props: HomePageProps): JSX.Element => {
   const { enableHomeBackground } = useAppState();
 
   if (enableHomeBackground) {
-    return <HomePageWithBackground />;
+    return <HomePageWithBackground {...props} />;
   }
 
   return (
@@ -44,6 +55,14 @@ const HomePage = (): JSX.Element => {
       <LatestNews />
     </PageLayout>
   );
+};
+
+export const getStaticProps = async (): Promise<{ props: HomePageProps }> => {
+  return {
+    props: {
+      featuredText: parseMarkdown("data/featured-text.md", ["content"]),
+    },
+  };
 };
 
 export default HomePage;

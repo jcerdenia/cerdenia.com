@@ -18,7 +18,11 @@
   background-position: left center;
   background-repeat: no-repeat;
   filter: brightness(0.66) saturate(0.5) contrast(1.25);
-  box-shadow: 0px 3px 15px #e0e0e0;
+}
+
+.featuredText {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 .inside {
@@ -59,5 +63,9 @@
   .background::before {
     background-size: 133% !important;
     background-position: 75% top !important;
+  }
+
+  .featuredText {
+    font-size: 1rem;
   }
 }
