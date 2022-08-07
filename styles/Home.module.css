@@ -21,7 +21,9 @@
 }
 
 .featuredText {
-  font-size: 1.25rem;
+  max-width: 992px;
+  align-self: center;
+  font-size: 1.15rem;
   margin-bottom: 3rem;
 }
 

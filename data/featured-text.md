@@ -2,4 +2,4 @@
 
 Despite that direction, 'Fire-Drunk' seemed to rest more with Dante. The work is filled with urgency, intensity, energy, excitement and a flurry of sounds both soft and otherwise, percussive and brass pronouncements, and endless rhythms. With a slight nod to Mahler’s First in the opening few notes, it’s a piece of enormous power that moves from one emotional platform to the next, interspersed with moments of tranquility before powering on. Waves of sound. It was stimulating and vibrant — a treat to hear."
 
-**John Shulson, [The Virginia Gazette](https://www.dailypress.com/virginiagazette/va-vg-virginia-symphony-0311-20200310-msj7psw6tbb5jhvt635bjkrqte-story.html)**
+**John Shulson, [_The Virginia Gazette_](https://www.dailypress.com/virginiagazette/va-vg-virginia-symphony-0311-20200310-msj7psw6tbb5jhvt635bjkrqte-story.html)**
