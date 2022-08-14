@@ -29,7 +29,7 @@ const HomePageWithBackground = ({
         </PageLayout>
       </Container>
 
-      <Container className="my-5 d-flex flex-column">
+      <Container className="my-5">
         <HtmlWrapper className={styles.featuredText}>
           {featuredText}
         </HtmlWrapper>
