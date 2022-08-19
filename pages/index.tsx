@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import PageLayout from "../components/PageLayout";
+import Transition from "../components/Transition";
 import LatestNews from "../components/LatestNews";
 import Footer from "../components/Footer";
 import Showcase from "../components/Showcase";
@@ -17,12 +18,13 @@ const HomePageWithBackground = ({
   featuredText,
 }: HomePageProps): JSX.Element => {
   return (
-    <>
+    <Transition>
       <Container className={styles.background} fluid>
         <PageLayout
           bodyClassName={styles.inside}
           title={meta.title}
           footer={false}
+          transition={false}
           exact
         >
           <LatestNews />
@@ -38,7 +40,7 @@ const HomePageWithBackground = ({
       </Container>
 
       <Footer />
-    </>
+    </Transition>
   );
 };
 

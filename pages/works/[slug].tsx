@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
+import Transition from "../../components/Transition";
 import WorksList from "../../components/WorksList";
 import WorkDetail from "../../components/WorkDetail";
 import { parseMarkdown } from "../../lib/markdown";
@@ -14,7 +15,11 @@ interface WorkPageProps {
 
 const WorkPage = ({ works, work, note }: WorkPageProps): JSX.Element => {
   return (
-    <PageLayout title={work.title} description={excerpt(note)}>
+    <PageLayout
+      title={work.title}
+      description={excerpt(note)}
+      transition={false}
+    >
       <Row>
         <Col md={12} lg={4} className="mb-4 lg-up">
           <WorksList

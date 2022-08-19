@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
+import Transition from "./Transition";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import useInnerWidth from "../hooks/useInnerWidth";
@@ -13,6 +14,7 @@ interface PageLayoutProps {
   bodyClassName?: string;
   navBar?: boolean;
   footer?: boolean;
+  transition?: boolean;
   children: any;
 }
 
@@ -23,6 +25,7 @@ const PageLayout = ({
   bodyClassName,
   navBar = true,
   footer = true,
+  transition = true,
   children,
 }: PageLayoutProps): JSX.Element => {
   const innerWidth = useInnerWidth();
@@ -68,14 +71,16 @@ const PageLayout = ({
       <div className={bodyClassName}>
         {navBar ? <NavBar /> : null}
 
-        <Container
-          className="main pb-4"
-          style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
-        >
-          {children}
-        </Container>
+        <Transition disabled={!transition}>
+          <Container
+            className="main pb-4"
+            style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
+          >
+            {children}
+          </Container>
 
-        {footer ? <Footer /> : null}
+          {footer ? <Footer /> : null}
+        </Transition>
       </div>
     </>
   );
