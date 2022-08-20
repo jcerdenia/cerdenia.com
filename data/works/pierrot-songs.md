@@ -6,6 +6,15 @@ category: "vocal"
 year: 2012
 mediaUrl: "api.soundcloud.com/playlists/3019115"
 scoreUrl: "https://drive.google.com/file/d/1e87m72YxH31yM7r0Cgk_FNGruivFKSxk/view?usp=sharing"
+tags:
+  - "flute"
+  - "clarinet"
+  - "violin"
+  - "cello"
+  - "piano"
+  - "vibraphone"
+  - "voice"
+  - "english"
 ---
 
 <iframe class="mb-3" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/3019115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>

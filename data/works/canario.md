@@ -6,6 +6,9 @@ category: "solo"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/canario-for-violin-and-piano-2016"
 scoreUrl: "https://drive.google.com/file/d/1llHNT8GvRfUZMwRy3XoLgPMr1Zzf2kfN/view?usp=sharing"
+tags:
+  - "violin"
+  - "piano"
 ---
 
 <iframe class="mb-3" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1273733767&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

@@ -6,6 +6,10 @@ category: "chamber"
 year: 2015
 mediaUrl: "https://www.youtube.com/watch?v=mbSxyysJgh8"
 scoreUrl: "https://drive.google.com/file/d/1MYwrjgJ4hpSI2WtKG4JdGpvdtsLXcKNZ/view?usp=sharing"
+tags:
+  - "marimba"
+  - "violin"
+  - "cello"
 ---
 
 <iframe class="mb-3" src="https://www.youtube.com/embed/mbSxyysJgh8" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

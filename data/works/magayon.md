@@ -6,6 +6,8 @@ category: "orchestra"
 year: 2015
 mediaUrl: "https://soundcloud.com/joshuacerdenia/magayon"
 scoreUrl: "https://drive.google.com/file/d/1nZNmvb9zOxwfabJeXud7ieyRxSkikxOF/view?usp=sharing"
+tags:
+  - "orchestra"
 ---
 
 <iframe class="mb-3" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204090592&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>

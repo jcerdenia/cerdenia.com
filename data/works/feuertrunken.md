@@ -7,6 +7,8 @@ description: "Commissioned by the Detroit Symphony Orchestra"
 year: 2017
 mediaUrl: "https://www.youtube.com/watch?v=xnmJFpS1x34"
 scoreUrl: "https://drive.google.com/file/d/1J7_u9aMLvhS1YolKCcFRrIpk3qV-lhoZ/view?usp=sharing"
+tags:
+  - "orchestra"
 ---
 
 <iframe class="mb-3" src="https://www.youtube.com/embed/xnmJFpS1x34" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

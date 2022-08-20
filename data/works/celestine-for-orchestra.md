@@ -7,6 +7,8 @@ description: "Commissioned by the Manila Symphony Orchestra"
 year: 2017
 mediaUrl: "https://soundcloud.com/joshuacerdenia/celestine-prelude-for-orchestramock-up"
 scoreUrl: "https://drive.google.com/file/d/1f-s8kLX5OKfuzVhr1sT8_0Yugz0GYHzx/view?usp=sharing"
+tags:
+  - "orchestra"
 ---
 
 <iframe class="mb-3" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1218093154&color=%234a4a4a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>

@@ -6,6 +6,12 @@ description: "Commissioned by the Asian Contemporary Ensemble"
 year: 2012
 mediaUrl: "https://soundcloud.com/joshuacerdenia/dumagat-fantasy"
 scoreUrl: "https://drive.google.com/file/d/15hmpXo-XLL7LAYNG9_iavSBQhdBpZzn_/view?usp=sharing"
+tags:
+  - "flute"
+  - "clarinet"
+  - "violin"
+  - "cello"
+  - "piano"
 ---
 
 <iframe class="mb-3" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/43315110&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%" height="300" frameborder="no" scrolling="no"></iframe>

@@ -6,6 +6,11 @@ description: "For Naoto Segawa and Ensemble Gô"
 year: 2014
 mediaUrl: "https://www.youtube.com/watch?v=YhaNa_622Wc"
 scoreUrl: "https://drive.google.com/file/d/1mQ_DXxwGEBg02PY5l_fHAOR2oKCCQRQs/view?usp=sharing"
+tags:
+  - "marimba"
+  - "violin"
+  - "viola"
+  - "cello"
 ---
 
 <iframe class="mb-3" width="100%" height="400" src="https://www.youtube.com/embed/YhaNa_622Wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

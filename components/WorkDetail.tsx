@@ -1,8 +1,10 @@
-import { Button } from "react-bootstrap";
+import Link from "next/link";
+import { Button, Badge } from "react-bootstrap";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";
 import useAppState from "../hooks/useAppState";
 import { Work } from "../lib/interfaces";
+import { slugify } from "../lib/utils";
 import email from "../data/email";
 
 interface WorkDetailProps {
@@ -61,6 +63,20 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       >
         Contact to Perform
       </Button>
+
+      {work.tags ? (
+        <div className="mt-3">
+          {work.tags.sort().map((tag) => {
+            return (
+              <Link key={tag} href={`./tags/${slugify(tag)}`} passHref>
+                <a>
+                  <Badge className="mx-1 work-tag">{tag}</Badge>
+                </a>
+              </Link>
+            );
+          })}
+        </div>
+      ) : null}
 
       <div className="mt-3">
         <LinkedIcon

@@ -6,6 +6,9 @@ description: "For the New Juilliard Ensemble"
 year: 2016
 mediaUrl: "https://soundcloud.com/joshuacerdenia/excerpt-spoliarium-for-chamber-orchestra-2016"
 scoreUrl: "https://drive.google.com/file/d/10HCW9mIPihZ4O77xY8XSEFfen7QDad9C/view?usp=sharing"
+tags:
+  - "sinfonietta"
+  - "percussion"
 ---
 
 <iframe class="mb-3" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267985720%3Fsecret_token%3Ds-hvvIG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
