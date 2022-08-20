@@ -23,6 +23,7 @@ export interface Work {
   category: string;
   scoreUrl?: string;
   slug: string;
+  tags?: string[];
 }
 
 export interface Writing {

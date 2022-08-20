@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 :root {
-  --color-accent: #357851; /* Formerly #2a6041;*/
+  --color-accent: #357851;
   --color-accent-secondary: #224d34;
   --color-background: #efefef;
   --color-text: #070707;
@@ -293,6 +293,16 @@ footer a:hover {
 .work-content-container iframe {
   width: 100% !important;
   margin-bottom: 1rem;
+}
+
+.work-tag {
+  color: var(--color-background) !important;
+  background-color: var(--color-accent-secondary) !important;
+  transition: 200ms;
+}
+
+.work-tag:hover {
+  background-color: var(--color-accent) !important;
 }
 
 @media screen and (max-width: 576px) {

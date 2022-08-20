@@ -72,3 +72,18 @@ export const formatDate = (dateString: string, options: any = {}): string => {
 
   return dates[0];
 };
+
+export const slugify = (text: string): string => {
+  return text.split(" ").join("-").toLowerCase();
+};
+
+export const unslugify = (text: string): string => {
+  return text.split("-").join(" ");
+};
+
+export const capitalize = (text: string): string => {
+  return text
+    .split(" ")
+    .map((word: string) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+};

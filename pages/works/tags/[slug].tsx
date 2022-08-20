@@ -1,0 +1,81 @@
+import PageLayout from "../../../components/PageLayout";
+import WorkListItem from "../../../components/WorkListItem";
+import { Work } from "../../../lib/interfaces";
+import { parseMarkdown } from "../../../lib/markdown";
+import { capitalize, slugify, unslugify } from "../../../lib/utils";
+
+const TagPage = ({ tag, works }: any) => {
+  const title = `Tagged Works: ${capitalize(tag)}`;
+
+  return (
+    <PageLayout title={title} transition={false}>
+      <h5 className="mb-3">{title}</h5>
+
+      {works.map((work: Work) => {
+        return (
+          <WorkListItem
+            key={work.slug}
+            className="my-3"
+            work={work}
+            active={false}
+          />
+        );
+      })}
+    </PageLayout>
+  );
+};
+
+export const getStaticPaths = async () => {
+  const fs = require("fs");
+  const dir = "/data/works";
+  const slugs: string[] = [];
+
+  fs.readdirSync(process.cwd() + dir)
+    .filter((fileName: string): boolean => fileName.endsWith(".md"))
+    .forEach((fileName: string) => {
+      const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
+
+      metadata.tags.forEach((tag: string) => {
+        if (!slugs.includes(tag)) {
+          slugs.push(slugify(tag));
+        }
+      });
+    });
+
+  return {
+    paths: slugs.map((slug) => ({
+      params: { slug },
+    })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async (context: any): Promise<{ props: any }> => {
+  const fs = require("fs");
+  const slug = context.params.slug;
+  const dir = "/data/works";
+  const works: Partial<Work>[] = [];
+
+  fs.readdirSync(process.cwd() + dir)
+    .filter((fileName: string): boolean => fileName.endsWith(".md"))
+    .forEach((fileName: string) => {
+      const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
+      const slugifiedTags = metadata.tags.map((tag: string) => slugify(tag));
+
+      if (slugifiedTags.includes(slug)) {
+        works.push({
+          title: metadata.title,
+          subtitle: metadata.subtitle || null,
+          instrumentation: metadata.instrumentation || null,
+          year: metadata.year,
+          slug: metadata.slug,
+        });
+      }
+    });
+
+  return {
+    props: { tag: unslugify(slug), works },
+  };
+};
+
+export default TagPage;
