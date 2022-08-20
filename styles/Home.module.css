@@ -26,13 +26,15 @@
 }
 
 .inside {
+  --color-text: #efefef;
+  --color-muted: #b5b5b5;
   position: relative; /* Stack on top of the home-background::before */
   user-select: none;
-  color: var(--color-background);
+  color: var(--color-text);
 }
 
 .inside :global .brand:hover {
-  color: var(--color-muted-secondary) !important;
+  color: var(--color-muted) !important;
 }
 
 .inside :global .main {
@@ -42,15 +44,15 @@
 }
 
 .inside :global .main a {
-  color: var(--color-background);
+  color: var(--color-text);
 }
 
 .inside :global .main a:hover {
-  color: var(--color-muted-secondary);
+  color: var(--color-muted);
 }
 
 .inside :global .text-muted {
-  color: var(--color-muted-secondary) !important;
+  color: #b5b5b5 !important;
 }
 
 @media screen and (max-width: 1200px) {
