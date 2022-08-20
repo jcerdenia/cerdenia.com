@@ -1,8 +1,8 @@
 # music.cerdenia.com
 
-My personal music website at [music.cerdenia.com](https://music.cerdenia.com) containing a detailed list of works with audio samples, program notes, perusal scores, a biography and photographs, press items, and events. 
+My personal music website at [cerdenia.com](https://music.cerdenia.com) containing a detailed list of works with audio samples, program notes, perusal scores, a biography and photographs, press items, and events. 
 
-Built with Next.js, written in TypeScript, and deployed on Vercel.
+Built with Next.js, written in TypeScript, and deployed with Vercel.
 
 ## Running Locally
 
@@ -22,6 +22,7 @@ npm run start
 
 The project runs by default at `localhost:3000`.
 
-## Libraries/Tools
+## Frameworks & Libraries
+- [Next.js](https://nextjs.org), a [React](https://reactjs.org/) framework
 - [Bootstrap](https://getbootstrap.com/) and [React Bootstrap](https://react-bootstrap.github.io/) for styling and pre-built components
 - [gray-matter](https://www.npmjs.com/package/gray-matter) and [markdown-it](https://www.npmjs.com/package/gray-matter) for parsing markdown at build time
