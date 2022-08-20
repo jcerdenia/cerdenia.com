@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Offcanvas, Button } from "react-bootstrap";
+import { Button, Offcanvas } from "react-bootstrap";
+
 import navs from "../data/nav";
 
 interface NavOffcanvasProps {

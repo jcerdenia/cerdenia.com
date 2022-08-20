@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Button, Badge } from "react-bootstrap";
-import HtmlWrapper from "./HtmlWrapper";
-import LinkedIcon from "./LinkedIcon";
+import { Badge, Button } from "react-bootstrap";
+
+import email from "../data/email";
 import useAppState from "../hooks/useAppState";
 import { Work } from "../lib/interfaces";
 import { slugify } from "../lib/utils";
-import email from "../data/email";
+import HtmlWrapper from "./HtmlWrapper";
+import LinkedIcon from "./LinkedIcon";
 
 interface WorkDetailProps {
   work: Work;

@@ -1,11 +1,11 @@
-import { Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+
 import PageLayout from "../../components/PageLayout";
-import Transition from "../../components/Transition";
-import WorksList from "../../components/WorksList";
 import WorkDetail from "../../components/WorkDetail";
+import WorksList from "../../components/WorksList";
+import { Work } from "../../lib/interfaces";
 import { parseMarkdown } from "../../lib/markdown";
 import { excerpt } from "../../lib/utils";
-import { Work } from "../../lib/interfaces";
 
 interface WorkPageProps {
   works: Work[];

@@ -1,11 +1,12 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import Transition from "./Transition";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import useInnerWidth from "../hooks/useInnerWidth";
+
 import meta from "../data/meta";
+import useInnerWidth from "../hooks/useInnerWidth";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+import Transition from "./Transition";
 
 interface PageLayoutProps {
   title: string;

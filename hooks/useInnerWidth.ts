@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import throttle from "lodash.throttle";
+import { useEffect, useState } from "react";
 
 const useInnerWidth = (): number => {
   const [width, setWidth] = useState<number>(0);

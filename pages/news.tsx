@@ -1,10 +1,10 @@
-import PageLayout from "../components/PageLayout";
 import NewsListItem from "../components/NewsListItem";
-import { NewsItem, NewsItemGroup } from "../lib/interfaces";
-import { compareBy } from "../lib/utils";
+import PageLayout from "../components/PageLayout";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
+import { NewsItem, NewsItemGroup } from "../lib/interfaces";
+import { compareBy } from "../lib/utils";
 
 const NewsPage = (): JSX.Element => {
   const isRecent = (item: NewsItem) => {
@@ -29,7 +29,7 @@ const NewsPage = (): JSX.Element => {
   ];
 
   return (
-    <PageLayout title="News">
+    <PageLayout title="News & Events">
       {news.map((group) => {
         return (
           <section key={group.title} className="mb-4">

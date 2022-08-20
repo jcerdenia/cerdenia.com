@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
-import PageLayout from "../components/PageLayout";
-import Transition from "../components/Transition";
-import LatestNews from "../components/LatestNews";
+
 import Footer from "../components/Footer";
-import Showcase from "../components/Showcase";
 import HtmlWrapper from "../components/HtmlWrapper";
+import LatestNews from "../components/LatestNews";
+import PageLayout from "../components/PageLayout";
+import Showcase from "../components/Showcase";
+import Transition from "../components/Transition";
+import meta from "../data/meta";
 import useAppState from "../hooks/useAppState";
 import { parseMarkdown } from "../lib/markdown";
-import meta from "../data/meta";
 import styles from "../styles/Home.module.css";
 
 interface HomePageProps {

@@ -1,12 +1,13 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
-import PageLayout from "../../components/PageLayout";
+import { Col, Row } from "react-bootstrap";
+
 import MediaWidget from "../../components/MediaWidget";
+import PageLayout from "../../components/PageLayout";
 import WorksList from "../../components/WorksList";
-import { parseMarkdown } from "../../lib/markdown";
-import { Work } from "../../lib/interfaces";
 import playlists from "../../data/playlists";
+import { Work } from "../../lib/interfaces";
+import { parseMarkdown } from "../../lib/markdown";
 
 interface WorksHomePageProps {
   works: Work[];

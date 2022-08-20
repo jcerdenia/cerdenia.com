@@ -1,6 +1,7 @@
-import { Tooltip, OverlayTrigger, Button } from "react-bootstrap";
-import LinkedIcon from "./LinkedIcon";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+
 import socials from "../data/socials";
+import LinkedIcon from "./LinkedIcon";
 
 const Socials = (): JSX.Element => {
   const renderTooltip = (text: string) => {

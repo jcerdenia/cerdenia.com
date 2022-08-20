@@ -1,13 +1,17 @@
 import Link from "next/link";
-import { formatDate } from "../lib/utils";
+
 import { Writing } from "../lib/interfaces";
+import { formatDate } from "../lib/utils";
 
 interface WritingsListProps {
   writings: Writing[];
-  activeKey: string;
+  activeKey?: string;
 }
 
-const WritingsList = ({ writings, activeKey }: any): JSX.Element => {
+const WritingsList = ({
+  writings,
+  activeKey,
+}: WritingsListProps): JSX.Element => {
   return (
     <section>
       <h5 className="mb-3">Assorted Writings</h5>

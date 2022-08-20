@@ -1,6 +1,6 @@
-import LinkedIcon from "./LinkedIcon";
-import { compareBy } from "../lib/utils";
 import announcements from "../data/news/announcements.json";
+import { compareBy } from "../lib/utils";
+import LinkedIcon from "./LinkedIcon";
 import NewsListItem from "./NewsListItem";
 
 const LatestNews = () => {

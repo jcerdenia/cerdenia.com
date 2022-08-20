@@ -1,8 +1,9 @@
 import { Accordion, Card } from "react-bootstrap";
-import WorkListItem from "./WorkListItem";
-import AccordionToggle from "./AccordionToggle";
+
 import categories from "../data/work-categories";
 import { Work } from "../lib/interfaces";
+import AccordionToggle from "./AccordionToggle";
+import WorkListItem from "./WorkListItem";
 
 interface WorksListProps {
   works: Work[];

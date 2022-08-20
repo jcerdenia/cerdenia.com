@@ -1,11 +1,12 @@
-import { Row, Col } from "react-bootstrap";
-import PageLayout from "../../components/PageLayout";
+import { Col, Row } from "react-bootstrap";
+
 import HtmlWrapper from "../../components/HtmlWrapper";
-import WritingsList from "../../components/WritingsList";
 import LinkedIcon from "../../components/LinkedIcon";
-import { parseMarkdown } from "../../lib/markdown";
-import { formatDate, compareBy } from "../../lib/utils";
+import PageLayout from "../../components/PageLayout";
+import WritingsList from "../../components/WritingsList";
 import { Writing } from "../../lib/interfaces";
+import { parseMarkdown } from "../../lib/markdown";
+import { compareBy, formatDate } from "../../lib/utils";
 
 interface WritingPageProps {
   metadata: Writing;

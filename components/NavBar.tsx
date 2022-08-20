@@ -1,13 +1,14 @@
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Container, Navbar, Nav, Button } from "react-bootstrap";
-import { Icon } from "@iconify/react";
-import NavOffcanvas from "./NavOffcanvas";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+
+import navs from "../data/nav";
 import useAppState from "../hooks/useAppState";
 import useInnerWidth from "../hooks/useInnerWidth";
-import navs from "../data/nav";
 import breakpoints from "../lib/breakpoints";
+import NavOffcanvas from "./NavOffcanvas";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();

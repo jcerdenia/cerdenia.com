@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+
 import MediaWidget from "../components/MediaWidget";
-import LinkedIcon from "./LinkedIcon";
 import media, { MediaItem } from "../data/showcase";
+import LinkedIcon from "./LinkedIcon";
 
 interface ShowcaseProps {
   columns?: number;

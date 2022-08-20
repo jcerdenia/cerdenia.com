@@ -1,7 +1,8 @@
-import { Row, Col } from "react-bootstrap";
-import HtmlWrapper from "./HtmlWrapper";
-import { formatDate } from "../lib/utils";
+import { Col, Row } from "react-bootstrap";
+
 import { NewsItem } from "../lib/interfaces";
+import { formatDate } from "../lib/utils";
+import HtmlWrapper from "./HtmlWrapper";
 
 interface NewsListItemProps {
   item: NewsItem;

@@ -1,6 +1,7 @@
-import { Row, Col, Container } from "react-bootstrap";
-import Socials from "./Socials";
+import { Col, Container, Row } from "react-bootstrap";
+
 import meta from "../data/meta";
+import Socials from "./Socials";
 
 const Footer = (): JSX.Element => {
   return (
