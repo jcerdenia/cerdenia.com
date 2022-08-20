@@ -175,7 +175,7 @@ footer a:hover {
 }
 
 .nav-offcanvas {
-  height: fit-content;
+  height: fit-content !important;
   background-color: var(--color-background);
 }
 
