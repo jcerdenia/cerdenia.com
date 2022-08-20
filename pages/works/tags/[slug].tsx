@@ -41,8 +41,10 @@ export const getStaticPaths = async () => {
       const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
 
       metadata.tags.forEach((tag: string) => {
-        if (!slugs.includes(tag)) {
-          slugs.push(slugify(tag));
+        const slug = slugify(tag);
+
+        if (!slugs.includes(slug)) {
+          slugs.push(slug);
         }
       });
     });
@@ -67,9 +69,9 @@ export const getStaticProps = async (
     .filter((fileName: string): boolean => fileName.endsWith(".md"))
     .forEach((fileName: string) => {
       const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
-      const slugifiedTags = metadata.tags.map((tag: string) => slugify(tag));
+      const slugs = metadata.tags.map((tag: string) => slugify(tag));
 
-      if (slugifiedTags.includes(slug)) {
+      if (slugs.includes(slug)) {
         works.push({
           title: metadata.title,
           subtitle: metadata.subtitle || null,
