@@ -3,7 +3,7 @@ import PageLayout from "../components/PageLayout";
 import announcements from "../data/news/announcements.json";
 import articles from "../data/news/articles.json";
 import events from "../data/news/events.json";
-import { NewsItem, NewsItemGroup } from "../lib/interfaces";
+import type { NewsItem, NewsItemGroup } from "../lib/interfaces";
 import { compareBy } from "../lib/utils";
 
 const NewsPage = (): JSX.Element => {

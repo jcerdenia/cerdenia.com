@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 
-import { NewsItem } from "../lib/interfaces";
+import type { NewsItem } from "../lib/interfaces";
 import { formatDate } from "../lib/utils";
 import HtmlWrapper from "./HtmlWrapper";
 

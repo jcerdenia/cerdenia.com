@@ -3,7 +3,7 @@ import { Badge, Button } from "react-bootstrap";
 
 import email from "../data/email";
 import useAppState from "../hooks/useAppState";
-import { Work } from "../lib/interfaces";
+import type { Work } from "../lib/interfaces";
 import { slugify } from "../lib/utils";
 import HtmlWrapper from "./HtmlWrapper";
 import LinkedIcon from "./LinkedIcon";

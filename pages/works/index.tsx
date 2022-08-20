@@ -6,7 +6,7 @@ import MediaWidget from "../../components/MediaWidget";
 import PageLayout from "../../components/PageLayout";
 import WorksList from "../../components/WorksList";
 import playlists from "../../data/playlists";
-import { Work } from "../../lib/interfaces";
+import type { Work } from "../../lib/interfaces";
 import { parseMarkdown } from "../../lib/markdown";
 
 interface WorksHomePageProps {

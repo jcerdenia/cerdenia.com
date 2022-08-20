@@ -1,6 +1,6 @@
 import PageLayout from "../../../components/PageLayout";
 import WorkListItem from "../../../components/WorkListItem";
-import { Work } from "../../../lib/interfaces";
+import type { Work } from "../../../lib/interfaces";
 import { parseMarkdown } from "../../../lib/markdown";
 import { capitalize, slugify, unslugify } from "../../../lib/utils";
 

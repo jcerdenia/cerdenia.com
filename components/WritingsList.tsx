@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Writing } from "../lib/interfaces";
+import type { Writing } from "../lib/interfaces";
 import { formatDate } from "../lib/utils";
 
 interface WritingsListProps {

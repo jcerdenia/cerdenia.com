@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
 import WorkDetail from "../../components/WorkDetail";
 import WorksList from "../../components/WorksList";
-import { Work } from "../../lib/interfaces";
+import type { Work } from "../../lib/interfaces";
 import { parseMarkdown } from "../../lib/markdown";
 import { excerpt } from "../../lib/utils";
 

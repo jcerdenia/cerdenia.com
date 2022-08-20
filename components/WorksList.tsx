@@ -1,7 +1,7 @@
 import { Accordion, Card } from "react-bootstrap";
 
 import categories from "../data/work-categories";
-import { Work } from "../lib/interfaces";
+import type { Work } from "../lib/interfaces";
 import AccordionToggle from "./AccordionToggle";
 import WorkListItem from "./WorkListItem";
 

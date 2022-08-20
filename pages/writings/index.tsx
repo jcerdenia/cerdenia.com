@@ -1,6 +1,6 @@
 import PageLayout from "../../components/PageLayout";
 import WritingsList from "../../components/WritingsList";
-import { Writing } from "../../lib/interfaces";
+import type { Writing } from "../../lib/interfaces";
 import { parseMarkdown } from "../../lib/markdown";
 import { compareBy } from "../../lib/utils";
 
