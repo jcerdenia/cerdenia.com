@@ -4,14 +4,19 @@ import type { Work } from "../../../lib/interfaces";
 import { parseMarkdown } from "../../../lib/markdown";
 import { capitalize, slugify, unslugify } from "../../../lib/utils";
 
-const TagPage = ({ tag, works }: any) => {
+interface TagProps {
+  tag: string;
+  works: Partial<Work>[];
+}
+
+const TagPage = ({ tag, works }: TagProps) => {
   const title = `Tagged Works: ${capitalize(tag)}`;
 
   return (
     <PageLayout title={title} transition={false}>
       <h5 className="mb-3">{title}</h5>
 
-      {works.map((work: Work) => {
+      {works.map((work) => {
         return (
           <WorkListItem
             key={work.slug}
@@ -50,7 +55,9 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context: any): Promise<{ props: any }> => {
+export const getStaticProps = async (
+  context: any
+): Promise<{ props: TagProps }> => {
   const fs = require("fs");
   const slug = context.params.slug;
   const dir = "/data/works";

@@ -4,7 +4,7 @@ import type { Work } from "../lib/interfaces";
 
 interface WorkListItemProps {
   className?: string;
-  work: Work;
+  work: Partial<Work>;
   active: boolean;
 }
 
