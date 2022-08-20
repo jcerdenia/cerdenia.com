@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 
 import meta from "../data/meta";
+import navs from "../data/nav";
 import Socials from "./Socials";
 
 const Footer = (): JSX.Element => {
@@ -9,17 +11,18 @@ const Footer = (): JSX.Element => {
       <Container>
         <Row>
           <Col className="mb-3 text-bold">
-            <div>
+            <div className="mb-2">
               For scores and parts, commissions, and all other inquiries, please{" "}
               <a href={meta.mailto}>email directly</a>.
             </div>
 
-            <div className="mt-2">
+            <div>
               <a href={meta.newsletter}>Join my newsletter</a> for occasional
               updates on life and music on a personal scale.
             </div>
           </Col>
-          <Col xl="auto" className="d-flex align-items-center mb-3">
+
+          <Col xl="auto" className="mb-3 d-flex align-items-center">
             <Socials />
           </Col>
 

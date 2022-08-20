@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import MediaWidget from "../components/MediaWidget";
 import media, { MediaItem } from "../data/showcase";
@@ -9,14 +9,9 @@ import LinkedIcon from "./LinkedIcon";
 interface ShowcaseProps {
   columns?: number;
   limit?: number;
-  noMoreWorksLink?: boolean;
 }
 
-const Showcase = ({
-  columns = 3,
-  limit = 6,
-  noMoreWorksLink = false,
-}: ShowcaseProps): JSX.Element => {
+const Showcase = ({ columns = 3, limit = 6 }: ShowcaseProps): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
   const getWidgetStyle = (widgetId: number): {} => ({
@@ -54,16 +49,6 @@ const Showcase = ({
           );
         })}
       </Row>
-
-      {!noMoreWorksLink ? (
-        <LinkedIcon
-          className="link-muted"
-          iconId="bi:arrow-return-right"
-          href="/works"
-        >
-          More Works
-        </LinkedIcon>
-      ) : null}
     </>
   );
 };

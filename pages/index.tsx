@@ -54,7 +54,7 @@ const HomePage = (props: HomePageProps): JSX.Element => {
 
   return (
     <PageLayout bodyClassName={styles.default} title={meta.title} exact>
-      <Showcase limit={6} noMoreWorksLink />
+      <Showcase limit={6} />
       <LatestNews />
     </PageLayout>
   );

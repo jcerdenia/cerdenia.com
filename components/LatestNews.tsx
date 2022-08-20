@@ -1,6 +1,8 @@
+import Link from "next/link";
+import { Button } from "react-bootstrap";
+
 import announcements from "../data/news/announcements.json";
 import { compareBy } from "../lib/utils";
-import LinkedIcon from "./LinkedIcon";
 import NewsListItem from "./NewsListItem";
 
 const LatestNews = () => {
@@ -24,13 +26,11 @@ const LatestNews = () => {
           })}
       </div>
 
-      <LinkedIcon
-        className="link-muted"
-        iconId="bi:arrow-return-right"
-        href="/news"
-      >
-        More News & Events
-      </LinkedIcon>
+      <Link passHref href="/news">
+        <Button variant="outline-secondary" size="sm">
+          More News & Events
+        </Button>
+      </Link>
     </section>
   );
 };

@@ -37,6 +37,12 @@
   color: var(--color-muted) !important;
 }
 
+.inside :global .btn-outline-secondary:hover {
+  border-color: white !important;
+  background-color: white !important;
+  color: black !important;
+}
+
 .inside :global .main {
   display: flex;
   flex-direction: column;
