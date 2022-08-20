@@ -38,8 +38,8 @@
 }
 
 .inside :global .btn-outline-secondary:hover {
-  border-color: white !important;
-  background-color: white !important;
+  border-color: var(--color-text) !important;
+  background-color: var(--color-text) !important;
   color: black !important;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .inside :global .text-muted {
-  color: #b5b5b5 !important;
+  color: var(--color-muted) !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,7 +69,13 @@
 
 @media screen and (max-width: 992px) {
   .background::before {
-    background-size: 133% !important;
+    background-size: 166% !important;
+    background-position: 75% bottom !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background::before {
     background-position: 75% top !important;
   }
 

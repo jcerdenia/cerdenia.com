@@ -27,7 +27,7 @@ const LatestNews = () => {
       </div>
 
       <Link passHref href="/news">
-        <Button variant="outline-secondary" size="sm">
+        <Button className="media-button" variant="outline-secondary" size="sm">
           More News & Events
         </Button>
       </Link>
