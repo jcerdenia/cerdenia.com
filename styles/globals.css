@@ -117,6 +117,12 @@ footer a:hover {
   background-color: var(--color-accent);
 }
 
+.btn-light {
+  color: var(--color-text);
+  border: transparent;
+  background-color: transparent;
+}
+
 .card {
   border: none;
   background-color: var(--color-background);
@@ -157,6 +163,10 @@ footer a:hover {
 .lg-down,
 .xl-down {
   display: none;
+}
+
+.menu-icon {
+  font-size: 2rem;
 }
 
 .nav-bar {

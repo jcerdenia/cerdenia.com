@@ -42,11 +42,11 @@ const NavBar = (): JSX.Element => {
 
         <Button
           className="xl-down"
-          variant={background ? "outline-light" : "outline-secondary"}
+          variant="light"
           size={innerWidth >= breakpoints.MD ? "lg" : undefined}
           onClick={() => setShowOffcanvas(true)}
         >
-          <Icon icon="bi:list" />
+          <Icon className="menu-icon" icon="bi:list" />
         </Button>
 
         <Nav className="xl-up" activeKey={`/${basePath}`}>
