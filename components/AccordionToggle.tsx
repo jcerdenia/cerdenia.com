@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { AccordionContext, Card, useAccordionButton } from "react-bootstrap";
 
 import useAppState from "../hooks/useAppState";
+import styles from "../styles/AccordionToggle.module.css";
 
 interface AccordionToggleProps {
   eventKey: string;
@@ -15,27 +16,20 @@ const AccordionToggle = ({ eventKey, children }: AccordionToggleProps) => {
 
   const active = activeEventKey === eventKey;
 
-  const toggleStyle = {
-    backgroundColor: active ? "#fbfbfb" : "#e2e2e2",
-    outline: active ? "2px solid rgba(42, 96, 65, 0.5)" : "1px solid #d5d5d5",
-  };
-
   useEffect(() => {
     setActiveWorkCategory(activeEventKey as string);
   }, [activeEventKey, setActiveWorkCategory]);
 
   return (
     <div
-      className="accordion-toggle"
-      style={toggleStyle}
+      className={`${styles.toggle} ${active ? styles.active : styles.inactive}`}
       onClick={useAccordionButton(eventKey)}
     >
       <Card.Header className="d-flex justify-content-between align-items-center">
         {children}
         <Icon
           icon="bi:chevron-down"
-          className="icon-transforming"
-          style={{ transform: active ? "rotate(-180deg)" : "none" }}
+          className={`${styles.icon} ${active && styles.rotating}`}
         />
       </Card.Header>
     </div>
