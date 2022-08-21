@@ -45,6 +45,20 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         {work.description} {!work.instrumentation && `(${work.year})`}
       </aside>
 
+      {work.tags ? (
+        <div className="my-2">
+          {work.tags.sort().map((tag) => {
+            return (
+              <Link key={tag} href={`./tags/${slugify(tag)}`} passHref>
+                <a>
+                  <Badge className="mx-1 work-tag">{tag}</Badge>
+                </a>
+              </Link>
+            );
+          })}
+        </div>
+      ) : null}
+
       <HtmlWrapper className="my-3">{note}</HtmlWrapper>
 
       <Button
@@ -64,20 +78,6 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
       >
         Contact to Perform
       </Button>
-
-      {work.tags ? (
-        <div className="mt-3">
-          {work.tags.sort().map((tag) => {
-            return (
-              <Link key={tag} href={`./tags/${slugify(tag)}`} passHref>
-                <a>
-                  <Badge className="mx-1 work-tag">{tag}</Badge>
-                </a>
-              </Link>
-            );
-          })}
-        </div>
-      ) : null}
 
       <div className="mt-3">
         <LinkedIcon
