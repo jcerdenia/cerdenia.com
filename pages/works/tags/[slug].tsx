@@ -1,3 +1,4 @@
+import LinkedIcon from "../../../components/LinkedIcon";
 import PageLayout from "../../../components/PageLayout";
 import WorkListItem from "../../../components/WorkListItem";
 import type { Work } from "../../../lib/interfaces";
@@ -26,6 +27,16 @@ const TagPage = ({ tag, works }: TagProps) => {
           />
         );
       })}
+
+      <div className="mt-3">
+        <LinkedIcon
+          className="link-muted"
+          iconId="bi:arrow-return-left"
+          href="/works"
+        >
+          More Works
+        </LinkedIcon>
+      </div>
     </PageLayout>
   );
 };
