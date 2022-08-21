@@ -160,6 +160,15 @@ footer a:hover {
   color: var(--color-text);
 }
 
+.link-muted-active {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.link-muted-active:hover {
+  color: var(--color-muted);
+}
+
 .lg-down,
 .xl-down {
   display: none;

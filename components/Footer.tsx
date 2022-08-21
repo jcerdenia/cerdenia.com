@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Col, Container, Row } from "react-bootstrap";
 
 import meta from "../data/meta";
@@ -6,11 +7,14 @@ import navs from "../data/nav";
 import Socials from "./Socials";
 
 const Footer = (): JSX.Element => {
+  const { asPath } = useRouter();
+  const basePath = asPath.split("/")[1];
+
   return (
     <div id="footer" className="footer-container pt-4">
       <Container>
         <Row>
-          <Col className="mb-3 text-bold">
+          <Col className="mb-4 text-bold">
             <div className="mb-2">
               For scores and parts, commissions, and all other inquiries, please{" "}
               <a href={meta.mailto}>email directly</a>.
@@ -22,7 +26,27 @@ const Footer = (): JSX.Element => {
             </div>
           </Col>
 
-          <Col xl="auto" className="mb-3 d-flex align-items-center">
+          <Col xl="auto" className="mb-4 d-flex flex-column align-items-center">
+            <div className="mb-2">
+              {navs
+                .filter((nav) => !nav.hidden)
+                .map((nav) => (
+                  <span key={nav.path} className="mx-1">
+                    <Link href={nav.path} passHref>
+                      <a
+                        className={
+                          `/${basePath}` == nav.path
+                            ? "small link-muted-active"
+                            : "small link-muted"
+                        }
+                      >
+                        {nav.title}
+                      </a>
+                    </Link>
+                  </span>
+                ))}
+            </div>
+
             <Socials />
           </Col>
 

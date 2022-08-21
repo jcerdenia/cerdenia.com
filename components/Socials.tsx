@@ -1,4 +1,4 @@
-import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 import socials from "../data/socials";
 import LinkedIcon from "./LinkedIcon";
@@ -10,11 +10,11 @@ const Socials = (): JSX.Element => {
 
   return (
     <span className="socials-row">
-      {socials.map((social, i) => {
+      {socials.map((social) => {
         return (
           <OverlayTrigger
-            key={i}
-            placement="auto"
+            key={social.url}
+            placement="top"
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip(social.name)}
           >
