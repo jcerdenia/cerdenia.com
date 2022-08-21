@@ -87,3 +87,8 @@ export const capitalize = (text: string): string => {
     .map((word: string) => word[0].toUpperCase() + word.slice(1))
     .join(" ");
 };
+
+export const shorten = (text: string): string => {
+  const words = text.split(" ");
+  return words.slice(0, 8).join(" ") + (words.length > 8 ? "…" : "");
+};
