@@ -5,6 +5,7 @@ export const excerpt = (text: string): string => {
 
 // Function to return a custom comparator for sorting objects by property.
 // Use with sort(), e.g., sort(compareBy("prop"))
+// eslint-disable-next-line no-unused-vars
 export const compareBy = (prop: string): ((a: any, b: any) => 1 | -1 | 0) => {
   return (objA: any, objB: any) => {
     const [a, b] = [objA, objB].map((obj) => {

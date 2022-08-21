@@ -3,6 +3,7 @@ type ParseOption = "metadata" | "content";
 export const parseMarkdown = (
   filePath: string,
   options: ParseOption[] = ["metadata", "content"],
+  // eslint-disable-next-line no-unused-vars
   onBeforeRender: (content: string) => string = (content) => content
 ): any => {
   const fs = require("fs");

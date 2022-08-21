@@ -5,6 +5,7 @@ import navs from "../data/nav";
 
 interface NavOffcanvasProps {
   show: boolean;
+  // eslint-disable-next-line no-unused-vars
   setShow: (show: boolean) => void;
   activeKey: string;
 }

@@ -4,6 +4,7 @@ type Category = string | null;
 
 interface AppState {
   activeWorkCategory: Category;
+  // eslint-disable-next-line no-unused-vars
   setActiveWorkCategory: (category: string) => void;
   enableHomeBackground: boolean;
 }

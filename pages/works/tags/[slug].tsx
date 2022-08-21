@@ -10,7 +10,7 @@ interface TagProps {
   works: Partial<Work>[];
 }
 
-const TagPage = ({ tag, works }: TagProps) => {
+const TagPage = ({ tag, works }: TagProps): JSX.Element => {
   const title = `Tagged Works: ${capitalize(tag)}`;
 
   return (
