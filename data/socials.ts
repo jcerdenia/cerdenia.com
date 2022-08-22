@@ -17,14 +17,14 @@ const socials: Social[] = [
     iconId: "fa6-brands:soundcloud",
   },
   {
-    name: "Instagram",
-    url: "https://www.instagram.com/joshuatopia/",
-    iconId: "bi:instagram",
+    name: "Personal Site",
+    url: "https://garden.cerdenia.com",
+    iconId: "bi:link-45deg",
   },
   {
-    name: `"Digital Garden"`,
-    url: "https://garden.cerdenia.com",
-    iconId: "fa6-solid:leaf",
+    name: "Email",
+    url: "https://www.instagram.com/joshuatopia/",
+    iconId: "bi:envelope-fill",
   },
 ];
 
