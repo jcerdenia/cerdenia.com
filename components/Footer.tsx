@@ -26,12 +26,12 @@ const Footer = (): JSX.Element => {
             </div>
           </Col>
 
-          <Col xl="auto" className="mb-4 d-flex flex-column align-items-center">
+          <Col xl="auto" className="mb-3 d-flex flex-column align-items-center">
             <div className="mb-2">
               {navs
-                .filter((nav) => !nav.hidden)
+                .filter((nav) => !nav.hidden && !nav.special)
                 .map((nav) => (
-                  <span key={nav.path} className="mx-1">
+                  <span key={nav.path} className="mx-2">
                     <Link href={nav.path} passHref>
                       <a
                         className={

@@ -129,13 +129,10 @@ footer a:hover {
   color: var(--color-text);
 }
 
-.link-muted-active {
+.link-muted-active,
+.link-muted-active:hover {
   text-decoration: none;
   color: var(--color-text);
-}
-
-.link-muted-active:hover {
-  color: var(--color-muted);
 }
 
 .lg-down,
