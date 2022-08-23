@@ -47,7 +47,7 @@ export const getStaticPaths = async () => {
   const slugs: string[] = [];
 
   fs.readdirSync(process.cwd() + dir)
-    .filter((fileName: string): boolean => fileName.endsWith(".md"))
+    .filter((fileName: string) => fileName.endsWith(".md"))
     .forEach((fileName: string) => {
       const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
 
@@ -77,7 +77,7 @@ export const getStaticProps = async (
   const works: Partial<Work>[] = [];
 
   fs.readdirSync(process.cwd() + dir)
-    .filter((fileName: string): boolean => fileName.endsWith(".md"))
+    .filter((fileName: string) => fileName.endsWith(".md"))
     .forEach((fileName: string) => {
       const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
       const slugs = metadata.tags.map((tag: string) => slugify(tag));
@@ -87,6 +87,7 @@ export const getStaticProps = async (
           title: metadata.title,
           subtitle: metadata.subtitle || null,
           instrumentation: metadata.instrumentation || null,
+          description: metadata.description || null,
           year: metadata.year,
           slug: metadata.slug,
         });
