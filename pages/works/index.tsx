@@ -6,8 +6,8 @@ import MediaWidget from "../../components/MediaWidget";
 import PageLayout from "../../components/PageLayout";
 import WorksList from "../../components/WorksList";
 import playlists from "../../data/playlists";
+import { getWorkFilePaths, parseMarkdown } from "../../lib/helpers";
 import type { Work } from "../../lib/interfaces";
-import { parseMarkdown } from "../../lib/markdown";
 
 interface WorksHomePageProps {
   works: Work[];
@@ -54,13 +54,9 @@ const WorksHomePage = ({ works }: WorksHomePageProps): JSX.Element => {
 export const getStaticProps = async (): Promise<{
   props: WorksHomePageProps;
 }> => {
-  const fs = require("fs");
-  const dir = "/data/works";
-
-  const works: Work[] = fs
-    .readdirSync(`${process.cwd()}/${dir}`)
-    .filter((name: string) => name.endsWith(".md"))
-    .map((name: string) => parseMarkdown(`${dir}/${name}`, ["metadata"]));
+  const works: Work[] = getWorkFilePaths().map((path: string) =>
+    parseMarkdown(path, ["metadata"])
+  );
 
   return {
     props: { works },

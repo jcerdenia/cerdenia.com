@@ -1,8 +1,8 @@
 import LinkedIcon from "../../../components/LinkedIcon";
 import PageLayout from "../../../components/PageLayout";
 import WorkListItem from "../../../components/WorkListItem";
+import { getWorkFilePaths, parseMarkdown } from "../../../lib/helpers";
 import type { Work } from "../../../lib/interfaces";
-import { parseMarkdown } from "../../../lib/markdown";
 import { capitalize, slugify, unslugify } from "../../../lib/utils";
 
 interface TagProps {
@@ -42,23 +42,19 @@ const TagPage = ({ tag, works }: TagProps): JSX.Element => {
 };
 
 export const getStaticPaths = async () => {
-  const fs = require("fs");
-  const dir = "/data/works";
   const slugs: string[] = [];
 
-  fs.readdirSync(process.cwd() + dir)
-    .filter((fileName: string) => fileName.endsWith(".md"))
-    .forEach((fileName: string) => {
-      const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
+  getWorkFilePaths().forEach((path: string) => {
+    const metadata = parseMarkdown(path, ["metadata"]);
 
-      metadata.tags.forEach((tag: string) => {
-        const slug = slugify(tag);
+    metadata.tags.forEach((tag: string) => {
+      const slug = slugify(tag);
 
-        if (!slugs.includes(slug)) {
-          slugs.push(slug);
-        }
-      });
+      if (!slugs.includes(slug)) {
+        slugs.push(slug);
+      }
     });
+  });
 
   return {
     paths: slugs.map((slug) => ({
@@ -71,28 +67,24 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (
   context: any
 ): Promise<{ props: TagProps }> => {
-  const fs = require("fs");
   const slug = context.params.slug;
-  const dir = "/data/works";
   const works: Partial<Work>[] = [];
 
-  fs.readdirSync(process.cwd() + dir)
-    .filter((fileName: string) => fileName.endsWith(".md"))
-    .forEach((fileName: string) => {
-      const metadata = parseMarkdown(`${dir}/${fileName}`, ["metadata"]);
-      const slugs = metadata.tags.map((tag: string) => slugify(tag));
+  getWorkFilePaths().forEach((path: string) => {
+    const metadata = parseMarkdown(path, ["metadata"]);
+    const slugs = metadata.tags.map((tag: string) => slugify(tag));
 
-      if (slugs.includes(slug)) {
-        works.push({
-          title: metadata.title,
-          subtitle: metadata.subtitle || null,
-          instrumentation: metadata.instrumentation || null,
-          description: metadata.description || null,
-          year: metadata.year,
-          slug: metadata.slug,
-        });
-      }
-    });
+    if (slugs.includes(slug)) {
+      works.push({
+        title: metadata.title,
+        subtitle: metadata.subtitle || null,
+        instrumentation: metadata.instrumentation || null,
+        description: metadata.description || null,
+        year: metadata.year,
+        slug: metadata.slug,
+      });
+    }
+  });
 
   return {
     props: { tag: unslugify(slug), works },

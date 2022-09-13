@@ -3,8 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import PageLayout from "../../components/PageLayout";
 import WorkDetail from "../../components/WorkDetail";
 import WorksList from "../../components/WorksList";
+import { getWorkFilePaths, parseMarkdown } from "../../lib/helpers";
 import type { Work } from "../../lib/interfaces";
-import { parseMarkdown } from "../../lib/markdown";
 import { excerpt } from "../../lib/utils";
 
 interface WorkPageProps {
@@ -38,12 +38,9 @@ const WorkPage = ({ works, work, note }: WorkPageProps): JSX.Element => {
 };
 
 export const getStaticPaths = async () => {
-  const fs = require("fs");
-
-  const slugs: string[] = fs
-    .readdirSync(`${process.cwd()}/data/works`)
-    .filter((fileName: string): boolean => fileName.endsWith(".md"))
-    .map((fileName: string): string => fileName.replace(".md", ""));
+  const slugs: string[] = getWorkFilePaths(true).map((fileName: string) =>
+    fileName.replace(".md", "")
+  );
 
   return {
     paths: slugs.map((slug) => ({
@@ -56,12 +53,12 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (
   context: any
 ): Promise<{ props: WorkPageProps }> => {
-  const fs = require("fs");
-  const slug = context.params.slug;
-  const dir = "/data/works";
+  const works: Work[] = getWorkFilePaths().map((path: string) =>
+    parseMarkdown(path, ["metadata"])
+  );
 
   const { metadata: work, content: note }: any = parseMarkdown(
-    `${dir}/${slug}.md`,
+    `/data/works/${context.params.slug}.md`,
     ["metadata", "content"],
     (content) => {
       return content
@@ -70,11 +67,6 @@ export const getStaticProps = async (
         .replace("show_comments=true", "show_comments=false");
     }
   );
-
-  const works: Work[] = fs
-    .readdirSync(`${process.cwd()}/${dir}`)
-    .filter((name: string) => name.endsWith(".md"))
-    .map((name: string) => parseMarkdown(`${dir}/${name}`, ["metadata"]));
 
   return {
     props: { works, work, note },

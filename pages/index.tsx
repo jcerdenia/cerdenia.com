@@ -8,7 +8,7 @@ import Showcase from "../components/Showcase";
 import Transition from "../components/Transition";
 import meta from "../data/meta";
 import useAppState from "../hooks/useAppState";
-import { parseMarkdown } from "../lib/markdown";
+import { parseMarkdown } from "../lib/helpers";
 import styles from "../styles/Home.module.css";
 
 interface HomePageProps {

@@ -1,3 +1,15 @@
+export const getWorkFilePaths = (fileNamesOnly?: boolean) => {
+  const fs = require("fs");
+  const dir = "/data/works";
+
+  return fs
+    .readdirSync(process.cwd() + dir)
+    .filter((fileName: string) => fileName.endsWith(".md"))
+    .map((fileName: string) =>
+      fileNamesOnly ? fileName : `${dir}/${fileName}`
+    );
+};
+
 type ParseOption = "metadata" | "content";
 
 export const parseMarkdown = (

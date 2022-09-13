@@ -4,8 +4,8 @@ import HtmlWrapper from "../../components/HtmlWrapper";
 import LinkedIcon from "../../components/LinkedIcon";
 import PageLayout from "../../components/PageLayout";
 import WritingsList from "../../components/WritingsList";
+import { parseMarkdown } from "../../lib/helpers";
 import { Writing } from "../../lib/interfaces";
-import { parseMarkdown } from "../../lib/markdown";
 import { compareBy, formatDate } from "../../lib/utils";
 
 interface WritingPageProps {
