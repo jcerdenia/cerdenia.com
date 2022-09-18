@@ -13,6 +13,7 @@ const LatestNews = (): JSX.Element => {
 
         <div>
           {announcements
+            .filter((item) => !item.skipPreview)
             .sort(compareBy("date"))
             .reverse()
             .slice(0, 3)

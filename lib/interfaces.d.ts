@@ -6,6 +6,7 @@ export interface NewsItem {
   language?: string;
   location?: string;
   blurb?: string | null;
+  skipPreview?: boolean;
 }
 
 export interface NewsItemGroup {

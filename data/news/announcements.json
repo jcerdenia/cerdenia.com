@@ -51,19 +51,28 @@
     "blurb": "Performance of <em>Heavenward</em> by soloists of the Spanish National Orchestra"
   },
   {
-    "title": "Quarteto 'Atlântico' da OCM e convidados na Capela da Fundação Princesa Dona Maria Amélia",
-    "date": "2022-07",
-    "source": "Diário de Notícias Madeira",
-    "language": "PT",
-    "url": "https://www-dnoticias-pt.translate.goog/2022/7/5/318469-quarteto-atlantico-da-ocm-e-convidados-na-capela-da-fundacao-princesa-dona-maria-amelia/?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
-    "blurb": "Performance of <em>Heavenward</em> by musicians of the Madeira Classical Orchestra"
-  },
-  {
     "title": "The Florida Orchestra announces its 2022-23 concert season",
     "date": "2022-05",
     "source": "St. Pete Catalyst",
     "url": "https://stpetecatalyst.com/the-florida-orchestra-announces-its-2022-23-concert-season/",
     "blurb": "Performance of <em>Feuertrunken</em> alongside works by Wynton Marsalis, Ellington, and Gershwin"
+  },
+  {
+    "title": "Quarteto 'Atlântico' da OCM e convidados na Capela da Fundação Princesa Dona Maria Amélia",
+    "date": "2022-07",
+    "source": "Diário de Notícias Madeira",
+    "language": "PT",
+    "url": "https://www-dnoticias-pt.translate.goog/2022/7/5/318469-quarteto-atlantico-da-ocm-e-convidados-na-capela-da-fundacao-princesa-dona-maria-amelia/?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
+    "blurb": "Performance of <em>Heavenward</em> by soloists of the Madeira Classical Orchestra",
+    "skipPreview": true
+  },
+  {
+    "title": "Concerto junta Quarteto de Cordas 'Atlântico', Pedro Camacho e Duarte Santos ",
+    "date": "2022-09",
+    "source": "Diário de Notícias Madeira",
+    "language": "PT",
+    "url": "https://www.dnoticias.pt/2022/9/15/328126-concerto-junta-quarteto-de-cordas-atlantico-pedro-camacho-e-duarte-santos/",
+    "blurb": "Performance of <em>Heavenward</em> by soloists of the Madeira Classical Orchestra"
   },
   {
     "title": "Critic Picks for the 2022-23 Season",
