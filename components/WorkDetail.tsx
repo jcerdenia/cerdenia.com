@@ -59,7 +59,7 @@ const WorkDetail = ({ work, note }: WorkDetailProps): JSX.Element => {
         </div>
       ) : null}
 
-      <HtmlWrapper className="my-3">{note}</HtmlWrapper>
+      <HtmlWrapper className="my-3 work-content">{note}</HtmlWrapper>
 
       <Button
         className="media-button px-5 py-2 m-1"

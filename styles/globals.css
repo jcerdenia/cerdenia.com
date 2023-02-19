@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 :root {
   --color-accent: #357851;
@@ -21,7 +21,7 @@ body {
   padding: 0;
   margin: 0;
   font-weight: var(--weight-normal);
-  font-family: "Rubik", sans-serif;
+  font-family: "Sora", sans-serif;
   color: var(--color-text);
   background-color: var(--color-background);
 }
@@ -49,6 +49,11 @@ blockquote p {
   color: var(--color-muted);
 }
 
+h5,
+h6 {
+  margin-bottom: 1.25rem;
+}
+
 footer {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -63,6 +68,10 @@ footer a {
 
 footer a:hover {
   color: var(--color-text);
+}
+
+p {
+  line-height: 1.75rem;
 }
 
 .brand {
@@ -277,6 +286,11 @@ footer a:hover {
 .work-content-container img,
 .work-content-container iframe {
   width: 100% !important;
+  margin-bottom: 1rem;
+}
+
+.work-content h6 {
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
