@@ -74,7 +74,7 @@ const PageLayout = ({
 
         <Transition disabled={!transition}>
           <Container
-            className="main pb-4"
+            className="main py-4"
             style={{ minHeight: `calc(100vh - ${heightOffset}px)` }}
           >
             {children}

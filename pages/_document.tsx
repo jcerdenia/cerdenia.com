@@ -32,7 +32,8 @@ export default class MyDocument extends Document {
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="music-note.svg" />
+
+          <link rel="icon" href="images/headshot-wide.jpg" />
         </Head>
 
         <body>

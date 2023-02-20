@@ -89,7 +89,7 @@ export const capitalize = (text: string): string => {
     .join(" ");
 };
 
-export const shorten = (text: string): string => {
+export const truncate = (text: string, count: number = 8): string => {
   const words = text.split(" ");
-  return words.slice(0, 8).join(" ") + (words.length > 8 ? "…" : "");
+  return words.slice(0, count).join(" ") + (words.length > count ? "…" : "");
 };

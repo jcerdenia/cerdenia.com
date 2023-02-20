@@ -24,7 +24,6 @@ const LatestNews = (): JSX.Element => {
                   item={item}
                   columnSpans={[12, 12]}
                   sources={false}
-                  shortened
                 />
               );
             })}

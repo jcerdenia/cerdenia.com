@@ -71,7 +71,7 @@
   .background::before {
     background-size: 166% !important;
     background-position: 75% bottom !important;
-    background-color: #606270;
+    /*background-color: #606270;*/
   }
 }
 

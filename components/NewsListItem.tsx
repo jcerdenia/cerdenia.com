@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 
 import type { NewsItem } from "../lib/interfaces";
-import { formatDate, shorten } from "../lib/utils";
+import { formatDate, truncate } from "../lib/utils";
 import HtmlWrapper from "./HtmlWrapper";
 
 interface NewsListItemProps {
@@ -10,7 +10,7 @@ interface NewsListItemProps {
   blurbs?: boolean;
   sources?: boolean;
   dates?: boolean;
-  shortened?: boolean;
+  truncated?: boolean;
 }
 
 const NewsListItem = ({
@@ -19,7 +19,7 @@ const NewsListItem = ({
   blurbs = true,
   sources = true,
   dates = true,
-  shortened = false,
+  truncated = false,
 }: NewsListItemProps): JSX.Element => {
   return (
     <Row className="news-item my-3">
@@ -37,7 +37,7 @@ const NewsListItem = ({
 
       <Col lg={12} xl={columnSpans[1]}>
         <a className="text-height-1" href={item.url}>
-          {shortened ? shorten(item.title) : item.title}
+          {truncated ? truncate(item.title) : item.title}
         </a>
         {item.language && ` (${item.language})`}
 
