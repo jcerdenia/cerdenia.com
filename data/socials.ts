@@ -30,7 +30,7 @@ const socials: Social[] = [
   */
   {
     name: "Email",
-    url: "https://www.instagram.com/joshuatopia/",
+    url: "mailto:joshua@cerdenia.com",
     iconId: "bi:envelope-fill",
   },
 ];
