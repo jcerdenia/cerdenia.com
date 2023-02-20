@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <link rel="icon" href="images/headshot-wide.jpg" />
+          <link rel="icon" href="music-note.svg" />
         </Head>
 
         <body>
