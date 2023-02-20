@@ -51,8 +51,8 @@ const Footer = (): JSX.Element => {
           </Col>
 
           <footer>
-            © 2011-22 Joshua Cerdenia unless otherwise stated. This site is{" "}
-            <a href={meta.repo}>open-source</a>.
+            © 2011-{new Date().getFullYear()} Joshua Cerdenia unless otherwise
+            stated. This site is <a href={meta.repo}>open-source</a>.
           </footer>
         </Row>
       </Container>
