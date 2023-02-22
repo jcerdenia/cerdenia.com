@@ -37,8 +37,4 @@ yarn-error.log*
 .vercel
 
 # images
-public/images/bklyn-2.jpeg
-public/images/bklyn-3.jpeg
-public/images/piano.jpeg
-public/images/steinway.jpeg
-public/images/headshot-wide.jpg
+public/images/archive

@@ -8,7 +8,7 @@ import NewsListItem from "./NewsListItem";
 const LatestNews = (): JSX.Element => {
   return (
     <Row className="my-3">
-      <Col lg={6}>
+      <Col lg={12}>
         <h5>Latest</h5>
 
         <div>

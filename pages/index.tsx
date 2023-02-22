@@ -29,6 +29,10 @@ const HomePageWithBackground = ({
           exact
         >
           <LatestNews />
+
+          <div className={styles.imageCredit}>
+            Photo courtesy of The Florida Orchestra
+          </div>
         </PageLayout>
       </Container>
 
