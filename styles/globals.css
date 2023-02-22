@@ -119,16 +119,6 @@ p {
   background-color: #fff;
 }
 
-.grayscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: 300ms;
-}
-
-.grayscale:hover {
-  opacity: 0.9;
-}
-
 .link-muted {
   text-decoration: none;
   color: var(--color-muted);

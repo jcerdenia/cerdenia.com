@@ -1,0 +1,30 @@
+.imageContainer {
+  background-image: url("/images/headshot-wide.jpg");
+  height: 75vh;
+  background-size: cover;
+  background-position: 60% center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 300ms;
+}
+
+.imageContainer:hover {
+  opacity: 0.9;
+}
+
+.imageContainer .imageCredit {
+  position: absolute;
+  bottom: 0;
+  color: var(--color-background);
+  font-size: 0.75rem;
+  text-align: left;
+  opacity: 0.33;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .imageCredit {
+    font-size: 0.66rem;
+  }
+}

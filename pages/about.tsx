@@ -1,8 +1,9 @@
-import { Button, Col, Image, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import HtmlWrapper from "../components/HtmlWrapper";
 import PageLayout from "../components/PageLayout";
 import { parseMarkdown } from "../lib/helpers";
+import styles from "../styles/About.module.css";
 
 interface AboutPageProps {
   bio: string;
@@ -13,15 +14,9 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
     <PageLayout title="About">
       <Row xs={1} lg={2}>
         <Col md={12} lg={5} className="mb-4">
-          <Image
-            fluid
-            className="grayscale"
-            src="/images/headshot-tall.jpeg"
-            alt="headshot"
-          />
-          <figcaption className="small text-muted mt-1">
-            Photo by Rashidah De Vore
-          </figcaption>
+          <div className={styles.imageContainer}>
+            <div className={styles.imageCredit}>Photo by Rashidah De Vore</div>
+          </div>
 
           <div className="d-flex justify-content-center mt-3">
             <Button
