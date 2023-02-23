@@ -22,7 +22,7 @@ _Dark Lady_ is a song cycle based on four sonnets from William Shakespeare's "Da
 
 Although I have conceived the cycle as one long piece rather than four separate movements, I have used the instrumentation as a means to demarcate the individual sonnets. The outer songs, Sonnets 130 and 127, make use of the entire trio of voice, violin, and piano; these texts address the reader, both extolling and deriding the qualities of Shakespeare's Dark Lady. The two inner songs, Sonnets 151 and 141, are duets (one between voice and violin, the other between voice and piano); they are more personal in tone, each one addressed directly to the Dark Lady.
 
-The cycle, as a whole, also represents my first attempt at integrating elements of classical-tradition art song with popular and musical theater sensibilities. I have written the piece in commemoration of Shakespeare's 450th birth anniversary in the year 2014.
+The cycle, as a whole, also represents my first attempt at integrating elements of classical-tradition art song with popular and musical theatre sensibilities. I have written the piece in commemoration of Shakespeare's 450th birth anniversary in the year 2014.
 
 ###### Duration
 

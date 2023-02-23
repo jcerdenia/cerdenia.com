@@ -1,7 +1,7 @@
 ---
 title: "The Getaway"
 description: "Short Musical"
-category: "theater"
+category: "theatre"
 year: 2019
 tags:
   - "english"

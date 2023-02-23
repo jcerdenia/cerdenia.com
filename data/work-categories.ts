@@ -20,8 +20,8 @@ const categories: CategoryMap = {
   vocal: {
     display: "Vocal & Vocal Chamber",
   },
-  theater: {
-    display: "Theater",
+  theatre: {
+    display: "Musical Theatre",
   },
 };
 
