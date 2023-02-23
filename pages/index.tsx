@@ -6,6 +6,7 @@ import LatestNews from "../components/LatestNews";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
 import Transition from "../components/Transition";
+import featuredWorks from "../data/featured-works";
 import meta from "../data/meta";
 import useAppState from "../hooks/useAppState";
 import { parseMarkdown } from "../lib/helpers";
@@ -41,7 +42,7 @@ const HomePageWithBackground = ({
           {featuredText}
         </HtmlWrapper>
 
-        <Showcase limit={3} />
+        <Showcase media={featuredWorks} limit={3} />
       </Container>
 
       <Footer />
@@ -58,7 +59,7 @@ const HomePage = (props: HomePageProps): JSX.Element => {
 
   return (
     <PageLayout title={meta.title} exact>
-      <Showcase limit={6} />
+      <Showcase media={featuredWorks} limit={6} />
       <LatestNews />
     </PageLayout>
   );

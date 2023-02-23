@@ -3,14 +3,19 @@ import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import MediaWidget from "../components/MediaWidget";
-import media, { MediaItem } from "../data/showcase";
+import { MediaItem } from "../lib/interfaces";
 
 interface ShowcaseProps {
+  media: MediaItem[];
   columns?: number;
   limit?: number;
 }
 
-const Showcase = ({ columns = 3, limit = 6 }: ShowcaseProps): JSX.Element => {
+const Showcase = ({
+  media,
+  columns = 3,
+  limit = 6,
+}: ShowcaseProps): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
   const getWidgetStyle = (widgetId: number): {} => ({

@@ -1,11 +1,6 @@
-export interface MediaItem {
-  title: string;
-  artist?: string;
-  path: string;
-  src: string;
-}
+import { MediaItem } from "../lib/interfaces";
 
-const media: MediaItem[] = [
+const featuredWorks: MediaItem[] = [
   {
     title: "Feuertrunken",
     artist: "Detroit Symphony Orchestra",
@@ -44,4 +39,4 @@ const media: MediaItem[] = [
   },
 ];
 
-export default media;
+export default featuredWorks;
