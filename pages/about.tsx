@@ -14,9 +14,7 @@ const AboutPage = ({ bio }: AboutPageProps): React.ReactElement => {
     <PageLayout title="About">
       <Row xs={1} lg={2}>
         <Col md={12} lg={5} className="mb-4">
-          <div className={styles.imageContainer}>
-            <div className={styles.imageCredit}>Photo by Rashidah De Vore</div>
-          </div>
+          <div className={styles.imageContainer} />
 
           <div className="d-flex justify-content-center mt-3">
             <Button

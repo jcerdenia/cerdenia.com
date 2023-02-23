@@ -11,20 +11,3 @@
 .imageContainer:hover {
   opacity: 0.9;
 }
-
-.imageContainer .imageCredit {
-  position: absolute;
-  bottom: 0;
-  color: var(--color-background);
-  font-size: 0.75rem;
-  text-align: left;
-  opacity: 0.33;
-  width: 100%;
-  padding: 0.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .imageCredit {
-    font-size: 0.66rem;
-  }
-}
