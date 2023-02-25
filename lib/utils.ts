@@ -93,3 +93,13 @@ export const truncate = (text: string, count: number = 8): string => {
   const words = text.split(" ");
   return words.slice(0, count).join(" ") + (words.length > count ? "…" : "");
 };
+
+export const setAttributes = (
+  target: any,
+  method: string,
+  params: object
+): void => {
+  Object.entries(params).forEach(([key, value]) => {
+    target[method](key, value);
+  });
+};

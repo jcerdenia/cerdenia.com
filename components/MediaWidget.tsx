@@ -1,78 +1,93 @@
+import { setAttributes } from "../lib/utils";
+
 interface MediaWidgetProps {
   className?: string;
   src: string;
   width?: number | string;
   height?: number | string;
-  style?: {};
+  style?: object;
   visual?: boolean;
   onMouseEnter?: VoidFunction;
   onMouseLeave?: VoidFunction;
 }
 
+export const heights = {
+  SHORT: 232,
+  NORMAL: 300,
+  TALL: 352,
+};
+
 const MediaWidget = ({
   className,
   src,
   width = "100%",
-  height = 300,
-  style,
-  visual = true,
+  height = heights.NORMAL,
+  style = {},
   onMouseEnter,
   onMouseLeave,
 }: MediaWidgetProps): JSX.Element => {
+  const props = {
+    className,
+    src,
+    width,
+    height,
+    style,
+    onMouseEnter,
+    onMouseLeave,
+  };
+
   switch (true) {
     case src.includes("youtube.com"): {
-      src = src.replace(/watch\?v=/i, "embed/");
-
       return (
         <iframe
-          className={className}
-          width={width}
-          height={height}
-          style={style}
-          src={src}
+          {...props}
+          src={src.replace(/watch\?v=/i, "embed/")}
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
         />
       );
     }
 
     case src.includes("soundcloud.com"): {
-      src = src.replace(/http(s?):\/\//i, "");
+      const url = new URL("https://w.soundcloud.com/player/");
 
-      const url =
-        `https://w.soundcloud.com/player/` +
-        `?url=https%3A//${src}` +
-        "&color=%23484440" +
-        "&auto_play=false" +
-        "&hide_related=true" +
-        "&show_comments=false" +
-        "&show_user=true" +
-        "&show_reposts=false" +
-        "&show_teaser=false" +
-        `&visual=${visual}`;
+      setAttributes(url.searchParams, "set", {
+        url: src,
+        color: "#484440",
+        auto_play: false,
+        hide_related: true,
+        show_comments: false,
+        show_user: false,
+        show_reposts: false,
+        show_teaser: false,
+        visual: true,
+      });
+
+      return <iframe {...props} src={url.toString()} allow="autoplay" />;
+    }
+
+    case src.includes("spotify.com"): {
+      const url = new URL(src.replace("spotify.com", "spotify.com/embed"));
+
+      setAttributes(url.searchParams, "set", {
+        utm_source: "generator",
+        theme: 0,
+      });
 
       return (
         <iframe
-          className={className}
-          width={width}
-          height={height}
-          style={style}
-          src={url}
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
+          {...props}
+          src={url.toString()}
+          style={{ ...style, borderRadius: "12px" }}
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
         />
       );
     }
 
     default: {
-      return <text className="text-danger">Cannot render {src}</text>;
+      return <text className="text-danger">Cannot render {props.src}</text>;
     }
   }
 };

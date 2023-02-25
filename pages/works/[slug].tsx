@@ -64,7 +64,8 @@ export const getStaticProps = async (
       return content
         .replace("hide_related=false", "hide_related=true")
         .replace("show_teaser=true", "show_teaser=false")
-        .replace("show_comments=true", "show_comments=false");
+        .replace("show_comments=true", "show_comments=false")
+        .replace("show_user=true", "show_user=false");
     }
   );
 
