@@ -12,6 +12,7 @@ interface MediaWidgetProps {
 }
 
 export const heights = {
+  COMPACT: 152,
   SHORT: 232,
   NORMAL: 300,
   TALL: 352,

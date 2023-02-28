@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import MediaWidget, { heights } from "../components/MediaWidget";
-import { MediaItem } from "../lib/interfaces";
+import { MediaItem } from "../data/featured-media";
 
 interface ShowcaseProps {
   media: MediaItem[];
@@ -20,16 +20,16 @@ const Showcase = ({
 }: ShowcaseProps): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
 
+  if (media.slice(0, limit + 1).find((m) => m.src.includes("soundcloud.com"))) {
+    itemHeight = heights.SHORT;
+  }
+
   const getWidgetStyle = (widgetId: number): {} => ({
     filter:
       hoveredWidgetId === null || hoveredWidgetId === widgetId
         ? "brightness(100%)"
         : "brightness(50%)",
   });
-
-  const getShowcaseLinkClass = (widgetId: number): string => {
-    return hoveredWidgetId !== widgetId ? "link-muted" : "showcase-link";
-  };
 
   return (
     <Row xs={1} lg={columns} className="g-2 mb-4">
@@ -45,17 +45,23 @@ const Showcase = ({
               style={getWidgetStyle(idx)}
             />
 
-            <aside className="small">
+            <div className="mt-2 small">
               <Link href={item.path} passHref>
-                <a className={getShowcaseLinkClass(idx)}>{item.title}</a>
+                <a className="showcase-link">{item.title}</a>
               </Link>{" "}
-              <span className="text-muted">({item.artist})</span>
-            </aside>
+              {item.subtitle && <span>({item.subtitle})</span>}
+            </div>
+
+            {item.description && (
+              <p className="small text-muted">{item.description}</p>
+            )}
           </Col>
         );
       })}
     </Row>
   );
 };
+
+export { heights };
 
 export default Showcase;

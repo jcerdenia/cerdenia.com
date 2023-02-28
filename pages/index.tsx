@@ -6,7 +6,7 @@ import LatestNews from "../components/LatestNews";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
 import Transition from "../components/Transition";
-import featuredWorks from "../data/featured-works";
+import featuredMedia from "../data/featured-media";
 import meta from "../data/meta";
 import { parseMarkdown } from "../lib/helpers";
 import styles from "../styles/Home.module.css";
@@ -39,7 +39,7 @@ const HomePage = ({ featuredText }: HomePageProps): JSX.Element => {
           {featuredText}
         </HtmlWrapper>
 
-        <Showcase media={featuredWorks} limit={3} />
+        <Showcase media={featuredMedia} limit={3} />
       </Container>
 
       <Footer />

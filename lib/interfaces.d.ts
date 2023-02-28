@@ -33,10 +33,3 @@ export interface Writing {
   location?: string;
   slug: string;
 }
-
-export interface MediaItem {
-  title: string;
-  artist?: string;
-  path: string;
-  src: string;
-}
