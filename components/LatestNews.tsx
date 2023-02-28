@@ -11,7 +11,7 @@ const LatestNews = (): JSX.Element => {
       <Col lg={12}>
         <h5>Latest</h5>
 
-        <div>
+        <div className="my-4">
           {announcements
             .filter((item) => !item.skipPreview)
             .sort(compareBy("date"))
@@ -23,7 +23,8 @@ const LatestNews = (): JSX.Element => {
                   key={item.url}
                   item={item}
                   columnSpans={[12, 12]}
-                  sources={false}
+                  date={true}
+                  source={false}
                   blurbAsTitle
                 />
               );

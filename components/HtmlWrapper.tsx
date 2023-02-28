@@ -20,7 +20,7 @@ const HtmlWrapper = ({
     }
 
     default: {
-      return <section {...props} />;
+      return <div {...props} />;
     }
   }
 };
