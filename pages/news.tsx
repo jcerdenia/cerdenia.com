@@ -37,7 +37,7 @@ const NewsPage = (): JSX.Element => {
 
             {group.items.map((item, idx) => {
               return (
-                <NewsListItem key={idx} item={item} blurbs={!!group.blurbs} />
+                <NewsListItem key={idx} item={item} blurb={!!group.blurbs} />
               );
             })}
           </section>

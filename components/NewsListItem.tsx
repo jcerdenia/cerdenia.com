@@ -7,7 +7,8 @@ import HtmlWrapper from "./HtmlWrapper";
 interface NewsListItemProps {
   item: NewsItem;
   columnSpans?: [number, number];
-  blurbs?: boolean;
+  blurb?: boolean;
+  blurbAsTitle?: boolean;
   sources?: boolean;
   dates?: boolean;
   truncated?: boolean;
@@ -16,11 +17,24 @@ interface NewsListItemProps {
 const NewsListItem = ({
   item,
   columnSpans = [4, 8],
-  blurbs = true,
+  blurb = true,
   sources = true,
   dates = true,
   truncated = false,
+  blurbAsTitle = false,
 }: NewsListItemProps): JSX.Element => {
+  const getTitle = (): JSX.Element | string => {
+    if (blurbAsTitle) {
+      return (
+        <HtmlWrapper>
+          {item.blurb || '<span class="text-danger">No blurb</span>'}
+        </HtmlWrapper>
+      );
+    }
+
+    return truncated ? truncate(item.title) : item.title;
+  };
+
   return (
     <Row className="news-item my-3">
       <Col lg={12} xl={columnSpans[0]}>
@@ -37,11 +51,11 @@ const NewsListItem = ({
 
       <Col lg={12} xl={columnSpans[1]}>
         <a className="text-height-1" href={item.url}>
-          {truncated ? truncate(item.title) : item.title}
+          {getTitle()}
         </a>
-        {item.language && ` (${item.language})`}
+        {!blurbAsTitle && item.language && ` (${item.language})`}
 
-        {blurbs && item.blurb && (
+        {blurb && !blurbAsTitle && item.blurb && (
           <HtmlWrapper className="small text-height-1" parent="aside">
             {item.blurb}
           </HtmlWrapper>
