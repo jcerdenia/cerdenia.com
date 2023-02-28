@@ -5,19 +5,17 @@ import { useEffect, useState } from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 
 import navs from "../data/nav";
-import useAppState from "../hooks/useAppState";
 import useInnerWidth from "../hooks/useInnerWidth";
 import breakpoints from "../lib/breakpoints";
 import NavOffcanvas from "./NavOffcanvas";
 
 const NavBar = (): JSX.Element => {
   const { asPath } = useRouter();
-  const { enableHomeBackground } = useAppState();
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const innerWidth = useInnerWidth();
 
   const basePath = asPath.split("/")[1];
-  const background = !basePath.length && enableHomeBackground;
+  const background = !basePath.length;
 
   useEffect(() => {
     if (innerWidth >= breakpoints.XL) {

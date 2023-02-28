@@ -8,7 +8,6 @@ import Showcase from "../components/Showcase";
 import Transition from "../components/Transition";
 import featuredWorks from "../data/featured-works";
 import meta from "../data/meta";
-import useAppState from "../hooks/useAppState";
 import { parseMarkdown } from "../lib/helpers";
 import styles from "../styles/Home.module.css";
 
@@ -16,9 +15,7 @@ interface HomePageProps {
   featuredText: string;
 }
 
-const HomePageWithBackground = ({
-  featuredText,
-}: HomePageProps): JSX.Element => {
+const HomePage = ({ featuredText }: HomePageProps): JSX.Element => {
   return (
     <Transition>
       <Container className={styles.background} fluid>
@@ -47,21 +44,6 @@ const HomePageWithBackground = ({
 
       <Footer />
     </Transition>
-  );
-};
-
-const HomePage = (props: HomePageProps): JSX.Element => {
-  const { enableHomeBackground } = useAppState();
-
-  if (enableHomeBackground) {
-    return <HomePageWithBackground {...props} />;
-  }
-
-  return (
-    <PageLayout title={meta.title} exact>
-      <Showcase media={featuredWorks} limit={6} />
-      <LatestNews />
-    </PageLayout>
   );
 };
 

@@ -6,7 +6,6 @@ interface AppState {
   activeWorkCategory: Category;
   // eslint-disable-next-line no-unused-vars
   setActiveWorkCategory: (category: string) => void;
-  enableHomeBackground: boolean;
 }
 
 export const AppStateContext = createContext({} as AppState);
@@ -17,7 +16,6 @@ const AppStateProvider = ({ children }: any): JSX.Element => {
   const value: AppState = {
     activeWorkCategory,
     setActiveWorkCategory,
-    enableHomeBackground: true,
   };
 
   return (
