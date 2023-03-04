@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import MediaWidget, { heights } from "../components/MediaWidget";
 import { MediaItem } from "../data/featured-media";
+import useInnerWidth from "../hooks/useInnerWidth";
+import breakpoints from "../lib/breakpoints";
 
 interface ShowcaseProps {
   media: MediaItem[];
@@ -19,10 +21,35 @@ const Showcase = ({
   itemHeight = heights.NORMAL,
 }: ShowcaseProps): JSX.Element => {
   const [hoveredWidgetId, setHoveredWidgetId] = useState<number | null>(null);
+  const [relativeColumns, setRelativeColumns] = useState<number>(columns);
+  const [heightsArray, setHeightsArray] = useState<number[]>([]);
+  const innerWidth = useInnerWidth();
 
-  if (media.slice(0, limit + 1).find((m) => m.src.includes("soundcloud.com"))) {
-    itemHeight = heights.SHORT;
-  }
+  useEffect(() => {
+    const _relativeColumns = innerWidth >= breakpoints.LG ? columns : 1;
+    setRelativeColumns(_relativeColumns);
+  }, [innerWidth, columns]);
+
+  useEffect(() => {
+    const _heightsArray: number[] = [];
+    let i = 0;
+
+    while (i < limit) {
+      const indices = new Array(relativeColumns)
+        .fill(i)
+        .map((val, idx) => val + idx);
+      const row = media.filter((_, idx) => indices.includes(idx));
+      const hasSpotify = row.find((r) => r.src.includes("spotify.com"));
+
+      indices.forEach((idx) => {
+        _heightsArray[idx] = hasSpotify ? heights.SHORT : itemHeight;
+      });
+
+      i += relativeColumns;
+    }
+
+    setHeightsArray(_heightsArray);
+  }, [relativeColumns, itemHeight, media, limit]);
 
   const getWidgetStyle = (widgetId: number): {} => ({
     filter:
@@ -39,7 +66,7 @@ const Showcase = ({
             <MediaWidget
               className="showcase"
               src={item.src}
-              height={itemHeight}
+              height={heightsArray[idx]}
               onMouseEnter={() => setHoveredWidgetId(idx)}
               onMouseLeave={() => setHoveredWidgetId(null)}
               style={getWidgetStyle(idx)}
