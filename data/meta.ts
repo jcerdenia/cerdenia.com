@@ -12,7 +12,7 @@ const meta: Meta = {
     "The online home of the music of Joshua Cerdenia. List of works with audio samples, program notes, and perusal scores; biography and photographs; news items and upcoming events.",
   repo: "https://github.com/joshuacerdenia/cerdenia.com",
   mailto: "mailto:joshua@cerdenia.com?subject=Contact from Website",
-  newsletter: "https://tinyletter.com/jcletters",
+  newsletter: "https://tinyletter.com/jcerdenia",
 };
 
 export default meta;
