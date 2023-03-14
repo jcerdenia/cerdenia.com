@@ -17,6 +17,7 @@
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   filter: brightness(0.66) saturate(0.5) contrast(1.25);
 }
 
@@ -81,7 +82,6 @@
   .background::before {
     background-size: 166% !important;
     background-position: 75% bottom !important;
-    /*background-color: #606270;*/
   }
 
   .background .imageCredit {
