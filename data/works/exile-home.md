@@ -15,9 +15,11 @@ tags:
 
 ###### Composer's Note
 
-After a bit of time in the US, I’ve returned to my home country of the Philippines. I’d emigrated from here in hopes of furthering my career, wound up in New York City, then returned when the pandemic hit. A big part of me remains in New York, and I’m constantly wondering what might bring me back.
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1477009348&color=%234b4c45&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
-_Exile/Home_ was commissioned by Melisa Tien for [SWELL](https://www.melisatien.com/swell), a collection of music theatre works by immigrants and children of immigrants. I wrote the text as well as the music, which I completed in my hometown in the Philippines in January 2021.
+"It is part of morality not to be at home in one's home," as Adorno said.
+
+_Exile/Home_ was commissioned by Melisa Tien for [SWELL](https://www.melisatien.com/swell), a collection of music theatre works by immigrants and children of immigrants. I wrote the text as well as the music, which I completed in Manila, Philippines in January 2021.
 
 ###### Instrumentation
 
