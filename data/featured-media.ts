@@ -37,9 +37,24 @@ const featuredMedia: MediaItem[] = [
   },
   {
     title: "Why should we compose music?",
+    subtitle: "The Saad Haddad Show",
     description: "Conversation with Saad Haddad",
-    path: "https://www.youtube.com/watch?v=RRZyQjc6k80",
-    src: "https://www.youtube.com/watch?v=RRZyQjc6k80",
+    path: "https://open.spotify.com/episode/6CQdEkvgMshiJJFjSJ1a8K?si=Okig4T5nQJuKpug0mRzT4Q",
+    src: "https://open.spotify.com/episode/6CQdEkvgMshiJJFjSJ1a8K?si=Okig4T5nQJuKpug0mRzT4Q",
+  },
+  {
+    title: "The Getaway",
+    subtitle: "Bite-Sized Broadway",
+    description: "Radio production and talkback",
+    path: "https://open.spotify.com/episode/4wtlFdw77ObM13zbE7tYd7?si=c19c495a28a84d5e",
+    src: "https://open.spotify.com/episode/4wtlFdw77ObM13zbE7tYd7?si=c19c495a28a84d5e",
+  },
+  {
+    title: "Maestro Filipino",
+    subtitle: "98.7 DZFE",
+    description: "Conversation with Daniel Federico",
+    path: "https://soundcloud.com/987dzfe/maestro-filipino-23-0506-joshua-cerdenia",
+    src: "https://soundcloud.com/987dzfe/maestro-filipino-23-0506-joshua-cerdenia",
   },
   {
     title: "Maestro Filipino",
@@ -47,11 +62,6 @@ const featuredMedia: MediaItem[] = [
     description: "Conversation with Tiffany Liong-Gabuya",
     path: "https://soundcloud.com/987dzfe/maestro-filipino-17-1028-joshua-cerdenia-pt01",
     src: "https://soundcloud.com/987dzfe/maestro-filipino-17-1028-joshua-cerdenia-pt01",
-  },
-  {
-    title: "Bite-Sized Broadway: The Getaway",
-    path: "https://open.spotify.com/episode/4wtlFdw77ObM13zbE7tYd7?si=c19c495a28a84d5e",
-    src: "https://open.spotify.com/episode/4wtlFdw77ObM13zbE7tYd7?si=c19c495a28a84d5e",
   },
   {
     title: "Magayon",

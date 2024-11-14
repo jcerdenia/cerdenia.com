@@ -33,7 +33,7 @@
 }
 
 .featuredText {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -57,7 +57,7 @@
 .inside :global .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 .inside :global .main a {

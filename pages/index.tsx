@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 
 import Footer from "../components/Footer";
 import HtmlWrapper from "../components/HtmlWrapper";
-import LatestNews from "../components/LatestNews";
 import PageLayout from "../components/PageLayout";
 import Showcase from "../components/Showcase";
 import Transition from "../components/Transition";
@@ -26,7 +25,9 @@ const HomePage = ({ featuredText }: HomePageProps): JSX.Element => {
           transition={false}
           exact
         >
-          <LatestNews />
+          <HtmlWrapper className={styles.featuredText}>
+            {featuredText}
+          </HtmlWrapper>
 
           <div className={styles.imageCredit}>
             Photo courtesy of The Florida Orchestra
@@ -35,11 +36,7 @@ const HomePage = ({ featuredText }: HomePageProps): JSX.Element => {
       </Container>
 
       <Container className="my-5">
-        <HtmlWrapper className={styles.featuredText}>
-          {featuredText}
-        </HtmlWrapper>
-
-        <Showcase media={featuredMedia} limit={3} />
+        <Showcase media={featuredMedia} limit={6} />
       </Container>
 
       <Footer />
