@@ -57,7 +57,7 @@
 .inside :global .main {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .inside :global .main a {
