@@ -19,11 +19,6 @@ const Footer = (): JSX.Element => {
               For scores and parts, commissions, and all other inquiries, please{" "}
               <a href={meta.mailto}>email directly</a>.
             </div>
-
-            <div>
-              <a href={meta.newsletter}>Join my newsletter</a> for occasional
-              updates on life and music on a personal scale.
-            </div>
           </Col>
 
           <Col xl="auto" className="mb-3 d-flex flex-column align-items-center">
