@@ -24,7 +24,7 @@ tags:
 
 ###### Composer's Note
 
-_**Feuertrunken**_ is a loud meditation (if one can meditate loudly) on joy. In the months that I spent composing the piece, between March–June 2017, I found little cause for celebration in the many goings-on both locally and abroad; perhaps this was the reason I thought the subject of joy had so much urgency.
+_**Feuertrunken**_ is a loud meditation (if one can meditate loudly) on joy. During the months in the spring of 2017 that I spent composing the piece, I found much urgency in the subject of joy amidst the many goings-on both in my personal life as well as the wider world.
 
 During this time I also found myself absorbed in the _Divine Comedy_, especially the _Purgatorio_. Dante’s vision of purgatory is a giant mountain partitioned into seven terraces, each devoted to purification from one of the deadly sins. Dante ascends the mountain terrace by terrace, until at last he finds a great wall of fire between himself and paradise. An angel of God encourages him to make the plunge into his final trial. Though my piece as a whole is not programmatic (meaning musical events generally do not correspond to anything in Dante’s story), there is a brief interlude in which I imagine Dante in devoted silence before he submits to the fire.
 
